@@ -1,0 +1,16 @@
+@screen md {
+  .catalog-navigation{
+    padding: rem(54px) 0 rem(128px) 0;
+  }
+  .catalog-nav {
+    grid-template-columns: repeat(6,1fr);
+    line-height: rem(21px);
+    &__img{
+      margin-bottom: rem(16px);
+      img {
+        width: rem(80px);
+        height: rem(80px);
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  --main-color: #525A68;
+  --main-bg-color: #fff;
+  --yellow-color: #FFC600;
+  --grey-color:  #F9F9F9;
+  --black-bold: #273142;
+  --light-grey-color: #A5A9AF;
+  --font-size: 14px;
+  --line-height: 20px;
+}
+@screen md {
+  :root{
+    --root-font-size: 18px;
+    --line-height: 30px;
+  }
+}

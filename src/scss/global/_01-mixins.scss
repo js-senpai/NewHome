@@ -1,0 +1,178 @@
+@mixin bg ($size) {
+	background-size: #{$size};
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@mixin centering ($dir) {
+	position: absolute;
+
+	@if $dir==v {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	@else if $dir==h {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@else {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@mixin btn_anim($scaleMax:1.05, $scaleMin:0.95) {
+	transform-origin: center center;
+	transition: all ease-out 240ms;
+
+	&:hover {
+		transform: scale($scaleMax);
+	}
+
+	&:focus {
+		transform: scale($scaleMax) trahslateY(-5%);
+	}
+
+	&:active {
+		transform: scale($scaleMin);
+	}
+}
+
+@mixin font-face($name, $file, $weight: 400, $style: normal) {
+	@font-face {
+		font-family: "#{$name}";
+		src: url('../fonts/#{$file}.eot');
+		src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/#{$file}.woff2') format('woff2'),
+		url('../fonts/#{$file}.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+@mixin no-btn {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: transparent;
+	border-radius: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+// rem converter
+$rem-baseline: 16px !default;
+$rem-fallback: false !default;
+$rem-px-only: false !default;
+
+@function rem-separator($list, $separator: false) {
+	@if $separator == "comma" or $separator == "space" {
+		@return append($list, null, $separator);
+	}
+
+	@if function-exists("list-separator") == true {
+		@return list-separator($list);
+	}
+
+	// list-separator polyfill by Hugo Giraudel (https://sass-compatibility.github.io/#list_separator_function)
+	$test-list: ();
+	@each $item in $list {
+		$test-list: append($test-list, $item, space);
+	}
+
+	@return if($test-list == $list, space, comma);
+}
+
+@mixin rem-baseline($zoom: 100%) {
+	font-size: $zoom / 16px * $rem-baseline;
+}
+
+@function rem-convert($to, $values...) {
+	$result: ();
+	$separator: rem-separator($values);
+
+	@each $value in $values {
+		@if type-of($value) == "number" and unit($value) == "rem" and $to == "px" {
+			$result: append($result, $value / 1rem * $rem-baseline, $separator);
+		} @else if type-of($value) == "number" and unit($value) == "px" and $to == "rem" {
+			$result: append($result, $value / $rem-baseline * 1rem, $separator);
+		} @else if type-of($value) == "list" {
+			$value-separator: rem-separator($value);
+			$value: rem-convert($to, $value...);
+			$value: rem-separator($value, $value-separator);
+			$result: append($result, $value, $separator);
+		} @else {
+			$result: append($result, $value, $separator);
+		}
+	}
+
+	@return if(length($result) == 1, nth($result, 1), $result);
+}
+
+@function rem($values...) {
+	@if $rem-px-only {
+		@return rem-convert(px, $values...);
+	} @else {
+		@return rem-convert(rem, $values...);
+	}
+}
+
+@mixin rem($properties, $values...) {
+	@if type-of($properties) == "map" {
+		@each $property in map-keys($properties) {
+			@include rem($property, map-get($properties, $property));
+		}
+	} @else {
+		@each $property in $properties {
+			@if $rem-fallback or $rem-px-only {
+				#{$property}: rem-convert(px, $values...);
+			}
+			@if not $rem-px-only {
+				#{$property}: rem-convert(rem, $values...);
+			}
+		}
+	}
+}
+
+@mixin rem-fallback($property, $values) {
+	$max: length($values);
+	$pxValues: '';
+	$remValues: '';
+
+	@for $i from 1 through $max {
+		$value: stripUnit(nth($values, $i));
+		$pxValues: #{$pxValues + $value*16}px;
+
+		@if $i < $max {
+			$pxValues: #{$pxValues + " "};
+		}
+	}
+
+	@for $i from 1 through $max {
+		$value: stripUnit(nth($values, $i));
+		$remValues: #{$remValues + $value}rem;
+
+		@if $i < $max {
+			$remValues: #{$remValues + " "};
+		}
+	}
+
+	#{$property}: $pxValues;
+	#{$property}: $remValues;
+}
+//px to em
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+	@return $number;
+}
+
+/// Convert value to em.
+@function em($size, $base-font-size:16px) {
+	@return strip-unit($size) / strip-unit($base-font-size) * 1em;
+}

@@ -1,0 +1,33 @@
+@screen md {
+  .our-news{
+    padding: rem(70px) 0;
+    &__see-more{
+      margin: 0;
+    }
+    &__title-container{
+      margin-bottom: rem(70px);
+    }
+    &__list{
+      grid-template-columns: repeat(auto-fit,minmax(250px,340px));
+      grid-gap: rem(30px);
+      img{
+        width: rem(98px);
+        height: rem(98px);
+      }
+      &-item{
+        grid-template-columns: rem(98px) 1fr;
+      }
+      &-content{
+        &__title{
+          font-weight: bold;
+          margin-bottom: rem(5px);
+          line-height: rem(21px);
+        }
+        &__date{
+          color: var(--light-grey-color);
+          font-size: rem(12px);
+        }
+      }
+    }
+  }
+}

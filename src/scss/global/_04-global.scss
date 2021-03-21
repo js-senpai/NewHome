@@ -78,6 +78,9 @@ button {
 .--align-end {
 	align-items: flex-end;
 }
+h1,h2,h3,h4,h5,h6,.title-h1,.title-h2,.title-h3,.title-h4,.title-h5,.title-h6{
+	font-weight: bold;
+}
 h1,.title-h1{
 	font-size: rem(24px);
 	line-height: rem(28px);
@@ -144,5 +147,51 @@ h6,.title-h6{
 	.container{
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+}
+// Action button
+.btn{
+	background: #FFC80A;
+	border-radius: 5px;
+	width: 100%;
+	height: 52px;
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	font-size: rem(16px);
+	font-weight: bold;
+	align-items: center;
+	color: var(--black-bold);
+	transition: all 500ms ease-in-out;
+	&-action{
+		background-color: var(--yellow-color);
+		&:hover{
+			background-color: var(--light-yellow-color);
+		}
+	}
+}
+// Contact list
+.contact-list{
+	&__item{
+		display: grid;
+		grid-template-columns: rem(24px) 1fr;
+		grid-gap: rem(15px);
+		align-items: center;
+	}
+	&__info-title{
+		color: var(--light-grey-color);
+		font-size: rem(14px);
+	}
+	&__info-link{
+		font-size: rem(16px);
+		line-height: rem(18px);
+		font-weight: bold;
+		&[href^="tel:"]{
+			font-size: rem(20px);
+		}
+	}
+	&__icon{
+		font-size: rem(17px);
+		text-align: center;
 	}
 }

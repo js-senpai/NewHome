@@ -1,0 +1,14 @@
+@screen md {
+  .map{
+    &-contact{
+      max-width: 360px;
+      padding: rem(40px);
+      &__list-item{
+        margin-bottom: rem(30px);
+      }
+      &__title{
+        margin-bottom: rem(40px);
+      }
+    }
+  }
+}

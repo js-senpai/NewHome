@@ -1,0 +1,22 @@
+.map{
+  position: relative;
+  &-container{
+    padding-top: rem(415px);
+    padding-bottom: rem(20px);
+  }
+  &-contact{
+    background-color: #fff;
+    box-shadow: 0px 0px rem(50px) #DAE5EB;
+    border-radius: rem(5px);
+    padding: rem(20px);
+    &__list-item{
+      margin-bottom: rem(20px);
+    }
+    &__title{
+      font-size: rem(24px);
+      line-height: rem(28px);
+      margin-bottom: rem(20px);
+    }
+  }
+}
+@import "media";

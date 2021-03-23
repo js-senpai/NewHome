@@ -1,0 +1,26 @@
+@screen md {
+  .popup{
+    &__header,&-description,&-form__container{
+      margin-bottom: rem(25px);
+    }
+    &-form{
+      &__container,&__btn-container{
+        grid-gap: rem(30px);
+      }
+      &__container{
+        grid-template-columns: repeat(2,1fr);
+      }
+      &__fieldset--full{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      &__btn-container{
+        grid-template-columns: rem(200px) 1fr;
+        align-items: center;
+      }
+    }
+    &-submit{
+      order: -1;
+    }
+  }
+}

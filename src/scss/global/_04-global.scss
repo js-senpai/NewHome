@@ -195,3 +195,56 @@ h6,.title-h6{
 		text-align: center;
 	}
 }
+//Form
+.form{
+	&__fieldset{
+		border: 1px solid #D4D6D9;
+		border-radius: 5px;
+		padding-inline-start: rem(15px);
+		position: relative;
+		&.required::after{
+			content: '';
+			display: block;
+			width: rem(10px);
+			height: rem(10px);
+			background: #EB5757;
+			border: 2px solid #FFFFFF;
+			border-radius: 50%;
+			position: absolute;
+			top: -16px;
+			right: rem(8px);
+		}
+		legend{
+			font-size: rem(12px);
+			color: var(--light-grey-color);
+		}
+	}
+    &__textarea,&__input{
+		padding: rem(6px) rem(15px) rem(15px) 0;
+		display: block;
+		width: 100%;
+		resize: none;
+		color: var(--light-grey-color);
+		font-size: rem(18px);
+		outline: none;
+	}
+	&__checkbox-container{
+		display: grid;
+		grid-template-columns: rem(40px) 1fr;
+		grid-gap: rem(20px);
+		color: var(--light-grey-color);
+		align-items: center;
+	}
+	&__checkbox-icon{
+		height: rem(40px);
+        background-color:  #EEF4F8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		&.not-checked{
+			background-color: #fff;
+			border: 1px solid #EEF4F8;
+		}
+	}
+}

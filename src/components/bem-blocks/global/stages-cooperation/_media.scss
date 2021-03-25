@@ -1,0 +1,29 @@
+@screen md {
+  .stages-cooperation{
+    padding: rem(70px) 0;
+    &__title{
+      margin-bottom: rem(20px);
+    }
+    &__item-container{
+      display: block !important;
+      &::before{
+        display: none;
+      }
+    }
+    &__nav{
+      display: none;
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(rem(200px),rem(250px)));
+      justify-content: space-between;
+      grid-gap: rem(30px);
+    }
+    &__img{
+      margin-bottom: rem(50px);
+      img{
+        max-width: 60px;
+      }
+    }
+  }
+}

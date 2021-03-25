@@ -1,0 +1,55 @@
+.stages-cooperation{
+  padding: rem(20px) 0;
+  &__title{
+    margin-bottom: rem(20px);
+  }
+  &__list{
+    position: relative;
+  }
+  &__item-container{
+    padding: rem(40px) rem(40px) rem(40px) 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: rem(40px) 1fr;
+    grid-gap: rem(10px);
+    &::before{
+      content: '';
+      background: center/100% url('../img/global/stages-cooperation/bg-slider.png') no-repeat;
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom:0;
+      right: 0;
+      width: rem(72px);
+      padding: rem(20px) 0;
+    }
+  }
+  &__text{
+    a{
+      font-weight: bold;
+    }
+  }
+  &__nav{
+    display: flex;
+  }
+  &__img{
+    img{
+      max-width: 40px;
+    }
+  }
+  &__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(20px);
+    height: rem(20px);
+    background: var(--yellow-color);
+    border-radius: 5px;
+    font-size: rem(12px);
+    &-left{
+      margin-right: rem(20px);
+    }
+  }
+}
+@import "media";

@@ -1,0 +1,35 @@
+@screen md {
+  .reviews{
+     padding: rem(70px) 0;
+     &__title{
+       grid-column-end: 1;
+       margin-bottom: 0;
+     }
+    &__header{
+       grid-template-columns: max-content max-content 1fr;
+       align-items: center;
+       grid-gap: rem(100px);
+       margin-bottom: rem(75px);
+    }
+    &__slider{
+      margin-bottom: rem(70px);
+      .slick-current.slick-active,.slick-current.slick-active + .slick-active{
+        margin-right: 20px;
+      }
+      .slick-track{
+        display: flex;
+        padding: rem(20px) 0;
+      }
+    }
+    &__partners{
+      &__img{
+        &-pc{
+          display: block;
+        }
+        &-mobile{
+          display: none;
+        }
+      }
+    }
+  }
+}

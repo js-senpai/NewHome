@@ -15,9 +15,9 @@
     }
     &__list{
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(rem(200px),rem(250px)));
+      grid-template-columns: repeat(auto-fit,minmax(rem(200px),rem(270px)));
       justify-content: space-between;
-      grid-gap: rem(30px);
+      grid-gap: rem(25px);
     }
     &__img{
       margin-bottom: rem(50px);

@@ -36,13 +36,7 @@
     flex-wrap: wrap;
   }
   &__see-more{
-    display: block;
-    width: max-content;
     margin: rem(6px) 0 rem(21px) 0;
-    font-size: rem(14px);
-    &__text{
-      margin-left: rem(15px);
-    }
   }
 
 }

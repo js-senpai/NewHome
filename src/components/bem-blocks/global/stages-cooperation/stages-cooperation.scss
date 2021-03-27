@@ -35,18 +35,10 @@
   }
   &__img{
     img{
-      max-width: 40px;
+      max-width: rem(40px);
     }
   }
   &__btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: rem(20px);
-    height: rem(20px);
-    background: var(--yellow-color);
-    border-radius: 5px;
-    font-size: rem(12px);
     &-left{
       margin-right: rem(20px);
     }

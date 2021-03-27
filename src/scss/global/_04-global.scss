@@ -248,3 +248,31 @@ h6,.title-h6{
 		}
 	}
 }
+// See more
+.see-more{
+	display: block;
+	width: max-content;
+	font-size: rem(14px);
+	&__text{
+		margin-left: rem(15px);
+	}
+}
+//Slider btn
+.slider-btn{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: rem(20px);
+	height: rem(20px);
+	background: var(--yellow-color);
+	border-radius: 5px;
+	font-size: rem(12px);
+}
+@screen md {
+	.slider-btn{
+		width: rem(40px);
+		height: rem(40px);
+		font-size: rem(18px);
+	}
+}

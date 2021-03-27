@@ -55,9 +55,40 @@ const lazyLoadInstance = new LazyLoad({
                     slidesToScroll: 1,
                     lazyLoad: 'progressive',
                     appendArrows: '.stages-cooperation__nav',
-                    prevArrow: '<span class="stages-cooperation__btn stages-cooperation__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
-                    nextArrow: '<span class="stages-cooperation__btn  stages-cooperation__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
+                    prevArrow: '<span class="slider-btn stages-cooperation__btn stages-cooperation__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
+                    nextArrow: '<span class="slider-btn stages-cooperation__btn  stages-cooperation__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
                 })},descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.stages-cooperation__list'
+            })
+        }
+        // Reviews slider
+        if($('.reviews__slider-item').length){
+            $('.reviews__slider').slick({
+                arrows: true,
+                infinite: true,
+                mobileFirst: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                lazyLoad: 'progressive',
+                appendArrows: '.reviews__slider-nav',
+                prevArrow: '<span class="slider-btn reviews__btn reviews__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
+                nextArrow: '<span class="slider-btn reviews__btn  reviews__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
             })
         }
     })

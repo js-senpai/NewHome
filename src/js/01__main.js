@@ -47,7 +47,8 @@ const lazyLoadInstance = new LazyLoad({
         }
         // Stages slider
         if($('.stages-cooperation__item').length){
-            mobileSlider({mobileFunc:()=>{$('.stages-cooperation__list').slick({
+            mobileSlider({mobileFunc:()=>{
+                $('.stages-cooperation__list').slick({
                     arrows: true,
                     infinite: true,
                     speed: 300,
@@ -57,7 +58,8 @@ const lazyLoadInstance = new LazyLoad({
                     appendArrows: '.stages-cooperation__nav',
                     prevArrow: '<span class="slider-btn stages-cooperation__btn stages-cooperation__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
                     nextArrow: '<span class="slider-btn stages-cooperation__btn  stages-cooperation__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
-                })},descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.stages-cooperation__list'
+                })
+                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.stages-cooperation__list'
             })
         }
         // Reviews slider
@@ -77,8 +79,9 @@ const lazyLoadInstance = new LazyLoad({
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            centerMode: true
                         }
                     },
                     {
@@ -89,6 +92,22 @@ const lazyLoadInstance = new LazyLoad({
                         }
                     },
                 ]
+            })
+        }
+        // Popular fances
+        if($('.product-slider').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.popular-fances__container').slick({
+                        arrows: false,
+                        autoplay: true,
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                    })
+                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.product-slider'
             })
         }
     })

@@ -149,6 +149,7 @@ h6,.title-h6{
 	&__info-title{
 		color: var(--light-grey-color);
 		font-size: rem(14px);
+		line-height: rem(16px);
 	}
 	&__info-link{
 		font-size: rem(16px);
@@ -288,6 +289,60 @@ h6,.title-h6{
 			}
 			&.slick-active{
 				border: 1px solid #FFC80A;
+			}
+		}
+	}
+}
+// Footer
+.footer{
+	background-color: #fff;
+	box-shadow: 0px 0px 50px rgba(82, 90, 104, 0.1);
+	&-menus{
+		padding: rem(20px) 0;
+		&__item{
+			&:not(:last-child){
+				margin-bottom: rem(30px);
+			}
+		}
+		&__nav{
+			&__item{
+				font-size: rem(14px);
+				line-height: rem(16px);
+				&:not(:last-child){
+					margin-bottom: rem(12px);
+				}
+			}
+		}
+		&__title{
+			font-weight: 500;
+			font-size: rem(18px);
+			line-height: rem(21px);
+			color: #273142;
+			margin-bottom: rem(20px);
+		}
+	}
+}
+@screen lg {
+	// Footer
+	.footer{
+		&-menus{
+			padding: rem(40px) 0;
+			display: flex;
+			justify-content: space-between;
+			&__item{
+				&:not(:last-child){
+					margin-bottom: 0;
+				}
+			}
+			&__nav{
+				&.catalog{
+					column-count: 3;
+				}
+				&__item{
+					&:not(:last-child){
+						margin-bottom: rem(12px);
+					}
+				}
 			}
 		}
 	}

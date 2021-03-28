@@ -1,0 +1,14 @@
+.nav-list{
+  padding: rem(20px) 0;
+  border-top: 1px solid #F2F2F2;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: rem(20px);
+  .contact-list{
+    display: grid;
+    grid-template-columns: rem(24px) 1fr;
+    grid-gap: rem(21px);
+    align-items: center;
+  }
+}
+@import "media";

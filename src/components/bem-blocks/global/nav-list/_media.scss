@@ -1,0 +1,8 @@
+@screen lg {
+  .nav-list{
+     grid-template-columns: repeat(6,1fr);
+     grid-gap: rem(15px);
+     justify-content: space-between;
+     align-items: center;
+  }
+}

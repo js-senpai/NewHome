@@ -1,5 +1,8 @@
 @screen lg {
   .subscribe-block{
+    &.mt{
+      margin-top: rem(-104px);
+    }
     &__container{
       display: grid;
       grid-template-columns: 1fr 3fr;

@@ -1,1 +1,69 @@
-<header class="header"></header>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-item">
+                <ul class="header__top-info__list">
+                    <li class="header__top-info__item">
+                        <div class="header__top-info__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="header__top-info__text">Челябинск, ул. Троицкая 1в/2</div>
+                    </li>
+                    <li class="header__top-info__item">
+                        <div class="header__top-info__icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="header__top-info__text">10:00–20:00, без выходных</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__top-item">
+                <ul class="header__top-social">
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/youtube.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/telegram.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/vk.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/instagram.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/facebook.svg" class="lazy" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-desktop">
+            <div class="header-desktop__middle">
+                @@include('../bem-blocks/global/nav-list/nav-list.html')
+            </div>
+            <div class="header-desktop__footer">
+
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="header-mobile__footer">
+                <div class="header-mobile__footer-item">
+                    <button class="mobile-btn header-mobile__btn-menu"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="header-mobile__footer-item">
+                    @@include('../bem-blocks/global/logo/logo.html')
+                </div>
+                <div class="header-mobile__footer-item">
+                    <button class="mobile-btn header-mobile__btn-contact"><i class="fas fa-phone-alt"></i></button>
+                </div>
+            </div>
+            <div class="header-mobile__contact-menu">
+                <button class="mobile-btn header-mobile__btn-contact-close"><i class="fas fa-times"></i></button>
+                @@include('../bem-blocks/global/nav-list/nav-list.html',{
+                'class': 'header-mobile__contact-menu__list'
+                })
+            </div>
+            <div class="header-mobile__nav">
+                <div class="header-mobile__menu">
+                    <header class="header-mobile__nav-header header-mobile__menu-header">
+                        <div class="header-mobile__header-nav__title header-mobile__menu-header__title"></div>
+                        <button class="header-mobile__nav-btn"><i class="fas fa-times"></i></button>
+                    </header>
+                </div>
+                <div class="div header-mobile__catalog">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

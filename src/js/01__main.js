@@ -110,5 +110,32 @@ const lazyLoadInstance = new LazyLoad({
                 },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.product-slider'
             })
         }
+        // Mobile contact
+        if($('.header-mobile__btn-contact').length && $('.header-mobile__contact-menu').length){
+            $('.header-mobile__btn-contact').click(function (){
+                $('.header-mobile__contact-menu').fadeIn(500)
+            })
+            $('.header-mobile__btn-contact-close').click(function (){
+                $('.header-mobile__contact-menu').fadeOut(500)
+            })
+        }
+        // Mobile nav
+        if($('.header-mobile__btn-menu').length && $('.header-mobile__nav').length){
+            $('.header-mobile__btn-menu').click(function (){
+                $('.header-mobile__nav').fadeIn(500)
+            })
+            $('.header-mobile__nav-btn').click(function (){
+                $('.header-mobile__nav').fadeOut(500)
+            })
+        }
+        // Choose city
+        if($('.choose-city').length){
+            $('.choose-city').click(function (){
+                $('.header__cities').fadeIn(500)
+            })
+            $('.header__cities-header__btn').click(function (){
+                $('.header__cities').fadeOut(500)
+            })
+        }
     })
 })(jQuery)

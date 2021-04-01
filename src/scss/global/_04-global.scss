@@ -113,8 +113,8 @@ h6,.title-h6{
 }
 @media (max-width: 640px) {
 	.container{
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 // Action button
@@ -320,6 +320,40 @@ h6,.title-h6{
 			color: #273142;
 			margin-bottom: rem(20px);
 		}
+	}
+}
+//Mobile btn
+.mobile-btn{
+	height: rem(40px);
+	width: rem(40px);
+	border-radius: 5px;
+	background-color: var(--yellow-color);
+	font-size: rem(16px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.choose-city{
+	cursor: pointer;
+}
+// Search
+.search{
+	background: #EEF4F8;
+	border-radius: rem(5px);
+	padding: rem(18px) rem(14px);
+	font-size: rem(14px);
+	line-height: rem(16px);
+	color: #B7C7D1;
+	display: grid;
+	grid-template-columns: 1fr 40px;
+	grid-gap: rem(5px);
+	justify-content: space-between;
+	align-items: center;
+	&-btn{
+		color: var(--black-bold)
+	}
+	input{
+		background: #EEF4F8;
 	}
 }
 @screen lg {

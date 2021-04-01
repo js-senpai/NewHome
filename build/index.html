@@ -22,11 +22,11 @@
 
 <body>
 	<header class="header">
-    <div class="container">
-        <div class="header__top">
+    <div class="header__top">
+        <div class="container header__top-container">
             <div class="header__top-item">
                 <ul class="header__top-info__list">
-                    <li class="header__top-info__item">
+                    <li class="header__top-info__item choose-city">
                         <div class="header__top-info__icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -45,11 +45,13 @@
                     <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/youtube.svg" class="lazy" alt=""></a></li>
                     <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/telegram.svg" class="lazy" alt=""></a></li>
                     <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/vk.svg" class="lazy" alt=""></a></li>
-                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/instagram.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/insta.svg" class="lazy" alt=""></a></li>
                     <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/facebook.svg" class="lazy" alt=""></a></li>
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="header-desktop">
             <div class="header-desktop__middle">
                 <div class="nav-list @class">
@@ -126,7 +128,9 @@
                 </div>
             </div>
             <div class="header-mobile__contact-menu">
-                <button class="mobile-btn header-mobile__btn-contact-close"><i class="fas fa-times"></i></button>
+                <header class="header-mobile__contact-menu__header">
+                    <button class="mobile-btn header-mobile__btn-contact-close"><i class="fas fa-times"></i></button>
+                </header>
                 <div class="nav-list @class">
     <div class="nav-list__item footer-list__item">
         <a href="#" class="logo @@class">
@@ -181,13 +185,93 @@
             <div class="header-mobile__nav">
                 <div class="header-mobile__menu">
                     <header class="header-mobile__nav-header header-mobile__menu-header">
-                        <div class="header-mobile__header-nav__title header-mobile__menu-header__title"></div>
+                        <div class="header-mobile__nav-header__title header-mobile__menu-header__title">Меню</div>
                         <button class="header-mobile__nav-btn"><i class="fas fa-times"></i></button>
                     </header>
+                    <ul class="header-mobile__menu-list">
+                        <li class="header-mobile__menu-list__item"><a href="#">Наши услуги</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Калькулятор</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Цены</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Фото работ</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Компания</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Вакансии</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Контакты</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Статьи</a></li>
+                    </ul>
                 </div>
-                <div class="div header-mobile__catalog">
-
+                <div class="header-mobile__search">
+                    <div class="container">
+                        <form class="search">
+                            <input type="search" placeholder="Найдём всё..." class="search-input">
+                            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
                 </div>
+                <div class="header-mobile__catalog">
+                        <header class="container header-mobile__nav-header header-mobile__catalog-header">
+                            <div class="header-mobile__nav-header__title header-mobile__catalog-header__title">Каталог</div>
+                            <a href="#" class="header-mobile__catalog-link">Все заборы</a>
+                        </header>
+                        <ul class="header-mobile__catalog-menu">
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Заборы жалюзи</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Ворота и калитки</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Забор «РАНЧО»</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">3Д-забор</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Автоматика для ворот</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__cities">
+            <div class="container">
+                <header class="header__cities-header">
+                    <div class="header__cities-header__title">Каталог</div>
+                    <button class="header__cities-header__btn"><i class="fas fa-times"></i></button>
+                </header>
+                <div class="header__cities-search">
+                    <form class="search">
+                        <input type="search" placeholder="Найдём всё..." class="search-input">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <ul class="header__cities-list">
+                    <li class="header__cities-list__item active"><a href="#">Москва</a></li>
+                    <li class="header__cities-list__item"><a href="#">Санкт-Петербург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Нижний Новгород</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ростов-на-Дону</a></li>
+                    <li class="header__cities-list__item"><a href="#">Самара</a></li>
+                    <li class="header__cities-list__item"><a href="#">Казань</a></li>
+                    <li class="header__cities-list__item"><a href="#">Воронеж</a></li>
+                    <li class="header__cities-list__item"><a href="#">Уфа</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ярославль</a></li>
+                    <li class="header__cities-list__item"><a href="#">Екатеринбург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Тольятти</a></li>
+                    <li class="header__cities-list__item"><a href="#">Омск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Волгоград</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ставрополь</a></li>
+                    <li class="header__cities-list__item"><a href="#">Краснодар</a></li>
+                    <li class="header__cities-list__item"><a href="#">Саратов</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ижевск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Челябинск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Санкт-Петербург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Нижний Новгород</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ростов-на-Дону</a></li>
+                    <li class="header__cities-list__item"><a href="#">Самара</a></li>
+                    <li class="header__cities-list__item"><a href="#">Казань</a></li>
+                    <li class="header__cities-list__item"><a href="#">Воронеж</a></li>
+                    <li class="header__cities-list__item"><a href="#">Уфа</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ярославль</a></li>
+                    <li class="header__cities-list__item"><a href="#">Екатеринбург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Тольятти</a></li>
+                    <li class="header__cities-list__item"><a href="#">Омск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Волгоград</a></li>
+                    <li class="header__cities-list__item"><a href="#">Казань</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ставрополь</a></li>
+                    <li class="header__cities-list__item"><a href="#">Краснодар</a></li>
+                    <li class="header__cities-list__item"><a href="#">Саратов</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ижевск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Челябинск</a></li>
+                </ul>
             </div>
         </div>
     </div>

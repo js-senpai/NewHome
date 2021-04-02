@@ -137,5 +137,15 @@ const lazyLoadInstance = new LazyLoad({
                 $('.header__cities').fadeOut(500)
             })
         }
+        // Desktop menu
+        if($('.header-desktop__submenu').length){
+            $('.header-desktop__submenu').parent().addClass('submenu')
+            $('.header-desktop__menu-item').mouseenter(function (){
+                $(this).find('.header-desktop__submenu').fadeIn()
+            })
+            $('.header-desktop__menu-item').mouseleave(function (){
+                $(this).find('.header-desktop__submenu').fadeOut()
+            })
+        }
     })
 })(jQuery)

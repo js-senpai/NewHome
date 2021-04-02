@@ -46,4 +46,111 @@
 //MEDIA: 369
 @media screen and (max-width: 369px) {}
 
-//!MEDIA: 369 
+//!MEDIA: 369
+//Tailwind media
+@screen md {
+  // Header
+  .header{
+    &-mobile{
+      display: none;
+    }
+    &-desktop{
+      display: block;
+      padding: rem(20px) 0;
+      border-top: 2px solid #F2F2F2;
+      &__btn-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EEF4F8;
+        border-radius: 5px;
+        width: rem(52px);
+        height: rem(52px);
+      }
+      &__catalog,&__submenu{
+        display: none;
+      }
+      &__footer{
+        display: grid;
+        grid-template-columns: rem(228px) max-content rem(52px);
+        grid-gap: rem(30px);
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &-item{
+          position: relative;
+          &:not(:last-child){
+            margin-right: rem(30px);
+          }
+          &.submenu{
+            &>a{
+              display: flex;
+              align-items: center;
+              &::after{
+                content: '';
+                display: block;
+                background: center/100% url('../img/global/icons/caret_down.svg') no-repeat;
+                width: rem(10px);
+                height: rem(20px);
+                margin-left: rem(12px);
+              }
+            }
+            ul{
+              position: absolute;
+              bottom: rem(-155px);
+              background-color: #fff;
+              border-radius: rem(5px);
+              width: max-content;
+              box-shadow: 0px 0px 50px 0px #DAE5EB;
+              li{
+                padding: rem(20px);
+                a{
+                  font-size: rem(18px);
+                  line-height: rem(21px);
+                  color: #525A68;
+                }
+                &:first-child{
+                  position: relative;
+                  &::before{
+                    content: '';
+                    border: 10px solid transparent;
+                    border-bottom: 10px solid #fff;
+                    position: absolute;
+                    top: rem(-18px);
+                    left: rem(30px);
+                  }
+                }
+                &:not(:last-child){
+                  border-bottom: 1px solid #F2F2F2;
+                }
+              }
+            }
+          }
+        }
+        &>a{
+          font-weight: 500;
+          font-size: rem(18px);
+          line-height: rem(21px);
+          color: #525A68;
+        }
+      }
+      &__catalog{
+        &-btn{
+          grid-template-columns: rem(18px) max-content;
+          align-items: center;
+          color: #525A68;
+          grid-gap: rem(20px);
+          padding: rem(20px) rem(14px);
+          justify-content: start;
+          .fa-times{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,15 @@ const lazyLoadInstance = new LazyLoad({
                 }
             });
         }
+        // Close popup by container
+        const closePopup = (item) => {
+            $(document).mouseup(function (e) {
+                const popup_container = $(item);
+                if (popup_container.has(e.target).length === 0){
+                    popup_container.parent().parent().fadeOut('slow');
+                }
+            });
+        }
         // Checkbox
         if($('.form__checkbox').length){
             $('.form__checkbox').each(function (item){
@@ -44,6 +53,7 @@ const lazyLoadInstance = new LazyLoad({
             $('.btn-open-popup-call').click(function (){
                 $('.popup-call').fadeIn(500)
             })
+            closePopup('.popup-call .popup-container')
         }
         // Stages slider
         if($('.stages-cooperation__item').length){
@@ -59,7 +69,7 @@ const lazyLoadInstance = new LazyLoad({
                     prevArrow: '<span class="slider-btn stages-cooperation__btn stages-cooperation__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
                     nextArrow: '<span class="slider-btn stages-cooperation__btn  stages-cooperation__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
                 })
-                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.stages-cooperation__list'
+                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.stages-cooperation__list'
             })
         }
         // Reviews slider
@@ -97,7 +107,7 @@ const lazyLoadInstance = new LazyLoad({
         // Popular fances
         if($('.product-slider').length){
             mobileSlider({mobileFunc:()=>{
-                    $('.popular-fances__container').slick({
+                    $('.product-slider').slick({
                         arrows: false,
                         autoplay: true,
                         dots: true,
@@ -107,7 +117,7 @@ const lazyLoadInstance = new LazyLoad({
                         slidesToScroll: 1,
                         lazyLoad: 'progressive',
                     })
-                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 768,elemClass: '.product-slider'
+                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.product-slider'
             })
         }
         // Mobile contact
@@ -143,9 +153,40 @@ const lazyLoadInstance = new LazyLoad({
             $('.header-desktop__menu-item').mouseenter(function (){
                 $(this).find('.header-desktop__submenu').fadeIn()
             })
-            $('.header-desktop__menu-item').mouseleave(function (){
-                $(this).find('.header-desktop__submenu').fadeOut()
+            $('.header-desktop__submenu').mouseleave(function (){
+                $(this).fadeOut()
             })
+        }
+        // Catalog menu
+        if($('.header-desktop__catalog-btn')){
+            $('.header-desktop__catalog-btn').click(function (){
+               $(this).toggleClass('active')
+               $('.header-desktop__catalog').fadeToggle(500)
+            })
+        }
+        if($('.header-desktop__catalog-menu__list-item').length && $('.header-desktop__catalog__nav-list__item').length){
+            $('.header-desktop__catalog-menu__list-item').click(function (){
+                if(!$(this).hasClass('active')){
+                    let catalogID = $(this).find('span').attr('data-catalog')
+                    $(this).addClass('active').siblings().removeClass('active')
+                    $(catalogID).addClass('active').siblings().removeClass('active')
+                }
+            })
+        }
+        if($('.header-desktop__catalog-nav__btn-close').length){
+            $('.header-desktop__catalog-nav__btn-close').click(function (){
+                $('.header-desktop__catalog').fadeOut(500)
+            })
+        }
+        // Search popup
+        if($('.header-desktop__btn-search').length){
+            $('.header-desktop__btn-search').click(function (){
+                $('.search-popup').fadeIn(500)
+            })
+            $('.search-popup form').submit(function (){
+                $('.search-popup').fadeOut(500)
+            })
+            closePopup('.search-popup .search')
         }
     })
 })(jQuery)

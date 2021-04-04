@@ -1,0 +1,19 @@
+.search-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background-color: #4243428c;
+  display: none;
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .search{
+      width: 100%;
+    }
+  }
+}

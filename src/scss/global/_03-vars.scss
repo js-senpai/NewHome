@@ -11,6 +11,12 @@
 }
 @screen md {
   :root{
+    --font-size: 16px;
+    --line-height: 25px;
+  }
+}
+@screen xl {
+  :root{
     --font-size: 18px;
     --line-height: 30px;
   }

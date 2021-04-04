@@ -1,9 +1,9 @@
-@screen md {
+@screen xl {
   .popular-fances{
     padding: rem(75px) 0 rem(96px) 0;
     &__list{
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(4,1fr);
       grid-gap: rem(30px);
     }
     &__title{
@@ -11,10 +11,10 @@
     }
   }
 }
-@screen lg {
-  .popular-fances{
-    &__list{
-      grid-template-columns: repeat(4,1fr);
-    }
-  }
-}
+//@screen lg {
+//  .popular-fances{
+//    &__list{
+//      grid-template-columns: repeat(4,1fr);
+//    }
+//  }
+//}

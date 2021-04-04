@@ -46,11 +46,27 @@
 //MEDIA: 369
 @media screen and (max-width: 369px) {}
 
-//!MEDIA: 369
+
 //Tailwind media
-@screen md {
+@screen 2xl {
   // Header
   .header{
+    &__top{
+      &-info{
+        &__item{
+          &:not(:first-child){
+              display: flex;
+          }
+          &:not(:last-child){
+            margin-right: rem(45px);
+          }
+        }
+        &__text{
+          font-size: rem(12px);
+          line-height: rem(14px);
+        }
+      }
+    }
     &-mobile{
       display: none;
     }
@@ -58,6 +74,7 @@
       display: block;
       padding: rem(20px) 0;
       border-top: 2px solid #F2F2F2;
+      position: relative;
       &__btn-search{
         display: flex;
         justify-content: center;
@@ -139,7 +156,20 @@
         }
       }
       &__catalog{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: rem(15px);
+        border-radius: 5px;
+        box-shadow: 14px 0px 50px #DAE5EB;
+        background-color: #fff;
+        z-index: 100;
+        &-container{
+          display: grid;
+          grid-template-columns: rem(228px) 1fr;
+        }
         &-btn{
+          position: relative;
           grid-template-columns: rem(18px) max-content;
           align-items: center;
           color: #525A68;
@@ -148,6 +178,115 @@
           justify-content: start;
           .fa-times{
             display: none;
+          }
+          &.active{
+            .fa-times{
+              display: block;
+            }
+            .fa-bars{
+              display: none;
+            }
+          }
+        }
+        &__nav{
+          &-list{
+            padding: rem(30px);
+            &__item{
+              display: none;
+              &.active{
+                display: block;
+              }
+            }
+          }
+        }
+        &-nav{
+          &__btn-close{
+            color: #BCBCBC;
+          }
+          &__title{
+            font-size: rem(24px);
+            line-height: rem(28px);
+            display: flex;
+            align-items: center;
+            color: #525A68;
+            border-bottom: 2px solid #FFC80A;
+          }
+          &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: rem(39px);
+          }
+          &__list{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: rem(30px);
+            align-items: center;
+            &-item{
+              background: #EEF4F8;
+              border-radius: 5px;
+              height: 104px;
+              &:hover{
+                background: center/cover url('../img/global/catalog-nav/active-bg.png') no-repeat;
+              }
+              &__title{
+                padding: rem(28px) rem(5px) rem(28px) rem(20px);
+                font-size: rem(14px);
+                line-height: rem(16px);
+                color: #000000;
+              }
+              &__img{
+                img{
+                  width: 100%;
+                }
+              }
+              a{
+                display: grid;
+                grid-template-columns: 1.8fr 2fr;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+              }
+            }
+          }
+        }
+        &-menu{
+          z-index: 100;
+          background: #525A68;
+          padding: rem(20px) 0;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &__link{
+            padding: rem(14px) rem(30px);
+            font-size: rem(16px);
+            line-height: rem(19px);
+            text-decoration-line: underline;
+            color: #FFFFFF;
+          }
+          &__list{
+            font-size: rem(16px);
+            line-height: rem(19px);
+            &-item{
+              padding: rem(14px) rem(30px);
+              position: relative;
+              cursor: pointer;
+              &.active,&:hover{
+                background: #8590A3;
+              }
+              &.active{
+                &::after{
+                  content: '';
+                  border: 8px solid transparent;
+                  border-right: 8px solid #fff;
+                  display: block;
+                  position: absolute;
+                  right: 0;
+                  top: 35%;
+                }
+              }
+            }
           }
         }
       }

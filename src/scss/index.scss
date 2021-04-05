@@ -1,0 +1,99 @@
+.catalog-banner{
+  padding: rem(20px) 0;
+  background: #fff;
+  &__title{
+    margin-bottom: rem(20px);
+  }
+  &__content{
+    p{
+      &:not(:last-child){
+        margin-bottom: rem(20px);
+      }
+    }
+  }
+  &__container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(20px);
+  }
+  &__link{
+    margin-top: rem(21px);
+  }
+  &__catalog{
+    &-list{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+      position: relative;
+      max-height: 370px;
+      overflow: auto;
+      margin-right: -0.5rem;
+      padding-right: 5px;
+      &::-webkit-scrollbar{
+        width: 4px;
+      }
+      &::-webkit-scrollbar-track{
+        background: #DAE5EB;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background: #8FBDD9;
+        border-radius: 5px;
+      }
+      &__item{
+        border-radius: 5px;
+        background: #FFFFFF;
+        border: 1px solid #D4D6D9;
+        min-height: 83px;
+        &--large{
+          background-color: #eef4f8;
+          border: none;
+          .catalog-banner__catalog-list__content{
+            position: relative;
+            &::after{
+              content: '';
+              background: center/100% url('../img/global/icons/arrows.svg') no-repeat;
+              display: block;
+              width: rem(24px);
+              height: rem(24px);
+              margin-top: rem(17px);
+            }
+          }
+          .catalog-banner__catalog-list__title{
+            font-weight: bold;
+            font-size: rem(18px);
+            line-height: rem(21px);
+            color: #273142;
+            display: block;
+            height: inherit;
+          }
+        }
+        a{
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1.4fr 1fr;
+          grid-gap: rem(5px);
+          align-content: center;
+        }
+      }
+      &__content{
+        padding: rem(20px) 0 rem(20px) rem(20px);
+      }
+      &__text{
+        display: none;
+      }
+      &__title{
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      &__img{
+        img{
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -11,12 +11,52 @@
 <body>
 	@@include('components/page/_2_header.html')
 	<main class="main">
+		<section class="main-banner">
+			<div class="container">
+				<div class="main-banner__top-container">
+					@@include('components/bem-blocks/global/actions-blocks/delivery-block/delivery-block.html')
+					@@include('components/bem-blocks/global/actions-blocks/work-block/work-block.html')
+				</div>
+				<div class="main-banner__bottom-container">
+					<ul class="main-banner__advantages-list">
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-1.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">Под заказ за 2 дня</div>
+						</li>
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-2.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">Делаем под ваш размер</div>
+						</li>
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-3.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">
+								10 цветовых решений
+							</div>
+						</li>
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-4.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">
+								Доставка с оплатой на месте
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		@@include('components/bem-blocks/global/catalog-nav/catalog-nav.html')
 		<section class="catalog-banner">
 			<div class="container">
 				<div class="catalog-banner__container">
 					<div class="catalog-banner__item">
-						<h2 class="catalog-banner__title font-normal"><span class="font-bold">Каталог заборов</span> с установкой под ключ</h2>
+						<h1 class="catalog-banner__title font-normal"><span class="font-bold">Каталог заборов</span> с установкой под ключ</h1>
 						<div class="catalog-banner__content">
 							<p>Наша компания специализируется на строительстве заборов полностью под ключ.</p>
 							<p>Собственное производство, постоянный штат рабочих и оптимизированная логистика позволяет продавать заборы по выгодной цене без ущерба для качества. Мы являемся обладателем более 15 патентов.</p>

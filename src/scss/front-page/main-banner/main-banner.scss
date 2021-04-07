@@ -1,0 +1,37 @@
+.main-banner{
+  padding: rem(20px) 0;
+  background: #F9F9F9;
+  &__top-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(30px);
+  }
+  &__advantages-list{
+    margin-top: rem(20px);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: rem(20px);
+    &__item{
+      background-color: #fff;
+      padding: rem(20px);
+      box-shadow: 0px 0px 50px rgba(218, 229, 235, 0.5);
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(10px);
+      &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img{
+          max-width: rem(40px);
+        }
+      }
+    }
+    &__title{
+      text-align: center;
+    }
+  }
+}
+@import "media";

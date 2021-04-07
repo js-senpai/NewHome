@@ -3,6 +3,8 @@
   &-container{
     padding-top: rem(415px);
     padding-bottom: rem(20px);
+    position: relative;
+    z-index: 1;
   }
   &-contact{
     background-color: #fff;
@@ -17,6 +19,13 @@
       line-height: rem(28px);
       margin-bottom: rem(20px);
     }
+  }
+  &-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 @import "media";

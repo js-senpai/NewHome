@@ -1,0 +1,26 @@
+@screen 2xl {
+  .main-banner{
+    padding: rem(30px) 0;
+    &__top-container{
+      grid-template-columns: 2fr 1fr;
+      grid-gap: rem(30px);
+    }
+    &__advantages-list{
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: rem(30px);
+      &__item{
+        padding: rem(35px);
+        grid-template-columns: 60px 1fr;
+        grid-gap: rem(35px);
+        &-img{
+          img{
+            max-width: rem(60px);
+          }
+        }
+      }
+      &__title{
+        text-align: left;
+      }
+    }
+  }
+}

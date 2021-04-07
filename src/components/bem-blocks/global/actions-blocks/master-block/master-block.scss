@@ -1,0 +1,45 @@
+.master-block{
+  background-color: var(--yellow-color);
+  padding: rem(20px);
+  border-radius: rem(5px);
+  &__content{
+    color: #333333;
+    margin: rem(20px) 0;
+  }
+  &__img{
+    display: none;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    color: #273142;
+  }
+  &__form{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(20px);
+    &__fieldset{
+      padding-top: rem(15px);
+      position: relative;
+      &.required::after{
+        top: rem(-5px);
+      }
+      legend{
+        position: absolute;
+        top: rem(5px);
+      }
+    }
+    &-submit{
+      border: 2px solid #273142;
+      border-radius: 5px;
+      height: 54px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: rem(16px);
+    }
+  }
+}
+@import "media";

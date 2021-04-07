@@ -1,0 +1,30 @@
+@screen xl{
+  .calc-block{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: rem(10px);
+    display: grid;
+    padding: rem(30px);
+    &__title{
+      font-size: rem(28px);
+      line-height: rem(33px);
+      margin-bottom: rem(30px);
+    }
+    &__content{
+      margin-bottom: rem(74px);
+      font-size: rem(16px);
+    }
+    &__mobile-img{
+      display: none;
+    }
+    &__img{
+      display: block;
+      position: relative;
+      img{
+        position: absolute;
+        bottom: rem(4px);
+        right: rem(-11px);
+        transform: scale(1.2);
+      }
+    }
+  }
+}

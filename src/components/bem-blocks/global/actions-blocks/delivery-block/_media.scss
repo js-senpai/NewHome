@@ -1,0 +1,44 @@
+@screen 2xl {
+  .delivery-block{
+    display: grid;
+    grid-template-columns: 2fr 1.7fr;
+    grid-gap: rem(5px);
+    &__text{
+      display: block;
+      font-size: rem(18px);
+      line-height: rem(24px);
+      color: #333333;
+      margin-bottom: rem(45px);
+    }
+    &__btn{
+      &-container{
+        display: grid;
+        grid-template-columns: rem(226px) rem(40px);
+        grid-gap: rem(40px);
+        padding: 0 0 rem(45px) 0;
+      }
+    }
+    &__content{
+      padding: rem(45px) 0 0 rem(45px);
+      &-btn-container{
+        display: grid;
+      }
+    }
+    &__img{
+      img{
+        object-fit: cover;
+        height: 100%;
+      }
+      &-desc{
+        display: block;
+      }
+      &-mobile{
+        display: none;
+      }
+    }
+    &__title{
+      font-size: rem(40px);
+      line-height: rem(48px);
+    }
+  }
+}

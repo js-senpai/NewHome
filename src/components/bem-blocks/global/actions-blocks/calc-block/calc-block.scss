@@ -1,0 +1,32 @@
+.calc-block{
+  padding: rem(20px);
+  border: 1px solid #D9DBDD;
+  border-radius: 5px;
+  position: relative;
+  &__content{
+    margin-bottom: rem(154px);
+  }
+  &__img{
+    display: none;
+  }
+  &__btn{
+    position: relative;
+    z-index: 1;
+    margin-bottom: rem(10px);
+  }
+  &__title{
+    font-weight: bold;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    color: #273142;
+  }
+  &__mobile-img{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+}
+@import "media";

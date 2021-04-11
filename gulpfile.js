@@ -41,7 +41,6 @@ const js_plugins = [
 const css_plugins = [
 	'node_modules/normalize.css/normalize.css',
 	'node_modules/slick-slider/slick/slick.css',
-	'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
 	'node_modules/wowjs/css/libs/animate.css',
 ];
 

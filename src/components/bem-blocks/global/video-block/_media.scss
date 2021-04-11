@@ -1,0 +1,41 @@
+@screen 2xl {
+  .video-block{
+    &__header{
+      margin-bottom: rem(44px);
+    }
+    &__advantages{
+      margin-bottom: rem(40px);
+      &-list{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: rem(15px);
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &__content{
+      grid-template-columns: 1fr 2.4fr;
+      grid-gap: rem(31px);
+      p{
+        font-size: rem(18px);
+        line-height: rem(24px);
+      }
+    }
+    &__gallery{
+      grid-template-columns: 1fr 3fr;
+      grid-gap: rem(30px);
+      &-images{
+        grid-template-columns: 100%;
+        grid-gap: rem(16px);
+        img{
+          height: rem(129px);
+        }
+      }
+      &-video{
+        order: inherit;
+        height: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

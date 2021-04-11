@@ -111,6 +111,10 @@ h6,.title-h6{
 	line-height: rem(16px);
 	margin-bottom: rem(10px);
 }
+iframe{
+	width: 100%;
+	height: 100%;
+}
 @media (max-width: 640px) {
 	.container{
 		padding-left: 1rem;
@@ -356,6 +360,40 @@ h6,.title-h6{
 		background: #EEF4F8;
 	}
 }
+//Youtube
+.youtube{
+	background-size: cover;
+	position: relative;
+	height: 100%;
+	&-container{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.play{
+		background: center/40% url('../../img/global/icons/play.png') no-repeat #FFFFFF;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		align-items: center;
+		color: #A5A9AF;
+		border-radius: 50%;
+		width: rem(35px);
+		height: rem(35px);
+		position: relative;
+		box-shadow: 0 0 0 0 rgba(#fff, 1);
+		animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+	}
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @screen lg {
 	// Footer
 	.footer{
@@ -439,6 +477,14 @@ h6,.title-h6{
 			font-size: rem(24px);
 			line-height: rem(28px);
 			margin-bottom: rem(20px);
+		}
+	}
+}
+@screen 2xl {
+	.youtube{
+		.play{
+			width: rem(60px);
+			height: rem(60px);
 		}
 	}
 }

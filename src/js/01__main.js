@@ -277,5 +277,13 @@ const lazyLoadInstance = new LazyLoad({
                 },descFunc: ()=>{$('.video-block__advantages-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.video-block__advantages-list'
             })
         }
+        // Stages cooperation
+        if($('.stages-installation__accordion-item').length){
+            $('.stages-installation__accordion-item').click(function (){
+                if(!$(this).hasClass('active')){
+                    $(this).addClass('active').siblings().removeClass('active')
+                }
+            })
+        }
     })
 })(jQuery)

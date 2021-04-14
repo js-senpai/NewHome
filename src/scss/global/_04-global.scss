@@ -78,6 +78,18 @@ button {
 .--align-end {
 	align-items: flex-end;
 }
+ol:not([class]){
+	list-style-type: decimal;
+	padding-left: rem(15px);
+	li{
+		&::marker{
+			font-weight: bold;
+		}
+		&:not(:last-child){
+			margin-bottom: rem(15px);
+		}
+	}
+}
 h1,h2,h3,h4,h5,h6,.title-h1,.title-h2,.title-h3,.title-h4,.title-h5,.title-h6{
 	font-weight: bold;
 }

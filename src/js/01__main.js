@@ -45,6 +45,16 @@ const lazyLoadInstance = new LazyLoad({
                }
             })
         }
+        // Tab
+        const tabToggle = (nav) => {
+            $(nav).click(function (){
+                if(!$(this).hasClass('active')){
+                    const getTab = $(this).attr('data-tab')
+                    $(this).addClass('active').siblings().removeClass('active')
+                    $(`#${getTab}`).addClass('active').siblings().removeClass('active')
+                }
+            })
+        }
         // Popup
         if($('.popup-overlay').length){
             $('.popup-close').click(function (){
@@ -284,6 +294,12 @@ const lazyLoadInstance = new LazyLoad({
                     $(this).addClass('active').siblings().removeClass('active')
                 }
             })
+        }
+        if($('.stages-installation__tab-nav__item').length){
+            tabToggle('.stages-installation__tab-nav__item')
+        }
+        if($('.portfolio-block__tab-nav__item').length){
+            tabToggle('.portfolio-block__tab-nav__item')
         }
     })
 })(jQuery)

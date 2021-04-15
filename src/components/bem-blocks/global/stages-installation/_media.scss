@@ -1,0 +1,82 @@
+@screen 2xl {
+  .stages-installation {
+    padding: rem(70px) 0;
+    &__title{
+      margin-bottom: rem(70px);
+    }
+    &__accordion{
+      display: none;
+    }
+    &__tab{
+      display: none;
+      &.active{
+        display: block;
+        padding: rem(40px);
+      }
+      &-container{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px #DAE5EB;
+        border-radius: 5px;
+      }
+      &-nav{
+        border: 1px solid #E4E4E4;
+        display: grid;
+        &__bg{
+          display: none;
+        }
+        &__title{
+          font-size: rem(24px);
+          line-height: rem(28px);
+          color: #000000;
+          position: relative;
+        }
+        &__img{
+          position: relative;
+          img{
+            width: rem(60px);
+            height: rem(60px);
+            margin-right: rem(70px);
+          }
+        }
+        &__item{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          cursor: pointer ;
+          &.active{
+            position: relative;
+            border-right: 0;
+            .stages-installation__tab-nav__bg{
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+            }
+          }
+          &:not(:last-child){
+            border-bottom: 1px solid #E4E4E4;
+          }
+        }
+      }
+      &-content{
+        b{
+          display: block;
+        }
+      }
+      &-title{
+        font-weight: bold;
+        font-size: rem(24px);
+        line-height: rem(28px);
+        color: #000000;
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+}

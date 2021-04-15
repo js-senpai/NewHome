@@ -1,0 +1,39 @@
+.portfolio-block{
+  background-color: var(--grey-color);
+  padding: rem(20px) 0;
+  &__tab{
+    display: none;
+    &.active{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: rem(20px);
+    }
+    &-nav{
+      padding: rem(20px) 0;
+      display: flex;
+      flex-wrap: wrap;
+      &__item{
+        margin-right: rem(15px);
+        padding: rem(3px) rem(9px);
+        margin-bottom: rem(10px);
+        &:hover{
+          font-weight: bold;
+        }
+        &.active{
+          background: #FFC80A;
+          border-radius: 5px;
+        }
+      }
+    }
+    &-img{
+      img{
+        width: 100%;
+      }
+      &:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+}
+@import "media";

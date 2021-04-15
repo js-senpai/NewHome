@@ -1,0 +1,47 @@
+@screen xl {
+  .portfolio-block{
+     padding: rem(70px) 0;
+    &__tab {
+      &.active {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: rem(20px);
+        grid-template-areas:
+        "a a c c c d e"
+        "b b c c c f g";
+      }
+      &-nav {
+        padding: rem(40px) 0;
+      }
+      &-img{
+        &:nth-child(1){
+          grid-area: a;
+        }
+        &:nth-child(2){
+          grid-area: b;
+        }
+        &:nth-child(3){
+          grid-area: c;
+        }
+        &:nth-child(4){
+          grid-area: d;
+        }
+        &:nth-child(5){
+          grid-area: e;
+        }
+        &:nth-child(6){
+          grid-area: f;
+        }
+        &:nth-child(7){
+          grid-area: g;
+        }
+        img{
+          display: block;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

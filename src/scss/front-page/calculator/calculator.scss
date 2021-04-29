@@ -1,0 +1,21 @@
+.main-calculator{
+  &__title{
+    font-weight: 500;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    display: flex;
+    align-items: center;
+    color: #273142;
+    position: relative;
+    margin-bottom: rem(20px);
+    &::before{
+      content: '';
+      background: center/100% url('../../../img/main-page/calculator/calculate.svg') no-repeat;
+      display: block;
+      width: rem(30px);
+      height: rem(30px);
+      margin-right: rem(30px);
+    }
+  }
+}
+@import "media";

@@ -301,5 +301,241 @@ const lazyLoadInstance = new LazyLoad({
         if($('.portfolio-block__tab-nav__item').length){
             tabToggle('.portfolio-block__tab-nav__item')
         }
+        // Input number
+        if($('.input-number')){
+            $('.input-number__nav-plus').click(function (){
+                let input = $(this).parent().parent().find('input[type="text"]'),
+                    val = +input.val()
+                input.val(val+=1)
+            })
+            $('.input-number__nav-minus').click(function (){
+                let input = $(this).parent().parent().find('input[type="text"]'),
+                    val = +input.val()
+                if(val > 0){
+                    input.val(val-=1)
+                }
+            })
+        }
+        // Calculator
+        if($('.calculator__tab-item').length && $('.calculator__nav-item').length){
+            const navContainer = $('.calculator__nav')
+            const navContainerWidth = navContainer.outerWidth(); // узнаем ширину контейнера (width + padding)
+            // Get active data helper
+            const setActiveData = ({currentBlock,currentImg,currentTitle,activeItem,activeTitle}) => {
+                if($(currentBlock).length){
+                    const currentItem = $(activeItem)
+                    if(currentItem.length){
+                        const findImg = currentItem.find('img').attr('src')
+                        if(findImg){
+                            $(currentImg).attr('src',findImg)
+                        }
+                        const findText = currentItem.find(activeTitle).text()
+                        if(findText){
+                            $(currentTitle).text(findText)
+                        }
+                    }
+                }
+            }
+            //Catalog
+            let
+                typesVal = $('.calculator__types-nav__checkbox:checked').val(),
+                paramsVal = {
+                  height: 1.25,
+                  length: 10,
+                  colLam: 10,
+                  distance: 10,
+                  width: 10,
+                  colLag: 2
+                },otherVal = {
+                   checked: 'Металлические столбы для забора / Колпаки на кирпичные столбы',
+                   value: 0,
+                },currentStep = 0,navArr = [],currentItem
+            const navList = $('.calculator__nav-item')
+            navList.each(function (){
+                navArr.push($(this).attr('data-tab'))
+            })
+            currentItem = navArr[0]
+            const navigateTabs = (inc = true,item) =>{
+                if(inc){
+                    if(currentStep <= navArr.length){
+                        item.removeAttr('disabled').siblings().removeAttr('disabled')
+                        currentStep++;
+                        currentItem = navArr[currentStep]
+                        if(currentStep === navArr.length){
+                            item.attr('disabled','disabled')
+                            if($('.calculator__result-height span').length){
+                                $('.calculator__result-height span').text(paramsVal.height)
+                                if($('.calculator__input-height').length){
+                                    $('.calculator__input-height').val(paramsVal.height)
+                                }
+                            }
+                            if($('.calculator__result-length span').length){
+                                $('.calculator__result-length span').text(paramsVal.length)
+                                if($('.calculator__input-length').length){
+                                    $('.calculator__input-length').val(paramsVal.length)
+                                }
+                            }
+                            if($('.calculator__result-width span').length){
+                                $('.calculator__result-width span').text(paramsVal.width)
+                                if($('.calculator__input-width').length){
+                                    $('.calculator__input-width').val(paramsVal.width)
+                                }
+                            }
+                            if($('.calculator__result-col-lam span').length){
+                                $('.calculator__result-col-lam span').text(paramsVal.colLam)
+                                if($('.calculator__input-col-lam').length){
+                                    $('.calculator__input-col-lam').val(paramsVal.colLam)
+                                }
+                            }
+                            if($('.calculator__result-distance-lam span').length){
+                                $('.calculator__result-distance-lam span').text(paramsVal.distance)
+                                if($('.calculator__input-distance-lam').length){
+                                    $('.calculator__input-distance-lam').val(paramsVal.distance)
+                                }
+                            }
+                            if($('.calculator__result-col-lag span').length){
+                                $('.calculator__result-col-lag span').text(paramsVal.colLag)
+                                if($('.calculator__input-col-lag').length){
+                                    $('.calculator__input-col-lag').val(paramsVal.colLag)
+                                }
+                            }
+                            if($('.calculator__result-material-value span').length){
+                                $('.calculator__result-material-value span:not(.value)').text(otherVal.checked)
+                                if(otherVal.value > 0){
+                                    $('.calculator__result-material-value .value').text(otherVal.value)
+                                }
+                                if($('.calculator__input-material-value').length){
+                                    $('.calculator__input-material-value').val(`${otherVal.checked} ${otherVal.value}`)
+                                }
+                            }
+                            if($('.calculator__catalog-nav__item').length){
+                                if($('.calculator__input-catalog').length){
+                                    $('.calculator__input-catalog').val($('.calculator__catalog-nav__item.active .calculator__catalog-nav__item-title').text())
+                                }
+                            }
+                            if($('.calculator__materials-nav__item').length){
+                                // Set active data to material block
+                                setActiveData({currentBlock:'.calculator__result-material',
+                                    currentImg:'.calculator__result-material img',
+                                    currentTitle:'.calculator__result-material__item-title',
+                                    activeItem:'.calculator__materials-nav__item.active',activeTitle:'.calculator__materials-nav__item-title' })
+                                if($('.calculator__input-material').length){
+                                    $('.calculator__input-material').val($('.calculator__materials-nav__item.active .calculator__materials-nav__item-title').text())
+                                }
+                            }
+                            if($('.calculator__types-nav__item').length){
+                                // Set active data to types
+                                setActiveData({currentBlock:'.calculator__result-types',
+                                    currentImg:'.calculator__result-types__img img',
+                                    currentTitle:'.calculator__types-title',
+                                    activeItem:'.calculator__types-nav__item.active',activeTitle:'.calculator__types-nav__item.active label' })
+                                if($('.calculator__input-type').length){
+                                    $('.calculator__input-type').val($('.calculator__types-nav__item.active label').text())
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    if(currentStep > 0) {
+                        item.removeAttr('disabled').siblings().removeAttr('disabled')
+                        currentStep--;
+                        currentItem = navArr[currentStep]
+                        if(currentStep === 0){
+                            item.attr('disabled','disabled')
+                        }
+                    }
+                }
+                $('.calculator__nav').find(`[data-tab='${currentItem}']`).addClass('active').siblings().removeClass('active')
+                const navActive = $('.calculator__nav-item.active')
+                const itemOuterWidth = navActive.outerWidth(); // узнаем ширину текущего элемента (width + padding)
+                const itemOffsetLeft = navActive.offset().left; // узнаем значение отступа слева в контейнере у текущего элемента
+                const containerScrollLeft = navContainer.scrollLeft(); // узнаем текущее значение скролла
+                const positionCenter = (navContainerWidth / 2 - itemOuterWidth / 2); // рассчитываем позицию центра
+                const scrollLeftUpd = containerScrollLeft + itemOffsetLeft - positionCenter; // рассчитываем положение скролла относительно разницы отступа элемента и центра контейнера
+                // анимируем
+                navContainer.animate({
+                    scrollLeft: scrollLeftUpd,
+                }, 400);
+                if($(`#${currentItem}`).length){
+                    $(`#${currentItem}`).addClass('active').siblings().removeClass('active')
+                }
+            }
+            // Next step
+            $('.calculator__nav-btn.right').click(function (){
+                let these = $(this)
+                navigateTabs(true,these)
+            })
+            $('.calculator__nav-btn.left').click(function (){
+                let these = $(this)
+                navigateTabs(false,these)
+            })
+            /* Catalog tab */
+            $('.calculator__catalog-nav__item').click(function (){
+                if(!$(this).hasClass('active')){
+                    $(this).addClass('active').siblings().removeClass('active')
+                }
+            })
+            /* Material tab */
+            $('.calculator__materials-nav__item').click(function (){
+                if(!$(this).hasClass('active')){
+                    $(this).addClass('active').siblings().removeClass('active')
+                }
+            })
+            /* Types tab */
+            $('.calculator__types-nav__checkbox').click(function (){
+                if($(this).is(':checked')){
+                    typesVal = $(this).val()
+                }
+            })
+            /* Params */
+            // height
+            if($('.calculator__parameters__height').length){
+                $('.calculator__parameters__height').click(function (){
+                    paramsVal.height = $(this).val()
+                })
+            }
+            // length
+            if($('.calculator__parameters__length').length){
+                $('.calculator__parameters__length').change(function (){
+                    paramsVal.length = $(this).val()
+                })
+            }
+            // Col lam
+            if($('.calculator__parameters__colLam').length){
+                $('.calculator__parameters__colLam').change(function (){
+                    paramsVal.colLam = $(this).val()
+                })
+            }
+            // Distance
+            if($('.calculator__parameters__distance').length){
+                $('.calculator__parameters__distance').change(function (){
+                    paramsVal.distance = $(this).val()
+                })
+            }
+            // Width section
+            if($('.calculator__parameters__width-section').length){
+                $('.calculator__parameters__width-section').change(function (){
+                    paramsVal.width = $(this).val()
+                })
+            }
+            // Col lag
+            if($('.calculator__parameters__colLag').length){
+                $('.calculator__parameters__colLag').click(function (){
+                    paramsVal.colLag = $(this).val()
+                })
+            }
+            /* Other tab */
+            if($('.calculator__other-number').length){
+                $('.calculator__other-number').change(function (){
+                    otherVal.value = $(this).val()
+                })
+            }
+            if($('.calculator__other-checkbox').length){
+                $('.calculator__other-checkbox').click(function (){
+                    otherVal.checked = $(this).val()
+                    $('.calculator__other-checkbox').not(this).prop('checked', false);
+                })
+            }
+        }
     })
 })(jQuery)

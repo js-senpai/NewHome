@@ -19,6 +19,10 @@
         max-height: inherit;
         &__item{
           &--large{
+            height: rem(250px);
+            a{
+              grid-template-columns: 1.4fr rem(200px);
+            }
             &.start{
               grid-column-start: 1;
               grid-column-end: 3;

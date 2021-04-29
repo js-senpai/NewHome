@@ -28,6 +28,10 @@
       position: relative;
       max-height: 370px;
       overflow: auto;
+      &__content{
+        padding: rem(15px) rem(5px) rem(15px) rem(20px);
+        height: 100%;
+      }
       &::-webkit-scrollbar{
         width: 4px;
       }
@@ -43,16 +47,30 @@
         border-radius: 5px;
         background: #FFFFFF;
         border: 1px solid #D4D6D9;
-        min-height: 83px;
-        padding: rem(20px) 0 rem(20px) rem(20px);
+        height: rem(80px);
+        a{
+          display: grid;
+          grid-template-columns: 1.4fr rem(95px);
+          grid-template-rows: 100%;
+          grid-gap: rem(5px);
+          position: relative;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+        }
         &--large{
           background-color: #eef4f8;
           border: none;
+          height: rem(120px);
+          a{
+            grid-template-columns: 1.4fr rem(120px);
+          }
           .catalog-banner__catalog-list__content{
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            height: 100%;
             &::after{
               content: '';
               background: center/100% url('../../img/global/icons/arrows.svg') no-repeat;
@@ -71,13 +89,6 @@
             height: inherit;
           }
         }
-        a{
-          height: 100%;
-          display: grid;
-          grid-template-columns: 1.4fr 1fr;
-          grid-gap: rem(5px);
-          position: relative;
-        }
       }
       &__text{
         display: none;
@@ -90,9 +101,13 @@
       &__img{
         display: flex;
         align-items: center;
+        height: 100%;
         img{
+          height: 100%;
           display: block;
           width: 100%;
+          object-fit: contain;
+          object-position: right;
         }
       }
     }

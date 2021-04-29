@@ -1,7 +1,7 @@
 <section class="calculator">
-    <div class="container calculator__container">
+    <header class="calculator__header">
         <ul class="calculator__nav">
-            <li class="calculator__nav-item" data-tab="calculator-1">
+            <li class="calculator__nav-item active" data-tab="calculator-1">
                 <div class="calculator__nav-content">
                     <div class="calculator__nav-title">Материал забора</div>
                 </div>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </li>
-            <li class="calculator__nav-item" data-tab="calculator-3">
+            <li class="calculator__nav-item" data-tab="calculator-4">
                 <div class="calculator__nav-content">
                     <div class="calculator__nav-title">Виды оформления</div>
                 </div>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </li>
-            <li class="calculator__nav-item" data-tab="calculator-4">
+            <li class="calculator__nav-item" data-tab="calculator-5">
                 <div class="calculator__nav-content">
                     <div class="calculator__nav-title">Параметры забора</div>
                 </div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </li>
-            <li class="calculator__nav-item" data-tab="calculator-4">
+            <li class="calculator__nav-item" data-tab="calculator-6">
                 <div class="calculator__nav-content">
                     <div class="calculator__nav-title">Крепежные материалы</div>
                 </div>
@@ -68,91 +68,121 @@
                 </div>
             </li>
         </ul>
+    </header>
+    <div class="container calculator__container">
         <div class="calculator__wrapper">
             <div class="calculator__tab">
-                <div class="calculator__tab-item tab-catalog" id="calculator-1">
-                    <div class="calculator__tab-title">Материал забора</div>
+                <div class="calculator__tab-item tab-catalog active" id="calculator-1">
+                    <div class="calculator__tab-title">1. Материал забора</div>
                     <ul class="calculator__catalog-nav">
-                        <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Металлические заборы</div>
+                        <li class="calculator__catalog-nav__item active">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Металлические заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-1.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Деревянные заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Деревянные заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-2.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Заборы из пластика</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы из пластика</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-3.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Заборы с монолитным основанием</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы с монолитным основанием</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-4.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Быстровозводимые заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Быстровозводимые заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-5.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Заборы для дачи</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                 <div class="calculator__catalog-nav__item-title">Заборы для дачи</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-6.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Заборы из камня</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы из камня</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-7.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Заборы из сэндвич панелей</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы из сэндвич панелей</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-8.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Кованые заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Кованые заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-9.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Комбинированные заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Комбинированные заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-10.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Рулонные заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                 <div class="calculator__catalog-nav__item-title">Рулонные заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-11.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Сварные заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Сварные заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-12.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Секционные заборы</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Секционные заборы</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-13.png" class="lazy" alt="calculator" />
                             </div>
                         </li>
                         <li class="calculator__catalog-nav__item">
-                            <div class="calculator__catalog-nav__item-title">Шумозащитные заборы и экраны</div>
+                            <div class="calculator__catalog-nav__item-content">
+                                 <div class="calculator__catalog-nav__item-title">Шумозащитные заборы и экраны</div>
+                            </div>
                             <div class="calculator__catalog-nav__item-img">
                                 <img data-src="img/global/calculator/catalog/item-14.png" class="lazy" alt="calculator" />
                             </div>
@@ -160,71 +190,79 @@
                     </ul>
                 </div>
                 <div class="calculator__tab-item tab-materials" id="calculator-2">
-                    <div class="calculator__tab-title">Выбор покрытия и цвета ламелей</div>
+                    <div class="calculator__tab-title">2. Выбор покрытия и цвета ламелей</div>
                     <ul class="calculator__materials-nav">
-                        <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С покрытием High Gloss Matt</div>
+                        <li class="calculator__materials-nav__item active">
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-1.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием High Gloss Matt</div>
                             <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С покрытием Стальной Бархат</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-2.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием Стальной Бархат</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С покрытием Printech</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-3.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием Printech</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С двустрониим покрытием Printech</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-4.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С двустрониим покрытием Printech</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С покрытием Полиэстер</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-5.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием Полиэстер</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С покрытием полиэстер и полиэфирной эмалью обратной стороны</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-6.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием полиэстер и полиэфирной эмалью обратной стороны</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-7.png" class="lazy" alt="calculator" />
+                            </div>
                             <div class="calculator__materials-nav__item-title">С двусторонним покрытием Полиэстер</div>
-                            <div class="calculator__materials-nav__item-img">
-                                <img data-src="img/global/calculator/material/item-7.png" class="lazy" alt="calculator" />
-                            </div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item">
-                            <div class="calculator__materials-nav__item-title">С двухсторонним порошковым покрытием Antique</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-7.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">С двухсторонним порошковым покрытием Antique</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                         <li class="calculator__materials-nav__item last">
-                            <div class="calculator__materials-nav__item-title">Ламели любого цвета</div>
                             <div class="calculator__materials-nav__item-img">
                                 <img data-src="img/global/calculator/material/item-7.png" class="lazy" alt="calculator" />
                             </div>
+                            <div class="calculator__materials-nav__item-title">Ламели любого цвета</div>
+                            <i class="fas fa-info-circle"></i>
                         </li>
                     </ul>
                 </div>
                 <div class="calculator__tab-item tab-types" id="calculator-3">
-                    <div class="calculator__tab-title">Виды оформления забора</div>
+                    <div class="calculator__tab-title">3. Виды оформления забора</div>
                     <ul class="calculator__types-nav">
-                        <li class="calculator__types-nav__item">
+                        <li class="calculator__types-nav__item active">
                             <div class="calculator__types-nav__item-title">
-                                <input id="calc-type-1" type="radio" value="Жалюзи №1" class="calculator__types-nav__checkbox" />
+                                <input name="types" id="calc-type-1" type="radio" value="Жалюзи №1" class="calculator__types-nav__checkbox" checked />
                                 <label for="calc-type-1">Жалюзи №1</label>
                             </div>
                             <div class="calculator__types-nav__item-img">
@@ -234,62 +272,97 @@
                         </li>
                         <li class="calculator__types-nav__item">
                             <div class="calculator__types-nav__item-title">
-                                <input id="calc-type-2" type="radio" value="Жалюзи №2" class="calculator__types-nav__checkbox" />
+                                <input name="types" id="calc-type-2" type="radio" value="Жалюзи №2" class="calculator__types-nav__checkbox" />
                                 <label for="calc-type-2">Жалюзи №2</label>
                             </div>
                             <div class="calculator__types-nav__item-img">
-                                <img data-src="img/global/calculator/types/item-2.jpg" class="lazy" alt="calculator" />
+                                <img src="img/global/calculator/types/item-2.jpg"  alt="calculator" />
                             </div>
                             <div class="calculator__types-nav__item-name">Забор-жалюзи с кирпичными столбами</div>
                         </li>
                     </ul>
                 </div>
                 <div class="calculator__tab-item tab-parameters" id="calculator-4">
-                    <div class="calculator__tab-title">Параметры забора</div>
+                    <div class="calculator__tab-title">4. Параметры забора</div>
                     <div class="calculator__parameters-container">
                         <div class="calculator__parameters-item">
                             <div class="calculator__parameters-title">Задайте высоту секции забора:</div>
-                            <div class="calculator__parameters-btn">
-                                <input id="calc-param-1" type="radio" value="1,25 м" class="calculator__parameters__checkbox" />
-                                <label for="calc-param-1">1,25 м</label>
-                            </div>
-                            <div class="calculator__parameters-btn">
-                                <input id="calc-param-2" type="radio" value="1,5 м" class="calculator__parameters__checkbox" />
-                                <label for="calc-param-2">1,5 м</label>
-                            </div>
-                            <div class="calculator__parameters-btn">
-                                <input id="calc-param-3" type="radio" value="1,7 м" class="calculator__parameters__checkbox" />
-                                <label for="calc-param-3">1,7 м</label>
-                            </div>
-                            <div class="calculator__parameters-btn">
-                                <input id="calc-param-4" type="radio" value="2 м" class="calculator__parameters__checkbox" />
-                                <label for="calc-param-4">2 м</label>
+                            <div class="calculator__parameters-height">
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" checked id="calc-param-1" type="radio" value="1.25" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-1">1,25 м</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" id="calc-param-2" type="radio" value="1.5" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-2">1,5 м</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" id="calc-param-3" type="radio" value="1.7" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-3">1,7 м</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" id="calc-param-4" type="radio" value="2" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-4">2 м</label>
+                                </div>
                             </div>
                         </div>
                         <div class="calculator__parameters-item">
-                            <div class="calculator__tab-text">Задайте длинну забора:</div>
-                            <div class="calculator__parameters-numbers">
-                                <input type="number" class="calculator__parameters__number" />
-                            </div>
-                            <div class="calculator__tab-text">или, укажите точное количество ламелей:</div>
-                            <div class="calculator__parameters-numbers">
-                                <input type="number" class="calculator__parameters__number" />
-                            </div>
-                            <div class="calculator__tab-text">или, укажите точное количество ламелей:</div>
-                            <div class="calculator__parameters-numbers">
-                                <input type="number" class="calculator__parameters__number" />
+                            <div class="calculator__parameters-width">
+                                <div class="calculator__parameters-width__item">
+                                    <div class="calculator__tab-text">Задайте длинну забора:</div>
+                                    <div class="calculator__parameters-numbers">
+                                        <div class="input-number">
+                                            <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__length" />
+                                            <div class="input-number__nav">
+                                                <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                                <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator__parameters-width__item">
+                                    <div class="calculator__tab-text">или, укажите точное количество ламелей:</div>
+                                    <div class="calculator__parameters-numbers">
+                                        <div class="input-number">
+                                            <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__colLam" />
+                                            <div class="input-number__nav">
+                                                <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                                <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator__parameters-width__item">
+                                    <div class="calculator__tab-text">укажите расстояние между ламелями:</div>
+                                    <div class="calculator__parameters-numbers">
+                                        <div class="input-number">
+                                            <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__distance" />
+                                            <div class="input-number__nav">
+                                                <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                                <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="calculator__parameters-item">
                             <div class="calculator__tab-text">Ширина секции:</div>
-                            <div class="calculator__tab-text">Количество лаг</div>
-                            <div class="calculator__parameters-flex">
+                            <div class="input-number">
+                                <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__width-section" />
+                                <div class="input-number__nav">
+                                    <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                    <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                </div>
+                            </div>
+                            <div class="calculator__tab-text calculator__parameters__lag-title">Количество лаг</div>
+                            <div class="calculator__parameters__lag-container">
                                 <div class="calculator__parameters-btn">
-                                    <input id="calc-param-width-1" type="radio" value="2 лаги" class="calculator__parameters__checkbox" />
+                                    <input checked id="calc-param-width-1" name="calc-param-lag" type="radio" value="2" class="calculator__parameters__checkbox calculator__parameters__colLag" />
                                     <label for="calc-param-width-1">2 лаги</label>
                                 </div>
                                 <div class="calculator__parameters-btn">
-                                    <input id="calc-param-width-2" type="radio" value="3 лаги" class="calculator__parameters__checkbox" />
+                                    <input id="calc-param-width-2" type="radio" name="calc-param-lag" value="3" class="calculator__parameters__checkbox calculator__parameters__colLag" />
                                     <label for="calc-param-width-2">3 лаги</label>
                                 </div>
                             </div>
@@ -297,71 +370,94 @@
                     </div>
                 </div>
                 <div class="calculator__tab-item tab-other" id="calculator-5">
-                    <div class="calculator__tab-title">Крепежные материалы</div>
-                    <div class="calculator__tab-text">Выберите необходимые элементы подконструкции и крепежные материалы</div>
-                    <div class="calculator__tab__other-container">
-                        <div class="calculator__tab__other-item">
-                            <div class="calculator__tab__other-checkbox__container">
-                                <input class="calculator__tab__other-checkbox" type="checkbox" id="other-checkbox-1" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
-                                <label for="other-checkbox-1">Металлические столбы для забора / Колпаки на кирпичные столбы</label>
-                                <input type="number" class="calculator__tab__other-number">
+                    <div class="calculator__tab-title">5. Крепежные материалы</div>
+                    <div class="calculator__tab-text calculator__other-description">Выберите необходимые элементы подконструкции и крепежные материалы</div>
+                    <div class="calculator__other-container">
+                        <div class="calculator__other-item">
+                            <div class="calculator__other-checkbox__container active">
+                                <div class="input-checkbox">
+                                    <input checked name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-1" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
+                                    <label for="other-checkbox-1">Металлические столбы для забора / Колпаки на кирпичные столбы</label>
+                                </div>
+                                <div class="input-number">
+                                    <input type="text" pattern="^[0-9]+$" value="10" class="calculator__other-number" />
+                                    <div class="input-number__nav">
+                                        <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                        <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="calculator__tab__other-checkbox__container">
-                                <input class="calculator__tab__other-checkbox" type="checkbox" id="other-checkbox-2" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
-                                <label for="other-checkbox-2">Х–кронштейны (позволяют обойтись без сварки)</label>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-2" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
+                                    <label for="other-checkbox-2">Х–кронштейны (позволяют обойтись без сварки)</label>
+                                </div>
                             </div>
-                            <div class="calculator__tab__other-checkbox__container">
-                                <input class="calculator__tab__other-checkbox" type="checkbox" id="other-checkbox-3" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
-                                <label for="other-checkbox-3">Лаги для забора</label>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-3" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
+                                    <label for="other-checkbox-3">Лаги для забора</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="calculator__tab__other-item">
-                            <div class="calculator__tab__other-checkbox__container">
-                                <input class="calculator__tab__other-checkbox" type="checkbox" id="other-checkbox-4" value="Крепеж для ламелей">
-                                <label for="other-checkbox-4">Крепеж для ламелей</label>
+                        <div class="calculator__other-item">
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-4" value="Крепеж для ламелей">
+                                    <label for="other-checkbox-4">Крепеж для ламелей</label>
+                                </div>
                             </div>
-                            <div class="calculator__tab__other-checkbox__container">
-                                <input class="calculator__tab__other-checkbox" type="checkbox" id="other-checkbox-5" value="Заглушки на столбы">
-                                <label for="other-checkbox-5">Заглушки на столбы</label>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-5" value="Заглушки на столбы">
+                                    <label for="other-checkbox-5">Заглушки на столбы</label>
+                                </div>
                             </div>
-                            <div class="calculator__tab__other-checkbox__container">
-                                <input class="calculator__tab__other-checkbox" type="checkbox" id="other-checkbox-6" value="Крепеж для X–кронштейнов">
-                                <label for="other-checkbox-6">Крепеж для X–кронштейнов</label>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-6" value="Крепеж для X–кронштейнов">
+                                    <label for="other-checkbox-6">Крепеж для X–кронштейнов</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="calculator__tab-item tab-result" id="calculator-6">
-                    <div class="calculator__tab__result-title">Отличный выбор!</div>
+                    <div class="calculator__result-title">Отличный выбор!</div>
                     <div class="calculator__tab-text">Вы выбрали такой забор</div>
-                    <div class="calculator__tab__result-container">
-                        <div class="calculator__tab__result-item">
-                            <div class="calculator__tab-text">Покрытие:</div>
-                            <div class="calculator__tab__result-material">
-                                <header class="calculator__tab__result-material__header">
-                                    <div class="calculator__tab__result-material__title">С покрытием High Gloss Matt</div>
-                                    <i class="fas fa-info-circle"></i>
-                                </header>
-                                <div class="calculator__tab__result-material__img">
-                                    <img data-src="img/global/calculator/material/item-1.png" class="lazy" />
+                    <div class="calculator__result-container">
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-subtitle">Покрытие:</div>
+                            <div class="calculator__result-material">
+                                <div class="calculator__result-material__item-img">
+                                    <img src="img/global/calculator/material/item-1.png" alt="calculator" />
+                                </div>
+                                <div class="calculator__result-material__item-title">С покрытием High Gloss Matt</div>
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                        </div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-types">
+                                <div class="calculator__result-subtitle calculator__types-title">Жалюзи 2</div>
+                                <div class="calculator__result-types__img">
+                                    <img data-src="img/global/calculator/types/item-1.jpg" class="lazy" alt="alt" />
                                 </div>
                             </div>
                         </div>
-                        <div class="calculator__tab__result-item">
-                            <div class="calculator__tab-text">Жалюзи 2</div>
-                            <div class="calculator__tab__result-other__img">
-                                <img data-src="img/global/calculator/types/item-1.jpg" class="lazy" alt="alt" />
-                            </div>
-                        </div>
-                        <div class="calculator__tab__result-item">
-                            <div class="calculator__tab-text">Выбранные параметры:</div>
-                            <div class="calculator__tab__result-height">Высота - 2м</div>
-                            <div class="calculator__tab__result-width">Ширина секции - 3м</div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-subtitle font-bold">Выбранные параметры:</div>
+                            <div class="calculator__result-text calculator__result-height-section">Высота секции - <span class="font-bold">2м</span></div>
+                            <div class="calculator__result-text calculator__result-width">Ширина секции - <span class="font-bold">3м</span></div>
+                            <div class="calculator__result-text calculator__result-length">Длина забора - <span class="font-bold">10</span></div>
+                            <div class="calculator__result-text calculator__result-col-lam">Количество ламелей - <span class="font-bold">10</span></div>
+                            <div class="calculator__result-text calculator__result-distance-lam">Расстояние между ламелями - <span class="font-bold">10</span></div>
+                            <div class="calculator__result-text calculator__result-col-lag">Количество лаг - <span class="font-bold">2</span></div>
+                            <div class="calculator__result-text calculator__result-material-value">Крепежный материал - <span class="font-bold">Металлические столбы для забора / Колпаки на кирпичные столбы</span> <span class="font-bold value"></span></div>
                         </div>
                     </div>
                 </div>
-                <div class="calculator__nav">
-                    <button class="btn calculator__nav-btn left">
+                <div class="calculator__nav-buttons">
+                    <button class="btn calculator__nav-btn left" disabled>
                         <i class="fas fa-long-arrow-alt-left"></i>
                         <span>Предыдущий шаг</span>
                     </button>
@@ -375,20 +471,32 @@
                 <div class="calculator__form-title">Возникли вопросы?</div>
                 <div class="calculator__form-text">Оставьте свои данные, менеджер в течении часа свяжется с Вами и назначит дату выезда замерщика</div>
                 <div class="calculator__form-container">
-                    <fieldset class="form__fieldset calculator__fieldset required">
+                    <fieldset class="form__fieldset calculator__form-fieldset required">
                         <legend>Ваше имя</legend>
                         <input type="text" class="form__input calculator__input" required placeholder="Иван Иванов">
                     </fieldset>
-                    <fieldset class="form__fieldset calculator__fieldset required">
+                    <fieldset class="form__fieldset calculator__form-fieldset required">
                         <legend>Ваш телефон</legend>
                         <input type="tel" class="form__input calculator__input" required placeholder="8 800 333 33 33">
                     </fieldset>
-                    <fieldset class="form__fieldset calculator__fieldset required">
+                    <fieldset class="form__fieldset calculator__form-fieldset required">
                         <legend>Ваш email</legend>
                         <input type="email" class="form__input calculator__input" required placeholder="ivan.ivanov@gmail.com">
                     </fieldset>
+                    <div class="hidden">
+                        <input type="hidden" class="form__input calculator__input-catalog">
+                        <input type="hidden" class="form__input calculator__input-material">
+                        <input type="hidden" class="form__input calculator__input-material-value">
+                        <input type="hidden" class="form__input calculator__input-type">
+                        <input type="hidden" class="form__input calculator__input-height">
+                        <input type="hidden" class="form__input calculator__input-width">
+                        <input type="hidden" class="form__input calculator__input-length">
+                        <input type="hidden" class="form__input calculator__input-col-lam">
+                        <input type="hidden" class="form__input calculator__input-distance-lam">
+                        <input type="hidden" class="form__input calculator__input-col-lag">
+                    </div>
                     <div class="calculator__btn-container">
-                        <div class="form__checkbox-container calculator__checkbox-container">
+                        <div class="form__checkbox-container calculator__form-checkbox">
                             <div class="form__checkbox-item form__checkbox-icon calculator__checkbox-icon">
                                 <img src="img/global/icons/checkbox.svg" alt="checkbox">
                             </div>

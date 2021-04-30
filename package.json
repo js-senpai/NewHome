@@ -48,6 +48,7 @@
 	"scripts": {
 		"html": "gulp",
 		"php": "gulp dev-php",
+		"heroku-postbuild": "gulp",
 		"build": "gulp style && gulp html && gulp php && gulp js && gulp build_js && gulp json && gulp images && gulp fonts"
 	},
 	"repository": "https://github.com/budfy/Easy-webdev-startpack.git",

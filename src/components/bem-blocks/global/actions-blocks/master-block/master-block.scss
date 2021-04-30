@@ -20,7 +20,7 @@
     grid-template-columns: 100%;
     grid-gap: rem(20px);
     &__fieldset{
-      padding-top: rem(15px);
+      padding-top: rem(25px);
       position: relative;
       &.required::after{
         top: rem(-5px);

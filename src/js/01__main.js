@@ -16,6 +16,17 @@ const lazyLoadInstance = new LazyLoad({
                 }
             });
         }
+        // Mobile func
+        const mobileFunc = ({mobileFunc,mobileWidth = 880}) => {
+            if ($(window).width() <= mobileWidth) {
+                mobileFunc()
+            }
+            $(window).resize(function () {
+                if ($(window).width() <= mobileWidth) {
+                    mobileFunc()
+                }
+            });
+        }
         // Close popup by container
         const closePopup = (item) => {
             $(document).mouseup(function (e) {
@@ -446,16 +457,18 @@ const lazyLoadInstance = new LazyLoad({
                     }
                 }
                 $('.calculator__nav').find(`[data-tab='${currentItem}']`).addClass('active').siblings().removeClass('active')
-                const navActive = $('.calculator__nav-item.active')
-                const itemOuterWidth = navActive.outerWidth(); // узнаем ширину текущего элемента (width + padding)
-                const itemOffsetLeft = navActive.offset().left; // узнаем значение отступа слева в контейнере у текущего элемента
-                const containerScrollLeft = navContainer.scrollLeft(); // узнаем текущее значение скролла
-                const positionCenter = (navContainerWidth / 2 - itemOuterWidth / 2); // рассчитываем позицию центра
-                const scrollLeftUpd = containerScrollLeft + itemOffsetLeft - positionCenter; // рассчитываем положение скролла относительно разницы отступа элемента и центра контейнера
-                // анимируем
-                navContainer.animate({
-                    scrollLeft: scrollLeftUpd,
-                }, 400);
+                mobileFunc(()=>{
+                    const navActive = $('.calculator__nav-item.active')
+                    const itemOuterWidth = navActive.outerWidth(); // узнаем ширину текущего элемента (width + padding)
+                    const itemOffsetLeft = navActive.offset().left; // узнаем значение отступа слева в контейнере у текущего элемента
+                    const containerScrollLeft = navContainer.scrollLeft(); // узнаем текущее значение скролла
+                    const positionCenter = (navContainerWidth / 2 - itemOuterWidth / 2); // рассчитываем позицию центра
+                    const scrollLeftUpd = containerScrollLeft + itemOffsetLeft - positionCenter; // рассчитываем положение скролла относительно разницы отступа элемента и центра контейнера
+                    // анимируем
+                    navContainer.animate({
+                        scrollLeft: scrollLeftUpd,
+                    }, 400);
+                },'1359')
                 if($(`#${currentItem}`).length){
                     $(`#${currentItem}`).addClass('active').siblings().removeClass('active')
                 }

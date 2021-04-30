@@ -1,0 +1,166 @@
+@screen 2xl{
+  .calculator{
+    &__header{
+      max-width: 1536px;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    &__wrapper{
+      grid-template-columns: 2.5fr 1fr;
+      grid-gap: rem(40px);
+      padding-bottom: rem(70px);
+    }
+    &__tab{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-item{
+        &.active{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    &__nav{
+      &-buttons{
+        margin-top: rem(40px);
+        grid-template-columns: rem(230px) rem(230px);
+        grid-gap: rem(30px);
+      }
+      &-btn{
+        &.left{
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+    &__catalog,&__materials{
+      &-nav{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: rem(30px);
+        max-height: 100%;
+        padding-right: 0;
+        overflow: hidden;
+        &__item{
+          &-title{
+            font-size: rem(14px);
+            line-height: rem(16px);
+          }
+        }
+      }
+    }
+    &__materials{
+      &-nav{
+        grid-template-columns: repeat(3,1fr);
+      }
+    }
+    &__types{
+      &-nav{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: rem(30px);
+        align-items: center;
+        &__item{
+           height: 100%;
+        }
+      }
+    }
+    &__parameters{
+      &-title{
+        font-size: rem(16px);
+        line-height: rem(19px);
+      }
+      &-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        height: inherit;
+      }
+      &-height,&-width{
+        grid-template-columns: 100%;
+      }
+      &-width{
+        grid-gap: rem(30px);
+      }
+      &-item{
+        border-radius: 5px;
+        padding: rem(15px) rem(30px);
+        &:nth-child(2),&:last-child{
+          padding: rem(15px) rem(30px);
+          box-shadow: rem(-22px) 0 rem(28px) rem(-17px) rgba(39, 49, 66, 0.2);
+        }
+      }
+    }
+    &__other{
+      &-description{
+        margin: rem(49px) 0;
+      }
+      &-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: rem(50px);
+      }
+    }
+    &__result{
+      &-title{
+        font-size: rem(36px);
+        line-height: rem(24px);
+        margin-bottom: rem(10px);
+      }
+      &-text{
+        font-size: rem(18px);
+        line-height: rem(24px);
+        margin-bottom: rem(15px);
+      }
+      &-container{
+        display: grid;
+        grid-template-columns: 1fr 1.4fr 1fr;
+      }
+      &-item{
+        border-radius: 5px;
+        padding: rem(15px) rem(30px);
+        &:nth-child(2),&:last-child{
+          padding: rem(15px) rem(30px);
+          box-shadow: rem(-22px) 0 rem(28px) rem(-17px) rgba(39, 49, 66, 0.2);
+        }
+      }
+      &-material{
+        grid-template-columns: 100%;
+        grid-gap: rem(25px);
+        height: inherit;
+        background-size: cover;
+        padding: rem(30px) rem(15px) rem(20px) rem(15px);
+        grid-template-rows: inherit;
+        &__item{
+          &-title{
+            order: -1;
+            font-weight: bold;
+            font-size: rem(18px);
+            line-height: rem(21px);
+          }
+          &-img{
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    &__form{
+      box-shadow: rem(-27px) 0px rem(38px) rem(-24px)  rgba(39, 49, 66, 0.2);
+      padding: rem(10px) rem(40px);
+      &-title{
+        font-size: rem(24px);
+        line-height: rem(28px);
+        font-weight: bold;
+      }
+      &-text{
+        margin-bottom: rem(30px);
+      }
+      &-fieldset,&-checkbox{
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+}

@@ -177,7 +177,7 @@ input[type="radio"]{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-top: rem(-5px);
+		margin-top: rem(-10px);
 		&-plus{
 			cursor: pointer;
 			color: #FFC80A;
@@ -195,7 +195,7 @@ input[type="radio"]{
 	input[type="checkbox"]{
 		display: none;
 		&:checked + label::before{
-			background: center/75% url('../img/global/icons/done.svg') no-repeat;
+			background: center/75% url('../img/global/icons/done.svg') no-repeat #fff;
 		}
 	}
 	label{

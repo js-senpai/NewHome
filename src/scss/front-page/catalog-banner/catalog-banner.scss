@@ -11,11 +11,13 @@
       }
     }
   }
+  &__wrapper{
+    background-color: #fff;
+  }
   &__container{
     display: grid;
     grid-template-columns: 100%;
     grid-gap: rem(20px);
-    background-color: #fff;
   }
   &__link{
     margin-top: rem(21px);

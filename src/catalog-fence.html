@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html')
+    <section class="catalog-banner catalog-fence">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                <h1 class="catalog-fence__title font-normal"><span class="font-bold">Каталог заборов</span> с установкой под ключ</h1>
+                <ul class="catalog-banner__catalog-list catalog-fence__list">
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__content">
+                                <div class="catalog-banner__catalog-list__container">
+                                    <div class="catalog-banner__catalog-list__title">Металлические заборы</div>
+                                    <div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
+                                </div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-1.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Деревянные заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-2.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Заборы из пластика</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-3.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Заборы с монолитным основанием</div>
+                                <div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-4.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Быстровозводимые заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Быстровозводимые заборы</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-5.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Заборы для дачи</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-6.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Заборы из камня</div>
+                                <div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-7.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Заборы из сэндвич панелей</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-8.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Кованные заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-9.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Комби заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-10.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Рулонные заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-11.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Сварные заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-12.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Секционные заборы</div>
+                                <div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-13.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog-banner__catalog-list__item--large catalog-fence__list-item">
+                        <a href="#">
+                            <div class="catalog-banner__catalog-list__container">
+                                <div class="catalog-banner__catalog-list__title">Шумозащитные заборы и экраны</div>
+                                <div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <div class="catalog-banner__catalog-list__img">
+                                <img data-src="img/catalog-fence/catalog-item-14.png" class="lazy" alt="catalog">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-fence-instruction">
+        <div class="container">
+            <h2 class="catalog-fence-instruction__title font-normal"><span class="font-bold">Назначение и применение</span> горизонтальных заборов</h2>
+            <ul class="catalog-fence-instruction__list">
+                <li class="catalog-fence-instruction__list-item">
+                    <div class="catalog-fence-instruction__list-img">
+                        <img data-src="img/catalog-fence/instruction/item-1.svg" class="lazy" alt="catalog">
+                    </div>
+                    <div class="catalog-fence-instruction__list-title">Отделка ворот и калиток, палисадников</div>
+                </li>
+                <li class="catalog-fence-instruction__list-item">
+                    <div class="catalog-fence-instruction__list-img">
+                        <img data-src="img/catalog-fence/instruction/item-2.svg" class="lazy" alt="catalog">
+                    </div>
+                    <div class="catalog-fence-instruction__list-title">Отделка летних кафе, ресторанов, магазинов, отелей, детских садов и школ</div>
+                </li>
+                <li class="catalog-fence-instruction__list-item">
+                    <div class="catalog-fence-instruction__list-img">
+                        <img data-src="img/catalog-fence/instruction/item-3.svg" class="lazy" alt="catalog">
+                    </div>
+                    <div class="catalog-fence-instruction__list-title">Зонирование территории загородных коттеджных поселков</div>
+                </li>
+                <li class="catalog-fence-instruction__list-item">
+                    <div class="catalog-fence-instruction__list-img">
+                        <img data-src="img/catalog-fence/instruction/item-4.svg" class="lazy" alt="catalog">
+                    </div>
+                    <div class="catalog-fence-instruction__list-title">Современные ограждения садовых участков, дач, загородных домов и коттеджей</div>
+                </li>
+                <li class="catalog-fence-instruction__list-item">
+                    <div class="catalog-fence-instruction__list-img">
+                        <img data-src="img/catalog-fence/instruction/item-5.svg" class="lazy" alt="catalog">
+                    </div>
+                    <div class="catalog-fence-instruction__list-title">Благоустройство городских дворов, приусадебных участков, мест общего пользования и отдыха, кладбищ</div>
+                </li>
+                <li class="catalog-fence-instruction__list-item">
+                    <div class="catalog-fence-instruction__list-img">
+                        <img data-src="img/catalog-fence/instruction/item-6.svg" class="lazy" alt="catalog">
+                    </div>
+                    <div class="catalog-fence-instruction__list-title">Декоративное ограждение цветников, клумб, грядок, деревьев и кустарников</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/popular-fances/popular-fances.html',{
+    'title': 'заборы',
+    'class': 'product-slider'
+    })
+    <section class="catalog-fence-subscribe">
+        <div class="container catalog-fence-subscribe__container">
+            <div class="div container catalog-fence-subscribe__item">
+                @@include('components/bem-blocks/global/actions-blocks/work-block/work-block.html')
+            </div>
+            <div class="div container catalog-fence-subscribe__item"></div>
+            <div class="div container catalog-fence-subscribe__item"></div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

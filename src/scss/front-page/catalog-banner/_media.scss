@@ -6,6 +6,8 @@
     &__container{
       grid-template-columns: 1.2fr 2fr;
       grid-gap: rem(30px);
+    }
+    &__wrapper{
       padding: rem(30px);
       margin-top: -80px;
     }

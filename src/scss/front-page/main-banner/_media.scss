@@ -1,6 +1,9 @@
 @screen 2xl {
   .main-banner{
     padding: rem(30px) 0;
+    .work-block{
+      display: none;
+    }
     &__top-container{
       grid-template-columns: 2fr 1fr;
       grid-gap: rem(30px);

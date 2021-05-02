@@ -1,0 +1,27 @@
+@screen 2xl {
+  .quiz-block{
+    padding: rem(45px);
+    &__title{
+      margin-bottom: rem(20px);
+      font-size: rem(30px);
+      line-height: rem(34px);
+    }
+    &__text{
+      margin-bottom: rem(25px);
+      font-size: rem(18px);
+      line-height: rem(24px);
+    }
+    &__img{
+      &-mobile{
+        display: none;
+      }
+      &-desc{
+        display: block;
+        right: 0;
+      }
+    }
+    &__text,&__btn-container{
+      max-width: 60%;
+    }
+  }
+}

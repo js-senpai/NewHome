@@ -1,17 +1,10 @@
 @screen 2xl {
   .work-block{
-    display: block;
-    border: 2px solid #FFC80A;
-    box-sizing: border-box;
-    border-radius: 5px;
-    position: relative;
     padding: rem(45px);
     &__title{
       font-size: rem(30px);
       line-height: rem(34px);
-      color: #273142;
       margin-bottom: rem(39px);
-      font-weight: bold;
     }
     &__text{
       font-size: rem(18px);
@@ -24,13 +17,7 @@
       max-width: 200px;
     }
     &__img{
-      position: absolute;
-      bottom: 0;
-      right: 0;
       max-width: 223px;
-      img{
-        width: 100%;
-      }
     }
   }
 }

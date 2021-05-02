@@ -1,4 +1,37 @@
 .work-block{
-  display: none;
+  padding: rem(20px);
+  border: rem(2px) solid #FFC80A;
+  border-radius: rem(5px);
+  position: relative;
+  &__title{
+    font-size: rem(18px);
+    line-height: rem(21px);
+    color: #273142;
+    margin-bottom: rem(19px);
+    font-weight: bold;
+  }
+  &__text{
+    font-size: rem(12px);
+    line-height: rem(18px);
+    color: #333333;
+    margin-bottom: rem(30px);
+    max-width: 60%;
+  }
+  &__btn,&__text,&__title{
+    z-index: 1;
+    position: relative;
+  }
+  &__btn{
+    max-width: 195px;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 165px;
+    img{
+      width: 100%;
+    }
+  }
 }
 @import "media";

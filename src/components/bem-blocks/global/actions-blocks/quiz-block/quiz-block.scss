@@ -1,0 +1,34 @@
+.quiz-block{
+  padding: rem(20px);
+  border: 1px solid #D9DBDD;
+  border-radius: 5px;
+  position: relative;
+  &__title, &__text,&__btn-container{
+    position: relative;
+    z-index: 1;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    color: #273142;
+    margin-bottom: rem(20px);
+  }
+  &__text{
+    margin-bottom: rem(174px);
+    font-size: rem(12px);
+    line-height: rem(18px);
+    color: #333333;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    &-desc{
+      display: none;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+@import "media";

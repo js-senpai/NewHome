@@ -19,6 +19,7 @@
         grid-template-columns: repeat(4,1fr);
         grid-gap: rem(30px);
         max-height: inherit;
+        padding-right: 0;
         &__item{
           &--large{
             height: rem(250px);

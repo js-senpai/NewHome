@@ -1,0 +1,31 @@
+.catalog-nav-toggle{
+  background-color: var(--yellow-color);
+  padding: rem(20px) 0;
+  &__container{
+    @apply grid gap-2 items-center;
+    grid-template-columns: rem(40px) 1fr rem(24px);
+    img{
+      width: rem(40px);
+      height: rem(40px);
+    }
+  }
+  &__title{
+    font-weight: bold;
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: #273142;
+  }
+  &__btn{
+    color: #273142;
+    transition: all 500ms ease-in-out;
+    font-size: rem(18px);
+    &.active{
+      transform: rotate(-180deg);
+    }
+  }
+}
+@screen 2xl {
+  .catalog-nav-toggle{
+    display: none;
+  }
+}

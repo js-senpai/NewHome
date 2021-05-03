@@ -1,6 +1,9 @@
 .main-banner{
   padding: rem(20px) 0;
   background: #F9F9F9;
+  .work-block{
+    display: none;
+  }
   &__top-container{
     display: grid;
     grid-template-columns: 100%;

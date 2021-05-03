@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+      class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner catalog-metal">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                     breadcrumbItemFirst: 'Главная',
+                     breadcrumbItemSecond: 'Заборы',
+                     breadcrumbItemThird: 'Из металлического штакетника'
+                })
+                <h1 class="catalog-metal__title font-normal"><span class="font-bold">Заборы</span> из металлического штакетника</h1>
+                <ul class="catalog-metal__nav">
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из профнастила</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из евроштакетника</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из сетки рабица</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы 3D</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из профильной трубы</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Алюминиевые заборы</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы жалюзи</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из металлического прутка</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из перфорированного листа</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Заборы из сварной 3D сетки</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Оцинкованные заборы</a>
+                    </li>
+                    <li class="catalog-metal__nav-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="#">Реечные металлические заборы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container catalog-metal__hr">
+            <hr/>
+        </div>
+    </section>
+    <section class="catalog-product">
+        <div class="container">
+            <header class="catalog-product__header">
+                <div class="catalog-product__sort-select">
+                    <button class="catalog-product__sort-select__btn">
+                        <span class="catalog-product__sort-select__selected">Сортировка</span>
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <ul class="catalog-product__sort-select__list">
+                        <li class="catalog-product__sort-select__list-item">по возрастанию цены</li>
+                        <li class="catalog-product__sort-select__list-item">по убыванию цены</li>
+                        <li class="catalog-product__sort-select__list-item">по новизне</li>
+                        <li class="catalog-product__sort-select__list-item">акционные</li>
+                    </ul>
+                </div>
+                <div class="catalog-product__block-type__container">
+                    <button class="catalog-product__block-type__btn catalog-product__block-type__grid active">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="catalog-product__block-type__btn catalog-product__block-type__list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </header>
+            <ul class="catalog-product__list catalog-product__list-v1">
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item catalog-product__adv">
+                    <div class="catalog-product__adv-img">
+                        <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                    </div>
+                    <div class="catalog-product__adv-content">
+                        <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                        <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                    </div>
+                    <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item catalog-product__adv">
+                    <div class="catalog-product__adv-img">
+                        <img src="img/catalog-metal/products/garant-icon.svg" class="lazy" alt="icon">
+                    </div>
+                    <div class="catalog-product__adv-content">
+                        <div class="catalog-product__adv-title"> Гарантия: 12 месяцев</div>
+                        <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                    </div>
+                    <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <div class="catalog-product__list-img">
+                            <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                        </div>
+                        <div class="catalog-product__list-content">
+                            <div class="catalog-product__list-title">Забор из металлического штакетника Премиум</div>
+                            <div class="catalog-product__list-description">
+                                <ul>
+                                    <li>Профнастил: C8 или C20</li>
+                                    <li>Цвет профлиста: Нет</li>
+                                    <li>Толщина: 0,4</li>
+                                    <li>Количество лаг: 2</li>
+                                    <li>Высота: 2м</li>
+                                    <li>Ворота: распашные</li>
+                                    <li>Гарантия: 24 месяца</li>
+                                </ul>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

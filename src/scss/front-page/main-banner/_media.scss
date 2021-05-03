@@ -2,7 +2,7 @@
   .main-banner{
     padding: rem(30px) 0;
     .work-block{
-      display: none;
+      display: block;
     }
     &__top-container{
       grid-template-columns: 2fr 1fr;

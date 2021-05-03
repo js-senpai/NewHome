@@ -3,6 +3,8 @@
 @import '../components/bem-blocks/**/*.scss';
 @import "front-page/index";
 @import "catalog-fence/catalog-fence";
+@import "catalog-metal/catalog-metal";
+@import "catalog-products/catalog-products";
 /* NOTE - import here your style modules */
 // GLOBAL C
 @import 'media';

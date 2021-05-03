@@ -1,0 +1,19 @@
+.breadcrumb{
+  @apply flex flex-wrap items-center;
+  margin-bottom: rem(10px) ;
+  &-item{
+   margin-right: rem(15px);
+   display: flex;
+   align-items: center;
+   color: #525A68;
+   margin-bottom: rem(5px);
+   a{
+     border-bottom: 1px solid var(--yellow-color);
+     margin-right: rem(15px);
+   }
+   i{
+     font-size: rem(12px);
+   }
+  }
+}
+@import 'media';

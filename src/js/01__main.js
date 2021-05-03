@@ -546,9 +546,25 @@ const lazyLoadInstance = new LazyLoad({
             if($('.calculator__other-checkbox').length){
                 $('.calculator__other-checkbox').click(function (){
                     otherVal.checked = $(this).val()
-                    $('.calculator__other-checkbox').not(this).prop('checked', false);
+                    $('.calculator__other-checkbox').not(this).prop('checked', false)
                 })
             }
+        }
+        // Toggle catalog nav
+        if($('.catalog-nav-toggle__btn').length && $('.catalog-navigation__mobile').length){
+            $('.catalog-nav-toggle__btn').click(function (){
+                $(this).toggleClass('active')
+                $('.catalog-navigation__mobile').fadeToggle(500)
+            })
+        }
+        // Sort select
+        if($('.catalog-product__sort-select').length){
+            $('.catalog-product__sort-select__btn').click(function (){
+                $('.catalog-product__sort-select__list').fadeToggle(500)
+            })
+            $('.catalog-product__sort-select__list-item').click(function (){
+                $('.catalog-product__sort-select__selected').text($(this).text())
+            })
         }
     })
 })(jQuery)

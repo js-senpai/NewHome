@@ -1,6 +1,9 @@
 @screen xl {
   .catalog-navigation{
     padding: rem(54px) 0 rem(128px) 0;
+    &__mobile {
+      display: block;
+    }
   }
   .catalog-nav {
     grid-template-columns: repeat(6,1fr);

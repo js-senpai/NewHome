@@ -1,6 +1,9 @@
 .catalog-navigation{
   background-color: var(--yellow-color);
   padding: rem(20px) 0 rem(60px) 0;
+  &__mobile{
+    display: none;
+  }
 }
 .catalog-nav{
   display: grid;

@@ -66,7 +66,7 @@
 							</div>
 						</div>
 						<div class="catalog-banner__item">
-							<ul class="catalog-banner__catalog-list">
+							<ul class="scroll-container catalog-banner__catalog-list">
 								<li class="catalog-banner__catalog-list__item catalog-banner__catalog-list__item--large start">
 									<a href="#">
 										<div class="catalog-banner__catalog-list__content">
@@ -221,7 +221,9 @@
 			</div>
 		</section>
 		@@include('components/bem-blocks/global/video-block/video-block.html')
-		@@include('components/bem-blocks/global/stages-installation/stages-installation.html')
+		@@include('components/bem-blocks/global/stages-installation/stages-installation.html',{
+		  title: '<span class="font-bold">Этапы </span> установки забора'
+		})
 		@@include('components/bem-blocks/global/portfolio-block/portfolio-block.html')
 		@@include('components/bem-blocks/global/stages-cooperation/stages-cooperation.html')
 		<section class="main-calculator">

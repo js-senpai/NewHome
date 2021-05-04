@@ -6,16 +6,6 @@
       justify-content: space-between;
       align-items: center;
     }
-    &__advantages{
-      margin-bottom: rem(40px);
-      &-list{
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-gap: rem(15px);
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
     &__content{
       grid-template-columns: 1fr 2.4fr;
       grid-gap: rem(31px);

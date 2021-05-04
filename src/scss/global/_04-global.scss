@@ -363,6 +363,25 @@ input[type="radio"]{
 		}
 	}
 }
+// Scroll container
+.scroll-container{
+	position: relative;
+	max-height: 370px;
+	overflow: hidden;
+	overflow-y: auto;
+	padding-right: rem(15px);
+	&::-webkit-scrollbar{
+		width: 4px;
+	}
+	&::-webkit-scrollbar-track{
+		background: #DAE5EB;
+		border-radius: 5px;
+	}
+	&::-webkit-scrollbar-thumb{
+		background: #8FBDD9;
+		border-radius: 5px;
+	}
+}
 // Footer
 .footer{
 	background-color: #fff;
@@ -424,6 +443,56 @@ input[type="radio"]{
 	}
 	input{
 		background: #EEF4F8;
+	}
+}
+// Checked list
+.checked-list{
+	&__item{
+		display: grid;
+		grid-template-columns: rem(20px) 1fr;
+		grid-gap: rem(10px);
+		&:not(:last-child){
+			margin-bottom: rem(20px);
+		}
+		i{
+			color: var(--yellow-color);
+			padding-top: rem(7px);
+		}
+	}
+}
+// Steps list
+.steps-list{
+	counter-reset: steps-list;
+	position: relative;
+	&__btn{
+		width: rem(40px);
+		height: rem(40px);
+		font-size: rem(20px);
+		position: absolute;
+		top: 5%;
+		&-right{
+			right: 0;
+		}
+	}
+	&__item{
+		text-align: center;
+		&::before{
+			counter-increment: steps-list;
+			content: counter(steps-list);
+			display: block;
+			margin-bottom: rem(10px);
+			font-weight: bold;
+			font-size: rem(72px);
+			line-height: rem(60px);
+			color: #DAE5EB;
+		}
+	}
+	&__content{
+		font-size: rem(18px);
+		line-height: rem(24px);
+		a{
+			font-weight: bold;
+		}
 	}
 }
 //Youtube
@@ -551,6 +620,17 @@ input[type="radio"]{
 		.play{
 			width: rem(60px);
 			height: rem(60px);
+		}
+	}
+	.steps-list{
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-gap: rem(30px);
+		&__item {
+			text-align: left;
+			&::before{
+				margin-bottom: rem(30px);
+			}
 		}
 	}
 }

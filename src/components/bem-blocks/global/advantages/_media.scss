@@ -1,0 +1,12 @@
+@screen 2xl {
+  .advantages{
+    margin-bottom: rem(40px);
+    &-list{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-gap: rem(15px);
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

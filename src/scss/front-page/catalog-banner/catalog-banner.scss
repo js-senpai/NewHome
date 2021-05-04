@@ -27,25 +27,10 @@
       display: grid;
       grid-template-columns: 100%;
       grid-gap: rem(20px);
-      position: relative;
-      max-height: 370px;
-      overflow: hidden;
-      overflow-y: auto;
       padding-right: rem(15px);
       &__content{
         padding: rem(15px) rem(5px) rem(15px) rem(20px);
         height: 100%;
-      }
-      &::-webkit-scrollbar{
-        width: 4px;
-      }
-      &::-webkit-scrollbar-track{
-        background: #DAE5EB;
-        border-radius: 5px;
-      }
-      &::-webkit-scrollbar-thumb{
-        background: #8FBDD9;
-        border-radius: 5px;
       }
       &__item{
         border-radius: 5px;

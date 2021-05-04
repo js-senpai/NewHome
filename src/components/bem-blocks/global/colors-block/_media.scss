@@ -1,0 +1,43 @@
+@screen 2xl {
+  .colors-block{
+    padding: rem(70px) 0;
+    &__container{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: rem(30px);
+    }
+    &-title{
+      margin-bottom: rem(70px);
+    }
+    &__description{
+      margin-bottom: rem(40px);
+    }
+    &__list{
+      overflow: hidden;
+      padding-right: 0;
+      height: inherit;
+      grid-template-columns: repeat(8,1fr);
+      grid-gap: rem(30px);
+    }
+    &__more{
+      display: none;
+    }
+    &__form{
+      padding: rem(45px);
+      background: #FFFFFF;
+      box-shadow: 0px 0px 50px rgba(218, 229, 235, 0.5);
+      border-radius: 5px;
+      &-title{
+        margin-bottom: rem(30px);
+        font-size: rem(29px);
+        line-height: rem(34px);
+      }
+      &-img{
+        margin-bottom: rem(45px);
+      }
+      &-fieldset{
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+}

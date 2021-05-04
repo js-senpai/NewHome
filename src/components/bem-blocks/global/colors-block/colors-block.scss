@@ -1,0 +1,53 @@
+.colors-block{
+  padding: rem(20px) 0;
+  &__description{
+    margin-bottom: rem(16px);
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: rem(20px);
+    margin-bottom: rem(20px);
+    &-color{
+      @apply bg-gray-100;
+      width: 100%;
+      height: rem(55px);
+      margin-bottom: rem(5px);
+    }
+    &-title{
+      font-size: rem(12px);
+      line-height: rem(12px);
+      text-align: center;
+      color: #919191;
+    }
+  }
+  &__more{
+    &:not(:last-child){
+      margin-bottom: rem(20px);
+    }
+  }
+  &__form{
+    padding: rem(20px) 0;
+    &-title{
+      font-weight: bold;
+      font-size: rem(24px);
+      line-height: rem(28px);
+      color: #273142;
+      margin-bottom: rem(20px);
+    }
+    &-description{
+      margin-bottom: rem(10px);
+    }
+    &-img{
+      margin-bottom: rem(10px);
+      img{
+        width: 100%;
+      }
+    }
+    &-fieldset{
+      border-color: var(--yellow-color);
+      margin-bottom: rem(20px);
+    }
+  }
+}
+@import "media";

@@ -36,6 +36,22 @@ const lazyLoadInstance = new LazyLoad({
                 }
             });
         }
+        // Open popup
+        const openPopup = (btn = '',popup = '',title = '') =>{
+            if($(btn).length && $(popup).length){
+                $(btn).click(function (){
+                    let title = ''
+                    if($(this).attr('data-title')){
+                        title = $(this).attr('data-title')
+                        $(title).val(title)
+                    }
+                    $(popup).fadeIn(500)
+                })
+            }
+        }
+        // Open popup call
+        openPopup('.btn-open-popup-call','.popup-call','.popup-call__input-title')
+        openPopup('.btn-open-popup-write','.popup-write','.popup-write__input-title')
         // Checkbox
         if($('.form__checkbox').length){
             $('.form__checkbox').each(function (item){
@@ -90,7 +106,7 @@ const lazyLoadInstance = new LazyLoad({
                     prevArrow: '<span class="slider-btn stages-cooperation__btn stages-cooperation__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
                     nextArrow: '<span class="slider-btn stages-cooperation__btn  stages-cooperation__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
                 })
-                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.stages-cooperation__list'
+                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.stages-cooperation__list'
             })
         }
         // Reviews slider
@@ -138,7 +154,7 @@ const lazyLoadInstance = new LazyLoad({
                         slidesToScroll: 1,
                         lazyLoad: 'progressive',
                     })
-                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.product-slider'
+                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.product-slider'
             })
         }
         // Mobile contact
@@ -283,9 +299,9 @@ const lazyLoadInstance = new LazyLoad({
         youtubeChange();
 
         // Video-block
-        if($('.video-block__advantages-list').length){
+        if($('.advantages-list').length){
             mobileSlider({mobileFunc:()=>{
-                    $('.video-block__advantages-list').slick({
+                    $('.advantages-list').slick({
                         arrows: false,
                         autoplay: true,
                         dots: true,
@@ -295,7 +311,7 @@ const lazyLoadInstance = new LazyLoad({
                         slidesToScroll: 2,
                         lazyLoad: 'progressive',
                     })
-                },descFunc: ()=>{$('.video-block__advantages-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.video-block__advantages-list'
+                },descFunc: ()=>{$('.advantages-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.advantages-list'
             })
         }
         // Stages cooperation
@@ -565,6 +581,30 @@ const lazyLoadInstance = new LazyLoad({
             $('.catalog-product__sort-select__list-item').click(function (){
                 $('.catalog-product__sort-select__selected').text($(this).text())
             })
+        }
+        // Steps list
+        if($('.steps-list__item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.steps-list').slick({
+                        arrows: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                        prevArrow: '<span class="slider-btn steps-list__btn steps-list__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
+                        nextArrow: '<span class="slider-btn steps-list__btn  steps-list__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
+                    })
+                },descFunc: ()=>{$('.steps-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.steps-list'
+            })
+        }
+        // Our advantages
+        if($('.our-advantages__list-item').length){
+            mobileFunc({mobileFunc: ()=>{
+                    $('.our-advantages__list-item').click(function (){
+                        $(this).addClass('active').siblings().removeClass('active')
+                    })
+            },mobileWidth: 1536})
         }
     })
 })(jQuery)

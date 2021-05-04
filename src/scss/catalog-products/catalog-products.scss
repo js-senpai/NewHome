@@ -91,6 +91,7 @@
       line-height: rem(28px);
       color: #000000;
       margin-bottom: rem(20px);
+      display: block;
     }
     &-description{
       font-size: rem(18px);
@@ -144,10 +145,12 @@
       }
     }
     &-item{
-      padding: rem(20px) 0;
       background-color: #fff;
       border-radius: 5px;
       position: relative;
+    }
+    &-container{
+      padding: rem(20px) 0;
     }
     &-v1{
        .catalog-product__list-description{

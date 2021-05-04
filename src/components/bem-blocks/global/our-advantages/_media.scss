@@ -1,0 +1,57 @@
+@screen 2xl{
+  .our-advantages{
+    padding: rem(70px) 0;
+    &__title{
+      margin-bottom: rem(50px);
+    }
+    &__list{
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 0;
+      .our-advantages__list-btn{
+        display: none;
+      }
+      &-item{
+        padding: rem(50px);
+        text-align: center;
+        border-right: 1px solid #E0E0E0;
+        position: relative;
+        &:nth-child(4n+4){
+          border-right-width: 0;
+        }
+        &:hover{
+          .our-advantages__list-container{
+            box-shadow: 0px 0px 50px rgba(218, 229, 235, 0.5);
+            border-radius: 5px;
+            padding: rem(50px);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+          .our-advantages__list-footer{
+            display: block;
+          }
+        }
+      }
+      &-header{
+        grid-template-columns: 100%;
+        grid-gap: rem(18px);
+        justify-content: center;
+        align-items: center;
+        &__container{
+          grid-template-columns: 100%;
+        }
+      }
+
+      &-img{
+        display: flex;
+        justify-content: center;
+        img{
+          width: rem(60px);
+          height: rem(60px);
+        }
+      }
+    }
+  }
+}

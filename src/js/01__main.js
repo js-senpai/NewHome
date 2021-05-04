@@ -106,7 +106,7 @@ const lazyLoadInstance = new LazyLoad({
                     prevArrow: '<span class="slider-btn stages-cooperation__btn stages-cooperation__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
                     nextArrow: '<span class="slider-btn stages-cooperation__btn  stages-cooperation__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
                 })
-                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.stages-cooperation__list'
+                },descFunc: ()=>{$('.stages-cooperation__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.stages-cooperation__list'
             })
         }
         // Reviews slider
@@ -154,7 +154,7 @@ const lazyLoadInstance = new LazyLoad({
                         slidesToScroll: 1,
                         lazyLoad: 'progressive',
                     })
-                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.product-slider'
+                },descFunc: ()=>{$('.product-slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.product-slider'
             })
         }
         // Mobile contact
@@ -311,7 +311,7 @@ const lazyLoadInstance = new LazyLoad({
                         slidesToScroll: 2,
                         lazyLoad: 'progressive',
                     })
-                },descFunc: ()=>{$('.advantages-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.advantages-list'
+                },descFunc: ()=>{$('.advantages-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.advantages-list'
             })
         }
         // Stages cooperation
@@ -595,7 +595,7 @@ const lazyLoadInstance = new LazyLoad({
                         prevArrow: '<span class="slider-btn steps-list__btn steps-list__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
                         nextArrow: '<span class="slider-btn steps-list__btn  steps-list__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
                     })
-                },descFunc: ()=>{$('.steps-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1536,elemClass: '.steps-list'
+                },descFunc: ()=>{$('.steps-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.steps-list'
             })
         }
         // Our advantages
@@ -604,7 +604,7 @@ const lazyLoadInstance = new LazyLoad({
                     $('.our-advantages__list-item').click(function (){
                         $(this).addClass('active').siblings().removeClass('active')
                     })
-            },mobileWidth: 1536})
+            },mobileWidth: 1280})
         }
     })
 })(jQuery)

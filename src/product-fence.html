@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner product-fence">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Заборы',
+                breadcrumbItemThird: 'Из металлического штакетника'
+                })
+                <h1 class="product-fence__title">Забор жалюзи Стандарт</h1>
+                <div class="current-product">
+                    <div class="current-product__item">
+                        <div class="current-product__gallery">
+                            <div class="current-product__gallery-list">
+                                <a class="current-product__gallery-list-item" data-fancybox="gallery" href="big_1.jpg">
+
+                                </a>
+                            </div>
+                            <div class="div current-product__gallery-main"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="current-product__item">
+
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+    @@include('components/bem-blocks/global/portfolio-block/portfolio-block.html')
+    @@include('components/bem-blocks/global/our-advantages/our-advantages.html')
+    @@include('components/bem-blocks/global/reviews/reviews.html')
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

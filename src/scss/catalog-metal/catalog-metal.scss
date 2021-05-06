@@ -76,5 +76,15 @@
     padding: rem(20px) 0;
     background-color: var(--grey-color);
   }
+  &-popular{
+    .catalog-product__list-description{
+      display: none;
+    }
+  }
+  &-subscribe{
+    position: relative;
+    bottom: rem(-24px);
+    z-index: 1;
+  }
 }
 @import "media";

@@ -611,7 +611,17 @@
     </section>
     @@include('components/bem-blocks/global/our-advantages/our-advantages.html')
     @@include('components/bem-blocks/global/portfolio-block/portfolio-block.html')
-
+    @@include('components/bem-blocks/global/fances-slider/fances-slider.html',{
+       title: '<span class="font-bold">Калитки</span> и ворота'
+    })
+    @@include('components/bem-blocks/global/popular-fances/popular-fances.html',{
+       title: '<span class="font-bold">Другие виды</span>  металлических заборов',
+       class: 'catalog-metal-popular'
+    })
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
     @@include('components/bem-blocks/global/map/map.html')
     @@include('components/bem-blocks/global/our-news/our-news.html')
 </main>

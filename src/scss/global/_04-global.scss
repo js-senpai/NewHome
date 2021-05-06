@@ -363,6 +363,14 @@ input[type="radio"]{
 		}
 	}
 }
+.slick-slide{
+	border: none;
+	outline: none;
+	&:hover,&:focus{
+		border: none;
+		outline: none;
+	}
+}
 // Scroll container
 .scroll-container{
 	position: relative;

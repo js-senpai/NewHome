@@ -606,5 +606,38 @@ const lazyLoadInstance = new LazyLoad({
                     })
             },mobileWidth: 1280})
         }
+        // Fances slider
+        if($('.fances-slider__list-item').length){
+            $('.fances-slider__list').slick({
+                arrows: true,
+                infinite: true,
+                mobileFirst: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                lazyLoad: 'progressive',
+                appendArrows: '.fances-slider__nav',
+                prevArrow: '<span class="slider-btn fances-slider__btn fances-slider__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
+                nextArrow: '<span class="slider-btn fances-slider__btn  fances-slider__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            centerMode: true
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
+            })
+        }
+
     })
 })(jQuery)

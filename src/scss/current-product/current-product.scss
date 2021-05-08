@@ -1,0 +1,126 @@
+.current-product{
+  &__gallery{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(10px);
+    img{
+      border-radius: 5px;
+      width: 100%;
+    }
+    &-main{
+      order: -1;
+    }
+    &-list{
+      margin-bottom: rem(20px);
+      a{
+        &:hover,&:focus{
+          border: none;
+        }
+      }
+      &__item{
+        &-container{
+          padding-right: rem(10px);
+        }
+      }
+      &__btn{
+        position: absolute;
+        top: 30%;
+        color: #fff;
+        z-index: 1;
+        font-size: rem(17px);
+        &-right{
+          right: 0;
+        }
+      }
+    }
+  }
+  &__advantages{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: rem(20px);
+    margin-bottom: rem(20px);
+    img{
+      max-width: 40px;
+    }
+    &-img{
+      display: flex;
+      justify-content: center;
+      margin-bottom: rem(10px);
+    }
+    &-title{
+      font-weight: bold;
+      font-size: rem(12px);
+      line-height: rem(14px);
+      text-align: center;
+      color: #525A68;
+    }
+    &-item{
+      text-align: center;
+    }
+  }
+  &__price{
+    &-container{
+      margin: rem(20px) 0;
+    }
+    &-title{
+      font-size: rem(14px);
+      line-height: rem(16px);
+      color: #525A68;
+      margin-bottom: rem(10px);
+    }
+    &-value{
+      font-size: rem(24px);
+      line-height: rem(28px);
+      color: #525A68;
+    }
+    &-sale{
+      font-size: rem(18px);
+      line-height: rem(21px);
+      text-decoration-line: line-through;
+      color: #A5A9AF;
+    }
+  }
+  &__order{
+    &-container{
+      background-color: var(--grey-color);
+      border-radius: 5px;
+      padding: rem(20px);
+    }
+    &-buttons{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(10px);
+    }
+    &-btn{
+      &__order{
+        @apply bg-green-500 text-white;
+        &:hover{
+          @apply bg-green-400;
+        }
+      }
+      &__qa{
+        background-color: #fff;
+        color: #000000;
+        &:hover,&:focus{
+          @apply bg-gray-100;
+        }
+      }
+    }
+  }
+  &__payments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(20px);
+    &-item{
+      &:not(:last-child){
+        margin-right: rem(20px);
+      }
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+@import "media";

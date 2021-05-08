@@ -638,6 +638,36 @@ const lazyLoadInstance = new LazyLoad({
                 ]
             })
         }
-
+        // Product gallery
+        if($('.current-product__gallery-list').length){
+            $('.current-product__gallery-list').slick({
+                arrows: true,
+                infinite: true,
+                mobileFirst: true,
+                centerMode: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: '<span class="current-product__gallery-list__btn current-product__gallery-list__btn-left"><i class="fas fa-chevron-left"></i></span>',
+                nextArrow: '<span class="current-product__gallery-list__btn current-product__gallery-list__btn-right"><i class="fas fa-chevron-right"></i></span>',
+            })
+            const getMainItem = $('.current-product__gallery-main')
+            const getMainImgSrc = getMainItem.find('img').attr('src')
+            $('.current-product__gallery-list').on('beforeChange', function(event){
+                const findCurrentItem = event.target
+                const getImgSrc = $(findCurrentItem).find('.slick-slide.slick-current.slick-active img').attr('src')
+                if(getImgSrc && getMainImgSrc) {
+                    const getMainImg = getMainItem.find('img')
+                    getMainImg.attr('src',getImgSrc)
+                }
+            });
+            $('.current-product__gallery-list-item').click(function (){
+                const getImgSrc = $(this).find('img').attr('src')
+                if(getImgSrc && getMainImgSrc) {
+                    const getMainImg = getMainItem.find('img')
+                    getMainImg.attr('src',getImgSrc)
+                }
+            })
+        }
     })
 })(jQuery)

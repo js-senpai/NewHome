@@ -13,14 +13,6 @@
       }
     }
   }
-  &__hr{
-    hr{
-      display: block;
-      height: rem(4px);
-      background: var(--grey-color);
-      border-radius: 5px;
-    }
-  }
   &-variants{
     background-color: var(--grey-color);
     padding: rem(20px) 0;

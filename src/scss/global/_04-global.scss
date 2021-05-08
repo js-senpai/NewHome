@@ -229,6 +229,7 @@ input[type="radio"]{
 	display: flex;
 	cursor: pointer;
 	justify-content: center;
+	transition: all 500ms ease-in-out;
 	font-size: rem(16px);
 	font-weight: bold;
 	align-items: center;
@@ -502,6 +503,12 @@ input[type="radio"]{
 			font-weight: bold;
 		}
 	}
+}
+hr{
+	display: block;
+	height: rem(2px);
+	background: var(--grey-color);
+	border-radius: 5px;
 }
 //Youtube
 .youtube{

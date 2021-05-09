@@ -648,8 +648,22 @@ const lazyLoadInstance = new LazyLoad({
                 speed: 300,
                 slidesToShow: 3,
                 slidesToScroll: 3,
+                lazyLoad: 'progressive',
+                appendArrows: '.current-product__gallery-list__nav',
                 prevArrow: '<span class="current-product__gallery-list__btn current-product__gallery-list__btn-left"><i class="fas fa-chevron-left"></i></span>',
                 nextArrow: '<span class="current-product__gallery-list__btn current-product__gallery-list__btn-right"><i class="fas fa-chevron-right"></i></span>',
+                responsive: [
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            vertical: true,
+                            verticalSwiping: true,
+                            slidesToShow: 3,
+                            centerMode: false,
+                            slidesToScroll: 3,
+                        }
+                    },
+                ]
             })
             const getMainItem = $('.current-product__gallery-main')
             const getMainImgSrc = getMainItem.find('img').attr('src')
@@ -668,6 +682,10 @@ const lazyLoadInstance = new LazyLoad({
                     getMainImg.attr('src',getImgSrc)
                 }
             })
+        }
+        // Product tab
+        if($('.product-fence__tab-nav__item').length){
+            tabToggle('.product-fence__tab-nav__item')
         }
     })
 })(jQuery)

@@ -12,25 +12,36 @@
     }
     &-list{
       margin-bottom: rem(20px);
+      position: relative;
       a{
         &:hover,&:focus{
           border: none;
         }
       }
       &__item{
+        z-index: 2;
+        position: relative;
         &-container{
           padding-right: rem(10px);
         }
       }
-      &__btn{
+      &__container{
+        position: relative;
+      }
+      &__nav{
         position: absolute;
-        top: 30%;
+        top: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        left: 0;
+        right: 0
+      }
+      &__btn{
         color: #fff;
         z-index: 1;
-        font-size: rem(17px);
-        &-right{
-          right: 0;
-        }
+        font-size: rem(18px);
       }
     }
   }
@@ -40,7 +51,7 @@
     grid-gap: rem(20px);
     margin-bottom: rem(20px);
     img{
-      max-width: 40px;
+      max-width: rem(40px);
     }
     &-img{
       display: flex;
@@ -101,6 +112,7 @@
       &__qa{
         background-color: #fff;
         color: #000000;
+        border: 2px solid #D4D6D9;
         &:hover,&:focus{
           @apply bg-gray-100;
         }

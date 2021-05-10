@@ -687,5 +687,9 @@ const lazyLoadInstance = new LazyLoad({
         if($('.product-fence__tab-nav__item').length){
             tabToggle('.product-fence__tab-nav__item')
         }
+        // Product fence about tab
+        if($('.product-fence-about__nav-item').length){
+            tabToggle('.product-fence-about__nav-item')
+        }
     })
 })(jQuery)

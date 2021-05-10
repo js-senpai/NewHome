@@ -30,5 +30,73 @@
   &-variants{
     display: none;
   }
+  &-about{
+    background-color: var(--grey-color);
+    padding: rem(20px) 0;
+    img{
+       width: rem(60px);
+      height: rem(60px);
+    }
+    &__title{
+      text-align: center;
+      margin-bottom: rem(20px);
+    }
+    &__nav{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: rem(10px);
+      &-item{
+        padding: rem(5px);
+        text-align: center;
+        transition: all 500ms ease-in-out;
+        &.active{
+          background: linear-gradient(0deg, #EEECEC 0%, #F7F7F7 100%);
+          border-radius: 5px;
+          border-bottom: rem(1px) solid var(--yellow-color);
+        }
+      }
+      &-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(10px);
+      }
+      &-title{
+        font-weight: bold;
+        font-size: rem(14px);
+        line-height: rem(30px);
+        color: #525A68;
+      }
+    }
+    &__list{
+      &-item,&-info{
+        display: none;
+      }
+      &-item{
+        &.active{
+          display: block;
+        }
+      }
+      &-advantages{
+        font-size: rem(14px);
+        line-height: rem(24px);
+        color: #525A68;
+        &__item{
+          position: relative;
+          display: grid;
+          grid-template-columns: rem(6px) 1fr;
+          grid-gap: rem(15px);
+          &::before{
+            content: '';
+            display: block;
+            width: rem(6px);
+            height: rem(6px);
+            margin-top: rem(8px);
+            border-radius: 50%;
+            background-color: var(--yellow-color);
+          }
+        }
+      }
+    }
+  }
 }
 @import "media";

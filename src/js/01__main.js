@@ -691,5 +691,25 @@ const lazyLoadInstance = new LazyLoad({
         if($('.product-fence-about__nav-item').length){
             tabToggle('.product-fence-about__nav-item')
         }
+        // Form select
+        if($('.form__fieldset-select').length){
+            $('.form__fieldset-select').click(function (e){
+                e.stopPropagation()
+                e.stopImmediatePropagation()
+                const getSelect = $(this).find('.form__select-list')
+                if(!getSelect.hasClass('active')){
+                    getSelect.addClass('active')
+                } else {
+                    getSelect.removeClass('active')
+                }
+            })
+            $('.form__select-list__item').click(function (){
+                const inputValue = $(this).text(),
+                      inputData = $(this).attr('data-value'),
+                      selectedItem = $(this).parent().siblings('.form__select-selected')
+                selectedItem.text(inputValue)
+                selectedItem.attr('data-value',inputData)
+            })
+        }
     })
 })(jQuery)

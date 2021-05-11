@@ -1,0 +1,36 @@
+.product-calculator{
+  padding: rem(20px) 0;
+  &__title{
+    margin-bottom: rem(20px);
+  }
+  &__container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(20px);
+  }
+  &__property-list{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(20px);
+    margin-bottom: rem(20px);
+  }
+  &__btn{
+    &-container{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+    }
+    &-reset{
+      border: 1px solid #D4D6D9;
+      background-color: #fff;
+      &:hover,&:focus{
+        @apply bg-gray-100;
+      }
+    }
+    &__info{
+      font-size: rem(14px);
+      line-height: rem(16px);
+      color: #A5A9AF;
+    }
+  }
+}

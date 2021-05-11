@@ -1,0 +1,182 @@
+<section class="product-calculator">
+    <div class="container">
+        <h2 class="product-calculator__title font-normal">
+            <span class="font-bold">Калькулятор </span> забора из профлиста
+        </h2>
+        <div class="product-calculator__container">
+            <div class="product-calculator__item">
+                <ul class="product-calculator__property-list">
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset product-calculator__fieldset">
+                            <legend>Общая длина, включая ворота и калитку, м:</legend>
+                            <div class="form__fieldset-container">
+                                <input type="number" id="product-calc-length" class="form__input product-calculator__input"  value="22">
+                                <span>метр</span>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Высота забора (профлиста):</legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" id="product-calculator-height">22</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item">22</li>
+                                    <li class="form__select-list__item">23</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Выбрать толщину и покрытие:</legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-coating">С полимерным покр.толщина 0,3мм</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">С полимерным покр.толщина 0,3мм</li>
+                                    <li class="form__select-list__item" data-value="3">С полимерным покр.толщина 0,4мм</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Выберите толщину столба:</legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-thickness">Толщина столба 2 мм</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">Толщина столба 2 мм</li>
+                                    <li class="form__select-list__item" data-value="3">Толщина столба 3 мм</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Количество горизонталей (лаги): </legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-lag">лаги в два ряда</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">лаги в два ряда</li>
+                                    <li class="form__select-list__item" data-value="3">лаги в три ряда</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Покраска: </legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-color">Грунтовка</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">Грунтовка</li>
+                                    <li class="form__select-list__item" data-value="3">Грунтовка 2</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Количество ворот: </legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-gate-col">2 шт.</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">2 шт.</li>
+                                    <li class="form__select-list__item" data-value="3">3 шт.</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Ширина ворот: </legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-gate-width">3,0 м.</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">3,0 м.</li>
+                                    <li class="form__select-list__item" data-value="3">3,0 м.</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
+                            <legend>Количество калиток: </legend>
+                            <div class="form__fieldset-container">
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-gate">2 шт.</div>
+                                <i class="fas fa-sort-down"></i>
+                                <ul class="form__select-list">
+                                    <li class="form__select-list__item" data-value="2">2 шт.</li>
+                                    <li class="form__select-list__item" data-value="3">2 шт.</li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset product-calculator__fieldset">
+                            <legend>Расстояние от МКАД :</legend>
+                            <input type="number" id="product-calc-delivery-distance" class="form__input product-calculator__input"  placeholder="Сколько километров?">
+                        </fieldset>
+                    </li>
+                </ul>
+                <div class="product-calculator__btn-container">
+                    <button class="btn product-calculator__btn-submit">Рассчитать стоимость</button>
+                    <button class="btn product-calculator__btn-reset">Очистить</button>
+                    <div class="product-calculator__info">* Все расчёты носят ознакомительный характер, окончательный расчёт производит менеджер с учётом всех данных.</div>
+                </div>
+            </div>
+            <div class="product-calculator__item">
+               <div class="product-calculator__form">
+                   <div class="product-calculator__form-title">Возникли вопросы?</div>
+                   <div class="product-calculator__form-text">Оставьте свои данные, менеджер в течении часа свяжется с Вами и назначит дату выезда замерщика</div>
+                   <div class="product-calculator__form-container">
+                       <fieldset class="form__fieldset product-calculator__form-fieldset required">
+                           <legend>Ваше имя</legend>
+                           <input type="text" class="form__input product-calculator__input" required placeholder="Иван Иванов">
+                       </fieldset>
+                       <fieldset class="form__fieldset product-calculator__form-fieldset required">
+                           <legend>Ваш телефон</legend>
+                           <input type="tel" class="form__input product-calculator__input" required placeholder="8 800 333 33 33">
+                       </fieldset>
+                       <fieldset class="form__fieldset product-calculator__form-fieldset required">
+                           <legend>Ваш email</legend>
+                           <input type="email" class="form__input product-calculator__input" required placeholder="ivan.ivanov@gmail.com">
+                       </fieldset>
+                       <div class="hidden">
+                           <input type="hidden" class="product-calculator__input-height">
+                           <input type="hidden" class="product-calculator__input-length">
+                           <input type="hidden" class="product-calculator__input-coating">
+                           <input type="hidden" class="product-calculator__input-thickness">
+                           <input type="hidden" class="product-calculator__input-lag">
+                           <input type="hidden" class="product-calculator__input-color">
+                           <input type="hidden" class="product-calculator__input-gate-col">
+                           <input type="hidden" class="product-calculator__input-gate-width">
+                           <input type="hidden" class="product-calculator__input-gate">
+                           <input type="hidden" class="product-calculator__input-col-lag">
+                           <input type="hidden" class="product-calculator__input-delivery-distance">
+                       </div>
+                       <div class="product-calculator__form-btn__container">
+                           <div class="form__checkbox-container product-calculator__form-checkbox">
+                               <div class="form__checkbox-item form__checkbox-icon product-calculator__form-checkbox__icon">
+                                   <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                               </div>
+                               <div class="form__checkbox-item">
+                                   <input checked type="checkbox" class="form__checkbox product-calculator__form-checkbox" hidden />
+                                   <div class="form__checkbox-text calculator__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                               </div>
+                           </div>
+                           <input type="submit" class="btn btn-action product-calculator__form-submit" value="Заказать обратный звонок">
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>

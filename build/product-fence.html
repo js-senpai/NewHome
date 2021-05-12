@@ -1715,113 +1715,108 @@
                 <ul class="product-calculator__property-list">
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset product-calculator__fieldset">
-                            <legend>Общая длина, включая ворота и калитку, м:</legend>
-                            <div class="form__fieldset-container">
-                                <input type="number" id="product-calc-length" class="form__input product-calculator__input"  value="22">
-                                <span>метр</span>
-                            </div>
+                            <legend>Ширина ворот:</legend>
+                            <input type="number" id="product-calc-width" class="form__input product-calculator__input"  value="22">
+                        </fieldset>
+                    </li>
+                    <li class="product-calculator__property-list__item">
+                        <fieldset class="form__fieldset product-calculator__fieldset">
+                            <legend>Высота ворот:</legend>
+                            <input type="number" id="product-calc-height" class="form__input product-calculator__input"  value="22">
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Высота забора (профлиста):</legend>
+                            <legend>Покраска каркаса:</legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" id="product-calculator-height">22</div>
+                                <div class="form__select-selected product-calculator__input" data-value="0" id="product-calculator-color">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item">22</li>
-                                    <li class="form__select-list__item">23</li>
+                                    <li class="form__select-list__item" data-value="0">Нет</li>
+                                    <li class="form__select-list__item" data-value="10">Грунт эмаль 3в1</li>
+                                    <li class="form__select-list__item" data-value="20">Эмаль алкидная</li>
                                 </ul>
                             </div>
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Выбрать толщину и покрытие:</legend>
+                            <legend>Тип обшивки:</legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-coating">С полимерным покр.толщина 0,3мм</div>
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-type">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">С полимерным покр.толщина 0,3мм</li>
-                                    <li class="form__select-list__item" data-value="3">С полимерным покр.толщина 0,4мм</li>
+                                    <li class="form__select-list__item" data-value="0">0</li>
+                                    <li class="form__select-list__item" data-value="1">Профлист односторонний</li>
+                                    <li class="form__select-list__item" data-value="2">Профлист двусторонний</li>
+                                    <li class="form__select-list__item" data-value="3">Евроштакетник односторонний</li>
+                                    <li class="form__select-list__item" data-value="4">Евроштакетник двухсторонний</li>
                                 </ul>
                             </div>
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Выберите толщину столба:</legend>
+                            <legend>Калитка в воротах:</legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-thickness">Толщина столба 2 мм</div>
+                                <div class="form__select-selected product-calculator__input" data-value="0" id="product-calculator-thickness">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">Толщина столба 2 мм</li>
-                                    <li class="form__select-list__item" data-value="3">Толщина столба 3 мм</li>
+                                    <li class="form__select-list__item" data-value="0">Нет</li>
+                                    <li class="form__select-list__item" data-value="1">Да</li>
                                 </ul>
                             </div>
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Количество горизонталей (лаги): </legend>
+                            <legend>Калитка в раме рядом с воротами: </legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-lag">лаги в два ряда</div>
+                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-thickness-window">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">лаги в два ряда</li>
-                                    <li class="form__select-list__item" data-value="3">лаги в три ряда</li>
+                                    <li class="form__select-list__item" data-value="0">Нет</li>
+                                    <li class="form__select-list__item" data-value="1">Да</li>
                                 </ul>
                             </div>
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Покраска: </legend>
+                            <legend>Установка ворот: </legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-color">Грунтовка</div>
+                                <div class="form__select-selected product-calculator__input" data-value="0" id="product-calculator-installation">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">Грунтовка</li>
-                                    <li class="form__select-list__item" data-value="3">Грунтовка 2</li>
+                                    <li class="form__select-list__item" data-value="0">Нет</li>
+                                    <li class="form__select-list__item" data-value="1">Да</li>
                                 </ul>
                             </div>
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Количество ворот: </legend>
+                            <legend>Фундамент для ворот: </legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-gate-col">2 шт.</div>
+                                <div class="form__select-selected product-calculator__input" data-value="0" id="product-calculator-foundation">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">2 шт.</li>
-                                    <li class="form__select-list__item" data-value="3">3 шт.</li>
+                                    <li class="form__select-list__item" data-value="0">Нет</li>
+                                    <li class="form__select-list__item" data-value="1">На сваях</li>
+                                    <li class="form__select-list__item" data-value="2">Из бетона</li>
                                 </ul>
                             </div>
                         </fieldset>
                     </li>
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Ширина ворот: </legend>
+                            <legend>Автоматика: </legend>
                             <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-gate-width">3,0 м.</div>
+                                <div class="form__select-selected product-calculator__input" data-value="0" id="product-calculator-auto">Нет</div>
                                 <i class="fas fa-sort-down"></i>
                                 <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">3,0 м.</li>
-                                    <li class="form__select-list__item" data-value="3">3,0 м.</li>
-                                </ul>
-                            </div>
-                        </fieldset>
-                    </li>
-                    <li class="product-calculator__property-list__item">
-                        <fieldset class="form__fieldset form__fieldset-select product-calculator__fieldset">
-                            <legend>Количество калиток: </legend>
-                            <div class="form__fieldset-container">
-                                <div class="form__select-selected product-calculator__input" data-value="2" id="product-calculator-gate">2 шт.</div>
-                                <i class="fas fa-sort-down"></i>
-                                <ul class="form__select-list">
-                                    <li class="form__select-list__item" data-value="2">2 шт.</li>
-                                    <li class="form__select-list__item" data-value="3">2 шт.</li>
+                                    <li class="form__select-list__item" data-value="0">Нет</li>
+                                    <li class="form__select-list__item" data-value="1">Да</li>
                                 </ul>
                             </div>
                         </fieldset>
@@ -1829,7 +1824,7 @@
                     <li class="product-calculator__property-list__item">
                         <fieldset class="form__fieldset product-calculator__fieldset">
                             <legend>Расстояние от МКАД :</legend>
-                            <input type="number" id="product-calc-delivery-distance" class="form__input product-calculator__input"  placeholder="Сколько километров?">
+                            <input type="number" id="product-calc-delivery-distance" class="form__input product-calculator__input" value="0"  placeholder="Сколько километров?">
                         </fieldset>
                     </li>
                 </ul>
@@ -1858,15 +1853,14 @@
                        </fieldset>
                        <div class="hidden">
                            <input type="hidden" class="product-calculator__input-height">
-                           <input type="hidden" class="product-calculator__input-length">
-                           <input type="hidden" class="product-calculator__input-coating">
-                           <input type="hidden" class="product-calculator__input-thickness">
-                           <input type="hidden" class="product-calculator__input-lag">
+                           <input type="hidden" class="product-calculator__input-width">
                            <input type="hidden" class="product-calculator__input-color">
-                           <input type="hidden" class="product-calculator__input-gate-col">
-                           <input type="hidden" class="product-calculator__input-gate-width">
-                           <input type="hidden" class="product-calculator__input-gate">
-                           <input type="hidden" class="product-calculator__input-col-lag">
+                           <input type="hidden" class="product-calculator__input-type">
+                           <input type="hidden" class="product-calculator__input-thickness">
+                           <input type="hidden" class="product-calculator__input-thickness-window">
+                           <input type="hidden" class="product-calculator__input-installation">
+                           <input type="hidden" class="product-calculator__input-foundation">
+                           <input type="hidden" class="product-calculator__input-auto">
                            <input type="hidden" class="product-calculator__input-delivery-distance">
                        </div>
                        <div class="product-calculator__form-btn__container">
@@ -1884,6 +1878,443 @@
                    </div>
                </div>
             </div>
+        </div>
+        <div class="product-calculator__table-wrapper product-calculator__table-material">
+            <div class="product-calculator__subtitle">Материалы:</div>
+            <div class="table-container">
+                <div class="table product-calculator__table">
+                    <header class="table-thead product-calculator__table-header">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td">№</div>
+                            <div class="table-td product-calculator__table-td">Наименование</div>
+                            <div class="table-td product-calculator__table-td">Ед.изм</div>
+                            <div class="table-td product-calculator__table-td">Кол-во</div>
+                            <div class="table-td product-calculator__table-td">Цена</div>
+                            <div class="table-td product-calculator__table-td">Стоимость</div>
+                        </div>
+                    </header>
+                    <div class="table-tbody product-calculator__table-body">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Установка ворот</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value"></div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">2</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Вариант покраски каркаса </div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">м2</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">3</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Калитка в воротах</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">4</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Калитка в раме рядом с воротами</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-calculator__table-wrapper product-calculator__table-foundation hidden">
+            <div class="product-calculator__subtitle">Фундамент:</div>
+            <div class="table-container">
+                <div class="table product-calculator__table">
+                    <header class="table-thead product-calculator__table-header">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td">№</div>
+                            <div class="table-td product-calculator__table-td">Наименование</div>
+                            <div class="table-td product-calculator__table-td">Ед.изм</div>
+                            <div class="table-td product-calculator__table-td">Кол-во</div>
+                            <div class="table-td product-calculator__table-td">Цена</div>
+                            <div class="table-td product-calculator__table-td">Стоимость</div>
+                        </div>
+                    </header>
+                    <div class="table-tbody product-calculator__table-body">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Свая</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">2</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Швеллер</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">3</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Арматура</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">4</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Бетон</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-calculator__table-wrapper product-calculator__table-services">
+            <div class="product-calculator__subtitle">Услуги:</div>
+            <div class="table-container">
+                <div class="table product-calculator__table">
+                    <header class="table-thead product-calculator__table-header">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td">№</div>
+                            <div class="table-td product-calculator__table-td">Наименование</div>
+                            <div class="table-td product-calculator__table-td">Ед.изм</div>
+                            <div class="table-td product-calculator__table-td">Кол-во</div>
+                            <div class="table-td product-calculator__table-td">Цена</div>
+                            <div class="table-td product-calculator__table-td">Стоимость</div>
+                        </div>
+                    </header>
+                    <div class="table-tbody product-calculator__table-body">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Свая</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">2</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Швеллер</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-calculator__table-wrapper product-calculator__table-automatic hidden">
+            <div class="product-calculator__subtitle">Услуги:</div>
+            <div class="table-container">
+                <div class="table product-calculator__table">
+                    <header class="table-thead product-calculator__table-header">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td">№</div>
+                            <div class="table-td product-calculator__table-td">Наименование</div>
+                            <div class="table-td product-calculator__table-td">Ед.изм</div>
+                            <div class="table-td product-calculator__table-td">Кол-во</div>
+                            <div class="table-td product-calculator__table-td">Цена</div>
+                            <div class="table-td product-calculator__table-td">Стоимость</div>
+                        </div>
+                    </header>
+                    <div class="table-tbody product-calculator__table-body">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Автоматика</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value">шт</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                        </div>
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">2</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Установка автоматики</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value"></div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value"></div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-calculator__table-wrapper product-calculator__table-delivery">
+            <div class="product-calculator__subtitle">Доставка:</div>
+            <div class="table-container">
+                <div class="table product-calculator__table">
+                    <header class="table-thead product-calculator__table-header">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td">№</div>
+                            <div class="table-td product-calculator__table-td">Наименование</div>
+                            <div class="table-td product-calculator__table-td">Ед.изм</div>
+                            <div class="table-td product-calculator__table-td">Кол-во</div>
+                            <div class="table-td product-calculator__table-td">Цена</div>
+                            <div class="table-td product-calculator__table-td">Стоимость</div>
+                        </div>
+                    </header>
+                    <div class="table-tbody product-calculator__table-body">
+                        <div class="table-tr product-calculator__table-tr">
+                            <div class="table-td product-calculator__table-td product-calculator__table-number">
+                                <div class="table-name">№</div>
+                                <div class="table-value">1</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Наименование</div>
+                                <div class="table-value">Доставка</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td">
+                                <div class="table-name">Ед.изм</div>
+                                <div class="table-value"></div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-col">
+                                <div class="table-name">Кол-во</div>
+                                <div class="table-value"></div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-price">
+                                <div class="table-name">Цена</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                            <div class="table-td product-calculator__table-td product-calculator__table-value">
+                                <div class="table-name">Стоимость</div>
+                                <div class="table-value text-blue-400">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-calculator__total-container">
+            <div class="product-calculator__total-title">ИТОГОВАЯ СТОИМОСТЬ ДОГОВОРА:</div>
+            <div class="product-calculator__total"><span class="product-calculator__total-number">0</span> РУБ.</div>
         </div>
     </div>
 </section>

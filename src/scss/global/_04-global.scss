@@ -307,11 +307,12 @@ input[type="radio"]{
 		z-index: 1;
 		background-color: #fff;
 		left: -1px;
-		width: 100.3%;
+		width: 100.2%;
 		top: 90%;
 		border-left: 1px solid #D4D6D9;
 		border-right: 1px solid #D4D6D9;
 		border-bottom: 1px solid #D4D6D9;
+		box-shadow: 0px rem(10px) rem(15px) 1px #d5d5d5;
 		display: none;
 		&.active{
 			display: block;

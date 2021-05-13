@@ -587,19 +587,20 @@ hr{
 	&-container {
 		overflow-x: auto;
 	}
-	width: max-content;
+	width: 100%;
+	min-width: max-content;
 	&-thead{
 		display: none;
 	}
 	&-tbody{
 		display: flex;
+		border-bottom: rem(2px) solid #E7E7E7;
 	}
 	&-td{
-		&:not(:last-child){
-			padding-bottom: rem(18px);
-		}
+		padding-bottom: rem(18px);
 	}
 	&-tr{
+		width: 100%;
 		color: #919191;
 		&:not(:last-child){
 			border-right: rem(1px) solid #E7E7E7;

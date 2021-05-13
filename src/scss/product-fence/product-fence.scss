@@ -98,5 +98,9 @@
       }
     }
   }
+  &-steps{
+    padding: rem(20px) 0;
+    background-color: var(--grey-color);
+  }
 }
 @import "media";

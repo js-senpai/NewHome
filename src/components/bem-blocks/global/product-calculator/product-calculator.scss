@@ -7,12 +7,13 @@
     display: grid;
     grid-template-columns: 100%;
     grid-gap: rem(20px);
+    margin-bottom: rem(20px);
   }
   &__property-list{
     display: grid;
     grid-template-columns: 100%;
     grid-gap: rem(20px);
-    margin-bottom: rem(20px);
+    margin-bottom:rem(20px);
   }
   &__btn{
     &-container{
@@ -31,6 +32,80 @@
       font-size: rem(14px);
       line-height: rem(16px);
       color: #A5A9AF;
+    }
+  }
+  &__form{
+    padding: rem(20px);
+    background: #FFFFFF;
+    border-radius: rem(5px);
+    box-shadow: 0px 10px 30px rgba(39, 49, 66, 0.2);
+    &-title{
+      font-size: rem(18px);
+      line-height: rem(21px);
+      color: #273142;
+    }
+    &-title,&-text{
+      margin-bottom: rem(20px);
+    }
+    &-container{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+    }
+    &-btn{
+      &__container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: rem(20px);
+      }
+    }
+  }
+  &__subtitle{
+    font-size: rem(24px);
+    line-height: rem(28px);
+    color: #000000;
+    margin-bottom: rem(28px);
+  }
+  &__table{
+    &-price{
+      @apply text-blue-400;
+    }
+    &-wrapper{
+      margin-bottom: rem(20px);
+    }
+    &-tr{
+      &:not(:last-child){
+        padding-right: rem(20px);
+      }
+    }
+    &-td{
+      padding-bottom: rem(20px);
+      .table-name{
+        margin-bottom: rem(10px);
+      }
+      .table-name,.table-value{
+        font-size: rem(18px);
+        line-height: rem(21px);
+      }
+    }
+  }
+  &__total{
+    font-weight: bold;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    color: #000000;
+    text-align: right;
+    &-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: rem(10px);
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-title{
+      font-size: rem(18px);
+      line-height: rem(21px);
+      color: #000000;
     }
   }
 }

@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner catalog-gates">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Заборы',
+                breadcrumbItemThird: 'Каталог ворот и калиток'
+                })
+                <h1 class="catalog-gates__title font-normal"><span class="font-bold">Каталог ворот и калиток</span></h1>
+                <ul class="scroll-container catalog-gates__nav">
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-1.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Автоматические ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-2.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Ворота для дачи</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-3.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Ворота с калиткой</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-4.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Въездные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-5.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Гаражные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-6.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Кованые ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-7.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Откатные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-8.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Подъемно- поворотные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-9.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Подъемные гаражные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-10.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Промышленные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-11.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Распашные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-12.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Рулонные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-13.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Рулонные ворота для гаража</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-14.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Сварные распашные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-15.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Секционные гаражные ворота</div>
+                    </a></li>
+                    <li class="catalog-gates__nav-item"><a href="#">
+                        <div class="catalog-gates__nav-img">
+                            <img data-src="img/catalog-gates/nav/item-16.jpg" class="lazy" alt="catalog">
+                        </div>
+                        <div class="catalog-gates__nav-title">Складные ворота гармошка</div>
+                    </a></li>
+                </ul>
+                <a href="#" class="btn catalog-gates__nav-more">Полный каталог</a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-gates-tab">
+        <ul class="catalog-gates-tab__nav">
+            <li class="catalog-gates-tab__nav-item" data-tab="catalog-product-1">По применению</li>
+            <li class="catalog-gates-tab__nav-item" data-tab="catalog-product-2">По принципу работы</li>
+            <li class="catalog-gates-tab__nav-item" data-tab="catalog-product-3">По производителю</li>
+        </ul>
+        <div class="catalog-gates-tab__container">
+            <div id="catalog-tab-1" class="catalog-product">
+                <div class="container">
+                    <header class="catalog-product__header">
+                        <div class="catalog-product__sort-select">
+                            <button class="catalog-product__sort-select__btn">
+                                <span class="catalog-product__sort-select__selected">Сортировка</span>
+                                <i class="fas fa-align-left"></i>
+                            </button>
+                            <ul class="catalog-product__sort-select__list">
+                                <li class="catalog-product__sort-select__list-item">по возрастанию цены</li>
+                                <li class="catalog-product__sort-select__list-item">по убыванию цены</li>
+                                <li class="catalog-product__sort-select__list-item">по новизне</li>
+                                <li class="catalog-product__sort-select__list-item">акционные</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-product__block-type__container">
+                            <button class="catalog-product__block-type__btn catalog-product__block-type__grid active">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="catalog-product__block-type__btn catalog-product__block-type__list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </header>
+                    <ul class="catalog-product__list catalog-product__list-v2">
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Въездные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item catalog-product__adv">
+                            <div class="catalog-product__adv-img">
+                                <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                            </div>
+                            <div class="catalog-product__adv-content">
+                                <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                                <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-4.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Въездные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item catalog-product__adv">
+                            <div class="catalog-product__adv-img">
+                                <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                            </div>
+                            <div class="catalog-product__adv-content">
+                                <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                                <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-4.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="catalog-tab-2" class="catalog-product">
+                <div class="container">
+                    <header class="catalog-product__header">
+                        <div class="catalog-product__sort-select">
+                            <button class="catalog-product__sort-select__btn">
+                                <span class="catalog-product__sort-select__selected">Сортировка</span>
+                                <i class="fas fa-align-left"></i>
+                            </button>
+                            <ul class="catalog-product__sort-select__list">
+                                <li class="catalog-product__sort-select__list-item">по возрастанию цены</li>
+                                <li class="catalog-product__sort-select__list-item">по убыванию цены</li>
+                                <li class="catalog-product__sort-select__list-item">по новизне</li>
+                                <li class="catalog-product__sort-select__list-item">акционные</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-product__block-type__container">
+                            <button class="catalog-product__block-type__btn catalog-product__block-type__grid active">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="catalog-product__block-type__btn catalog-product__block-type__list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </header>
+                    <ul class="catalog-product__list catalog-product__list-v2">
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Въездные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item catalog-product__adv">
+                            <div class="catalog-product__adv-img">
+                                <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                            </div>
+                            <div class="catalog-product__adv-content">
+                                <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                                <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-4.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Въездные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item catalog-product__adv">
+                            <div class="catalog-product__adv-img">
+                                <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                            </div>
+                            <div class="catalog-product__adv-content">
+                                <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                                <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-4.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="catalog-tab-3" class="catalog-product">
+                <div class="container">
+                    <header class="catalog-product__header">
+                        <div class="catalog-product__sort-select">
+                            <button class="catalog-product__sort-select__btn">
+                                <span class="catalog-product__sort-select__selected">Сортировка</span>
+                                <i class="fas fa-align-left"></i>
+                            </button>
+                            <ul class="catalog-product__sort-select__list">
+                                <li class="catalog-product__sort-select__list-item">по возрастанию цены</li>
+                                <li class="catalog-product__sort-select__list-item">по убыванию цены</li>
+                                <li class="catalog-product__sort-select__list-item">по новизне</li>
+                                <li class="catalog-product__sort-select__list-item">акционные</li>
+                            </ul>
+                        </div>
+                        <div class="catalog-product__block-type__container">
+                            <button class="catalog-product__block-type__btn catalog-product__block-type__grid active">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="catalog-product__block-type__btn catalog-product__block-type__list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </header>
+                    <ul class="catalog-product__list catalog-product__list-v2">
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Въездные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item catalog-product__adv">
+                            <div class="catalog-product__adv-img">
+                                <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                            </div>
+                            <div class="catalog-product__adv-content">
+                                <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                                <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-4.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-1.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Въездные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-2.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item catalog-product__adv">
+                            <div class="catalog-product__adv-img">
+                                <img src="img/catalog-metal/products/adv-icon.svg" class="lazy" alt="icon">
+                            </div>
+                            <div class="catalog-product__adv-content">
+                                <div class="catalog-product__adv-title">Монтаж в течение 3-х дней</div>
+                                <div class="catalog-product__adv-description">Заборы из равномерно расположенных вертикальных досок.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__adv-btn">Заявка на монтаж</button>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-3.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog-product__list-item">
+                            <div class="catalog-product__list-container">
+                                <a href="#" class="catalog-product__list-img">
+                                    <img data-src="img/catalog-metal/products/item-4.jpg" class="lazy" alt="product">
+                                    <ul class="catalog-product__icon-list">
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                            <i class="fas fa-fire"></i>
+                                        </li>
+                                        <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                            -30%
+                                        </li>
+                                    </ul>
+                                </a>
+                                <div class="catalog-product__list-content">
+                                    <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                                    <div class="catalog-product__list-description">
+                                        Предназначены для ограничения доступа на территорию участка дома, коттеджа и других территорий, а также комфортного въезда-выезда. Современные конструкции, оснащенные инновационной автоматикой.
+                                    </div>
+                                    <footer class="catalog-product__list-footer">
+                                        <div class="catalog-product__list-price__container">
+                                            <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                            <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                        </div>
+                                        <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/bem-blocks/global/stages-installation/stages-installation.html',{
+    title: '<span class="font-bold">Описание процесса</span> и сроки'
+    })
+    @@include('components/bem-blocks/global/stages-cooperation/stages-cooperation.html',{
+    class: 'grey-bg'
+    })
+    @@include('components/bem-blocks/global/colors-block/colors-block.html')
+    <section class="catalog-metal-variants">
+        <div class="container">
+            <h2 class="catalog-metal-variants__title font-normal"><span class="font-bold">Варианты</span> установки забора</h2>
+            <div class="catalog-metal-variants__description">
+                <p>Монтаж забора на участке осуществляется в следующей последовательности:
+                    Строительство фундамента (на плывучих и слабых грунтах).
+                    Разметка площадки с установкой колышков на месте будущего монтажа опорных столбов. При работе с грунтом используются буры, позволяющие выполнить качественное заглубление опоры.</p>
+            </div>
+            <ul class="catalog-metal-variants__list">
+                <li class="catalog-metal-variants__list-item">
+                    <a href="#" class="catalog-metal-variants__list-img">
+                        <img data-src="img/catalog-metal/variants/item-1.jpg" class="lazy" alt="product">
+                    </a>
+                    <header class="catalog-metal-variants__list-header">
+                        <a href="#" class="catalog-metal-variants__list-title">Забутовка столбов</a>
+                        <div class="catalog-metal-variants__list-price">От <b>1159₽</b> за шт.</div>
+                    </header>
+                    <footer class="catalog-metal-variants__list-footer">
+                        <button class="btn btn-action btn-open-popup-call catalog-metal-variants__list-btn" data-title="Забутовка столбов">Заказать</button>
+                        <a href="#" class="catalog-metal-variants__list-more">Подробнее</a>
+                    </footer>
+                </li>
+                <li class="catalog-metal-variants__list-item">
+                    <a href="#" class="catalog-metal-variants__list-img">
+                        <img data-src="img/catalog-metal/variants/item-2.jpg" class="lazy" alt="product">
+                    </a>
+                    <header class="catalog-metal-variants__list-header">
+                        <a href="#" class="catalog-metal-variants__list-title">Винтовые сваи</a>
+                        <div class="catalog-metal-variants__list-price">От <b>1159₽</b> за шт.</div>
+                    </header>
+                    <footer class="catalog-metal-variants__list-footer">
+                        <button class="btn btn-action btn-open-popup-call catalog-metal-variants__list-btn" data-title="Винтовые сваи">Заказать</button>
+                        <a href="#" class="catalog-metal-variants__list-more">Подробнее</a>
+                    </footer>
+                </li>
+                <li class="catalog-metal-variants__list-item">
+                    <a href="#" class="catalog-metal-variants__list-img">
+                        <img data-src="img/catalog-metal/variants/item-3.jpg" class="lazy" alt="product">
+                    </a>
+                    <header class="catalog-metal-variants__list-header">
+                        <a href="#" class="catalog-metal-variants__list-title">Ленточный фундамент</a>
+                        <div class="catalog-metal-variants__list-price">От <b>1159₽</b> за шт.</div>
+                    </header>
+                    <footer class="catalog-metal-variants__list-footer">
+                        <button class="btn btn-action btn-open-popup-call catalog-metal-variants__list-btn" data-title="Ленточный фундамент">Заказать</button>
+                        <a href="#" class="catalog-metal-variants__list-more">Подробнее</a>
+                    </footer>
+                </li>
+            </ul>
+            @@include('components/bem-blocks/global/advantages/advantages.html',{
+            class: 'catalog-metal__advantages'
+            })
+        </div>
+    </section>
+    <section class="catalog-metal-about">
+        <div class="container">
+            <h2 class="catalog-metal-about__title font-normal"><span class="font-bold">Что нужно знать</span> о заборах</h2>
+            <div class="catalog-metal-about__content">
+                <p>Монтаж забора на участке осуществляется в следующей последовательности: Строительство фундамента (на плывучих и слабых грунтах). Разметка площадки с установкой колышков на месте будущего монтажа опорных столбов. При работе с грунтом используются буры, позволяющие выполнить качественное заглубление опоры.</p>
+                <ul class="checked-list">
+                    <li class="checked-list__item"><i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Надежность.</b> Металлический секционный забор служит защитой участка от любопытных глаз и посторонних. В отличие от глухих секций еврожалюзи имеют низкую парусность, а опоры с квадратным сечением обеспечивают устойчивость конструкции к боковым нагрузкам. Такое ограждение устоит даже при сильных порывах ветра, не сломается и не погнется.</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Устойчивость к внешним факторам.</b> Оцинкованная сталь с полимерным покрытием не боится коррозии, перепадов температуры, воздействия влаги и химически активных сред. Забор еврожалюзи сохраняет первоначальный вид в течение всего срока эксплуатации.</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Эстетичность.</b> Заборы с горизонтально расположенными ламелями и текстурированным покрытием выглядят красиво и аккуратно. Широкий выбор цветов и оттенков позволяет подобрать материал для забора, который будет гармонировать с отделкой фасада дома и идеально впишется в окружающий ландшафт.</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Практичность.</b> Ограждения не нужно каждый год красить — покрытие не выгорает на солнце, не шелушится от дождя и мороза. Достаточно по мере необходимости смывать пыль и грязь с поверхности. Делать это можно обычной водой из шланга</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Ремонтопригодность.</b> В случае деформации нескольких ламелей не нужно менять всю секцию. Достаточно открутить саморезы на нужном участке, убрать погнутые планки, поставить новые и закрутить саморезы.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-metal-steps">
+        <div class="container">
+            <h2 class="catalog-metal-steps__title font-normal"><span class="font-bold">Технология</span>  установки забора-жалюзи</h2>
+            <ul class="steps-list">
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Вы оставляете заявку на сайте или по бесплатной линии
+                        <a href="tel:88007073501">8 (800) 707-35-01</a>
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Специалист связывается с Вами для уточнения деталей и выставляет счет на оплату согласно заявке.
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Вы проверяете и оплачиваете счет прямо на сайте без комиссий, либо по реквизитам в счете.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Производство заказа за 1 день! Тщательная упаковка груза по местам.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Отправка транспортной компанией или самовывоз из ближайшего филиала сети!</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/our-advantages/our-advantages.html')
+    @@include('components/bem-blocks/global/portfolio-block/portfolio-block.html')
+    @@include('components/bem-blocks/global/fances-slider/fances-slider.html',{
+    title: '<span class="font-bold">Калитки</span> и ворота'
+    })
+    @@include('components/bem-blocks/global/popular-fances/popular-fances.html',{
+    title: '<span class="font-bold">Другие виды</span>  металлических заборов',
+    class: 'catalog-metal-popular'
+    })
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

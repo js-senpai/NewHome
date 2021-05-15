@@ -1,0 +1,13 @@
+@screen 2xl {
+  .catalog-gates{
+    &__nav{
+      height: inherit;
+      overflow: hidden;
+      grid-gap: rem(30px);
+      grid-template-columns: repeat(auto-fit,minmax(228px,229px));
+      &-more{
+        display: none;
+      }
+    }
+  }
+}

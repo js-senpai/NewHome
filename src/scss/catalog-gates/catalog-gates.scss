@@ -1,0 +1,28 @@
+.catalog-gates{
+  &__nav{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(10px);
+    &-more{
+      margin-top: rem(20px);
+    }
+    &-title{
+      color: #000000;
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+    &-item{
+      a{
+        display: grid;
+        grid-template-columns: rem(98px) 1fr;
+        grid-gap: rem(20px);
+        align-items: center;
+        img{
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@import "media";

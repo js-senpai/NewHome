@@ -1,0 +1,13 @@
+.calculator-fence{
+  &-info{
+    padding: rem(20px) 0;
+    &__content{
+      p{
+        &:not(:last-child) {
+          margin-bottom: rem(15px);
+        }
+      }
+    }
+  }
+}
+@import "media";

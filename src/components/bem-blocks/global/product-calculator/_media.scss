@@ -1,0 +1,17 @@
+@screen 2xl {
+  .product-calculator{
+    padding: rem(70px) 0;
+    &__title{
+      margin-bottom: rem(70px);
+    }
+    &__container{
+      grid-template-columns: 2fr 1fr;
+      grid-gap: rem(70px);
+    }
+    &__property-list{
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: rem(30px);
+      margin-bottom: rem(36px);
+    }
+  }
+}

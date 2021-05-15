@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner catalog-metal">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Заборы',
+                breadcrumbItemThird: 'Расчет стоимости'
+                })
+                <h1 class="catalog-metal__title font-normal"><span class="font-bold">Калькулятор забора</span></h1>
+            </div>
+            @@include('components/bem-blocks/global/calculator/calculator.html')
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/stages-cooperation/stages-cooperation.html',{
+    class: 'grey-bg'
+    })
+    <section class="calculator-fence-info">
+        <div class="container">
+            <h2 class="calculator-fence-info__title font-normal"><span class="font-bold">Расчет стоимости</span> забора из профлиста онлайн</h2>
+            <div class="calculator-fence-info__content">
+                <p>Калькулятор забора из профнастила позволяет быстро рассчитать стоимость установки ограждения онлайн. С помощью калькулятора стоимости забора из профнастила вы можете узнать ориентировочную цену забора с материалами и работой.</p>
+                    Стоимость строительства ограждений из профлиста «под ключ» зависит от следующих факторов:
+                    <ul class="checked-list">
+                        <li class="checked-list__item"><i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Размеров забора.</b> В нашей компании можно заказать ограждения из профнастила любой длины, высотой 1,5-2,0 м.</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Комплектации.</b> Устанавливаем заборы с откатными или распашными воротами, со встроенными или отдельностоящими воротами. Количество ворот и калиток — от 1 до 5.</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Ширины проема.</b> Ширина воротной створки может быть от 3 до 5 метров.
+                            </div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Толщины столбов.</b> Для установки ограждений мы используем металлические опоры из профильной трубы с толщиной стенки 1,5 или 2,0 ммОграждения не нужно каждый год красить — покрытие не выгорает на солнце, не шелушится от дождя и мороза. Достаточно по мере необходимости смывать пыль и грязь с поверхности. Делать это можно обычной водой из шланга</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Вида конструкции.</b> В зависимости от высоты профлиста поперечные лаги устанавливаются в два или три ряда.</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Типа покрытия.</b>  Профнастил выпускается с односторонним или двусторонним полимерным покрытием толщиной 0,3-0,5 мм, с оцинковкой плотностью 0,4-0,5 мм.</div>
+                        </li>
+                    </ul>
+                    Если у вас остались вопросы — обратитесь к нашему консультанту. Точную стоимость можно узнать после выезда замерщика на ваш участок.
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/colors-block/colors-block.html')
+    <section class="catalog-metal-variants">
+        <div class="container">
+            <h2 class="catalog-metal-variants__title font-normal"><span class="font-bold">Варианты</span> установки забора</h2>
+            <div class="catalog-metal-variants__description">
+                <p>Монтаж забора на участке осуществляется в следующей последовательности:
+                    Строительство фундамента (на плывучих и слабых грунтах).
+                    Разметка площадки с установкой колышков на месте будущего монтажа опорных столбов. При работе с грунтом используются буры, позволяющие выполнить качественное заглубление опоры.</p>
+            </div>
+            <ul class="catalog-metal-variants__list">
+                <li class="catalog-metal-variants__list-item">
+                    <a href="#" class="catalog-metal-variants__list-img">
+                        <img data-src="img/catalog-metal/variants/item-1.jpg" class="lazy" alt="product">
+                    </a>
+                    <header class="catalog-metal-variants__list-header">
+                        <a href="#" class="catalog-metal-variants__list-title">Забутовка столбов</a>
+                        <div class="catalog-metal-variants__list-price">От <b>1159₽</b> за шт.</div>
+                    </header>
+                    <footer class="catalog-metal-variants__list-footer">
+                        <button class="btn btn-action btn-open-popup-call catalog-metal-variants__list-btn" data-title="Забутовка столбов">Заказать</button>
+                        <a href="#" class="catalog-metal-variants__list-more">Подробнее</a>
+                    </footer>
+                </li>
+                <li class="catalog-metal-variants__list-item">
+                    <a href="#" class="catalog-metal-variants__list-img">
+                        <img data-src="img/catalog-metal/variants/item-2.jpg" class="lazy" alt="product">
+                    </a>
+                    <header class="catalog-metal-variants__list-header">
+                        <a href="#" class="catalog-metal-variants__list-title">Винтовые сваи</a>
+                        <div class="catalog-metal-variants__list-price">От <b>1159₽</b> за шт.</div>
+                    </header>
+                    <footer class="catalog-metal-variants__list-footer">
+                        <button class="btn btn-action btn-open-popup-call catalog-metal-variants__list-btn" data-title="Винтовые сваи">Заказать</button>
+                        <a href="#" class="catalog-metal-variants__list-more">Подробнее</a>
+                    </footer>
+                </li>
+                <li class="catalog-metal-variants__list-item">
+                    <a href="#" class="catalog-metal-variants__list-img">
+                        <img data-src="img/catalog-metal/variants/item-3.jpg" class="lazy" alt="product">
+                    </a>
+                    <header class="catalog-metal-variants__list-header">
+                        <a href="#" class="catalog-metal-variants__list-title">Ленточный фундамент</a>
+                        <div class="catalog-metal-variants__list-price">От <b>1159₽</b> за шт.</div>
+                    </header>
+                    <footer class="catalog-metal-variants__list-footer">
+                        <button class="btn btn-action btn-open-popup-call catalog-metal-variants__list-btn" data-title="Ленточный фундамент">Заказать</button>
+                        <a href="#" class="catalog-metal-variants__list-more">Подробнее</a>
+                    </footer>
+                </li>
+            </ul>
+            @@include('components/bem-blocks/global/advantages/advantages.html',{
+            class: 'catalog-metal__advantages'
+            })
+        </div>
+    </section>
+    <section class="catalog-metal-about">
+        <div class="container">
+            <h2 class="catalog-metal-about__title font-normal"><span class="font-bold">Что нужно знать</span> о заборах</h2>
+            <div class="catalog-metal-about__content">
+                <p>Монтаж забора на участке осуществляется в следующей последовательности: Строительство фундамента (на плывучих и слабых грунтах). Разметка площадки с установкой колышков на месте будущего монтажа опорных столбов. При работе с грунтом используются буры, позволяющие выполнить качественное заглубление опоры.</p>
+                <ul class="checked-list">
+                    <li class="checked-list__item"><i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Надежность.</b> Металлический секционный забор служит защитой участка от любопытных глаз и посторонних. В отличие от глухих секций еврожалюзи имеют низкую парусность, а опоры с квадратным сечением обеспечивают устойчивость конструкции к боковым нагрузкам. Такое ограждение устоит даже при сильных порывах ветра, не сломается и не погнется.</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Устойчивость к внешним факторам.</b> Оцинкованная сталь с полимерным покрытием не боится коррозии, перепадов температуры, воздействия влаги и химически активных сред. Забор еврожалюзи сохраняет первоначальный вид в течение всего срока эксплуатации.</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Эстетичность.</b> Заборы с горизонтально расположенными ламелями и текстурированным покрытием выглядят красиво и аккуратно. Широкий выбор цветов и оттенков позволяет подобрать материал для забора, который будет гармонировать с отделкой фасада дома и идеально впишется в окружающий ландшафт.</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Практичность.</b> Ограждения не нужно каждый год красить — покрытие не выгорает на солнце, не шелушится от дождя и мороза. Достаточно по мере необходимости смывать пыль и грязь с поверхности. Делать это можно обычной водой из шланга</div>
+                    </li>
+                    <li class="checked-list__item">
+                        <i class="far fa-check-circle"></i>
+                        <div class="checked-list__content"><b>Ремонтопригодность.</b> В случае деформации нескольких ламелей не нужно менять всю секцию. Достаточно открутить саморезы на нужном участке, убрать погнутые планки, поставить новые и закрутить саморезы.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-metal-steps">
+        <div class="container">
+            <h2 class="catalog-metal-steps__title font-normal"><span class="font-bold">Технология</span>  установки забора-жалюзи</h2>
+            <ul class="steps-list">
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Вы оставляете заявку на сайте или по бесплатной линии
+                        <a href="tel:88007073501">8 (800) 707-35-01</a>
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Специалист связывается с Вами для уточнения деталей и выставляет счет на оплату согласно заявке.
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Вы проверяете и оплачиваете счет прямо на сайте без комиссий, либо по реквизитам в счете.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Производство заказа за 1 день! Тщательная упаковка груза по местам.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Отправка транспортной компанией или самовывоз из ближайшего филиала сети!</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/our-advantages/our-advantages.html')
+    @@include('components/bem-blocks/global/portfolio-block/portfolio-block.html')
+    @@include('components/bem-blocks/global/fances-slider/fances-slider.html',{
+    title: '<span class="font-bold">Калитки</span> и ворота'
+    })
+    @@include('components/bem-blocks/global/popular-fances/popular-fances.html',{
+    title: '<span class="font-bold">Другие виды</span>  металлических заборов',
+    class: 'catalog-metal-popular'
+    })
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

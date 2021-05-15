@@ -276,7 +276,7 @@ input[type="radio"]{
 		padding-inline-start: rem(15px);
 		position: relative;
 		background-color: #fff;
-		padding: rem(5px) rem(10px) rem(10px);
+		padding: rem(5px) rem(10px) rem(15px) rem(10px);
 		font-size: rem(17px);
 		&.required::after{
 			content: '';

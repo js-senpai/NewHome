@@ -97,5 +97,11 @@
         }
       }
     }
+    &-steps{
+      padding: rem(70px) 0;
+      &__title{
+        margin-bottom: rem(84px);
+      }
+    }
   }
 }

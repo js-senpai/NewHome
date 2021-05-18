@@ -10,6 +10,7 @@
       }
     }
     &-tab{
+      padding-bottom: rem(70px);
       &__nav{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -21,6 +22,22 @@
       }
       hr{
         display: none;
+      }
+    }
+    &-advantages{
+      &__list{
+        padding: rem(70px) 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: rem(30px);
+        &-img{
+          margin-bottom: rem(30px);
+        }
+        &-title{
+          font-size: rem(36px);
+          line-height: rem(42px);
+          margin-bottom: rem(30px);
+        }
       }
     }
   }

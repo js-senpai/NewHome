@@ -1,5 +1,6 @@
 @screen 2xl {
   .contact-action{
+    padding-top: rem(95px);
     margin-bottom: rem(70px);
     &__container{
       grid-template-columns: 2fr 1fr;

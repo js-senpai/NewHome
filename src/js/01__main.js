@@ -715,5 +715,21 @@ const lazyLoadInstance = new LazyLoad({
         if($('.catalog-gates-tab__nav-item').length){
             tabToggle('.catalog-gates-tab__nav-item')
         }
+        // Product gates advantages
+        if($('.catalog-gates-advantages__list-item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.catalog-gates-advantages__list').slick({
+                        arrows: false,
+                        autoplay: true,
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                    })
+                },descFunc: ()=>{$('.catalog-gates-advantages__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.catalog-gates-advantages__list'
+            })
+        }
     })
 })(jQuery)

@@ -39,6 +39,19 @@
           }
         }
       }
+      &-v2{
+        grid-template-columns: repeat(2,1fr);
+        .catalog-product__list-footer{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          align-items: center;
+          justify-content: space-between;
+          grid-gap: rem(30px);
+        }
+        .catalog-product__btn{
+          order: -1;
+        }
+      }
     }
     &__adv{
       width: 100%;

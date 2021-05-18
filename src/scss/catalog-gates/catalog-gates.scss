@@ -24,5 +24,31 @@
       }
     }
   }
+  &-tab{
+    &__nav{
+      overflow: hidden;
+      border-radius: rem(5px);
+      margin-bottom: rem(20px);
+      &-item{
+        background: linear-gradient(246.93deg, #B5CDDA 14.94%, #D6E2EA 85.06%);
+        color: #525A68;
+        text-align: center;
+        padding: rem(13px);
+        font-weight: bold;
+        &.active{
+          background: #FFC80A;
+        }
+      }
+    }
+    &__item{
+      display: none;
+      &.active{
+        display: block;
+      }
+    }
+    hr{
+      margin-bottom: rem(20px);
+    }
+  }
 }
 @import "media";

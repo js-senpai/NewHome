@@ -711,5 +711,9 @@ const lazyLoadInstance = new LazyLoad({
                 selectedItem.attr('data-value',inputData)
             })
         }
+        // Product gates tab
+        if($('.catalog-gates-tab__nav-item').length){
+            tabToggle('.catalog-gates-tab__nav-item')
+        }
     })
 })(jQuery)

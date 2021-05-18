@@ -9,5 +9,19 @@
         display: none;
       }
     }
+    &-tab{
+      &__nav{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-bottom: rem(40px);
+        border-bottom: 4px solid var(--grey-color);
+      }
+      &__container{
+        margin-top: rem(30px);
+      }
+      hr{
+        display: none;
+      }
+    }
   }
 }

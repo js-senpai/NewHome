@@ -20,6 +20,9 @@
         }
         &:hover{
           .our-advantages__list-container{
+            z-index: 1;
+            background-color: #fff;
+            height: max-content;
             box-shadow: 0px 0px 50px rgba(218, 229, 235, 0.5);
             border-radius: 5px;
             padding: rem(50px);

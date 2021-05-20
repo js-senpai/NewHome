@@ -13,5 +13,19 @@
       grid-gap: rem(30px);
       margin-bottom: rem(36px);
     }
+    &__btn{
+      &-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &__total{
+      &-title{
+        font-size: rem(24px);
+        line-height: rem(28px);
+      }
+    }
   }
 }

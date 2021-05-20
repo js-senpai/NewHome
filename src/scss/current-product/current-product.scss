@@ -134,5 +134,30 @@
       }
     }
   }
+  &__content{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(20px);
+    &-img{
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+  &__control{
+    margin-top: rem(20px);
+    display: grid;
+    grid-template-columns: max-content 2fr;
+    grid-gap: rem(50px);
+    justify-content: space-between;
+    label{
+      font-size: rem(14px);
+      line-height: rem(16px);
+      color: #525A68;
+      margin-bottom: rem(10px);
+    }
+  }
+  &__char-table{
+    display: none;
+  }
 }
 @import "media";

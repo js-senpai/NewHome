@@ -731,5 +731,12 @@ const lazyLoadInstance = new LazyLoad({
                 },descFunc: ()=>{$('.catalog-gates-advantages__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.catalog-gates-advantages__list'
             })
         }
+        // Product catalog col button
+        if($('.current-product__order-btn__order').length && $('#product-col').length){
+            $('.current-product__order-btn__order').click(function (){
+                const getTitle = $(this).attr('data-title')
+                $(this).attr('data-title',`${getTitle}.Количетво: ${$('#product-col').val()}`)
+            })
+        }
     })
 })(jQuery)

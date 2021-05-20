@@ -1,0 +1,91 @@
+.product-gates{
+  &-info{
+    padding: rem(20px) 0;
+    background-color: var(--grey-color);
+    &__title{
+      font-size: rem(24px);
+      line-height: rem(30px);
+      color: #273142;
+      margin-bottom: rem(10px);
+      font-weight: normal;
+    }
+    &__subtitle{
+      font-weight: bold;
+      font-size: rem(18px);
+      line-height: rem(30px);
+      color: #273142;
+      margin-bottom: rem(20px);
+      text-align: left;
+    }
+    &__container{
+      &:not(:last-child){
+        margin-bottom: rem(20px);
+      }
+    }
+    &__gates-list{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+      &__img{
+        margin-bottom: rem(20px);
+        img{
+          width: 100%;
+        }
+      }
+      &__title{
+        font-weight: bold;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        text-align: center;
+        color: #273142;
+      }
+    }
+    &__color{
+      &__content{
+        &:not(:last-child){
+          margin-bottom: rem(20px);
+        }
+      }
+    }
+    &__facture-list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(99px,100px));
+      grid-gap: rem(20px);
+      align-items: center;
+      &__img{
+        height: rem(60px);
+        margin-bottom: rem(10px);
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__title{
+        font-size: rem(12px);
+        line-height: rem(12px);
+        text-align: center;
+        color: #919191;
+      }
+    }
+    &__complect-list{
+      display: grid;
+      grid-gap: rem(20px);
+      grid-template-columns: repeat(2,1fr);
+      &__img{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(218, 229, 235, 0.5);
+        border-radius: 5px;
+        margin-bottom: rem(15px);
+        img{
+          width: 100%;
+        }
+      }
+      &__title{
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #000000;
+      }
+    }
+  }
+}
+@import "media";

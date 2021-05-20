@@ -1,5 +1,10 @@
 .product-calculator{
   padding: rem(20px) 0;
+  &__info{
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: #A5A9AF;
+  }
   &__title{
     margin-bottom: rem(20px);
   }
@@ -106,6 +111,7 @@
       font-size: rem(18px);
       line-height: rem(21px);
       color: #000000;
+      margin-bottom: 0;
     }
   }
 }

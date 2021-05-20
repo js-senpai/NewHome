@@ -1,0 +1,55 @@
+@screen 2xl {
+  .product-gates{
+    &-info{
+      padding: rem(70px) 0;
+      &__title{
+        margin-bottom: rem(40px);
+        font-size: rem(48px);
+        line-height: rem(30px);
+      }
+      &__subtitle{
+        margin-bottom: rem(40px);
+        font-size: rem(36px);
+        line-height: rem(30px);
+      }
+      &__container{
+        &:not(:last-child){
+          margin-bottom: rem(40px);
+        }
+      }
+      &__gates-list{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: rem(30px);
+        &__img {
+          margin-bottom: rem(40px);
+        }
+        &__title{
+          font-size: rem(18px);
+          line-height: rem(21px);
+        }
+      }
+      &__color{
+        &__content{
+          &:not(:last-child){
+            margin-bottom: rem(30px);
+          }
+        }
+      }
+      &__facture-list{
+        grid-gap: rem(30px);
+        &__img {
+          height: rem(40px);
+        }
+      }
+      &__complect-list{
+        display: grid;
+        grid-gap: rem(30px);
+        grid-template-columns: repeat(5,1fr);
+        justify-content: space-between;
+        &__img{
+          margin-bottom: rem(30px);
+        }
+      }
+    }
+  }
+}

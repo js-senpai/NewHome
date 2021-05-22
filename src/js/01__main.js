@@ -716,9 +716,9 @@ const lazyLoadInstance = new LazyLoad({
             tabToggle('.catalog-gates-tab__nav-item')
         }
         // Product gates advantages
-        if($('.catalog-gates-advantages__list-item').length){
+        if($('.catalog-advantages__list-item').length){
             mobileSlider({mobileFunc:()=>{
-                    $('.catalog-gates-advantages__list').slick({
+                    $('.catalog-advantages__list').slick({
                         arrows: false,
                         autoplay: true,
                         dots: true,
@@ -728,7 +728,7 @@ const lazyLoadInstance = new LazyLoad({
                         slidesToScroll: 1,
                         lazyLoad: 'progressive',
                     })
-                },descFunc: ()=>{$('.catalog-gates-advantages__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.catalog-gates-advantages__list'
+                },descFunc: ()=>{$('.catalog-advantages__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.catalog-advantages__list'
             })
         }
         // Product catalog col button

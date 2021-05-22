@@ -1,5 +1,8 @@
 @screen 2xl {
   .catalog-automatic{
+    &-products{
+      padding-bottom: rem(70px);
+    }
     &__filters{
       grid-template-columns: 1fr 2fr;
       &-item{

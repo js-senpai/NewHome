@@ -1,0 +1,23 @@
+.catalog-advantages{
+  background-color: var(--grey-color);
+  &__list{
+    padding: rem(20px) 0;
+    &-img{
+      display: flex;
+      justify-content: center;
+      margin-bottom: rem(20px);
+      img{
+        width: rem(60px);
+        height: rem(60px);
+      }
+    }
+    &-title{
+      font-size: rem(18px);
+      line-height: rem(21px);
+      text-align: center;
+      color: #000000;
+      margin-bottom: rem(41px);
+    }
+  }
+}
+@import "media";

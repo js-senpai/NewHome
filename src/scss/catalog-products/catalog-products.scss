@@ -108,9 +108,29 @@
   }
   &__list{
     position: relative;
+    &__char-table{
+      display: table;
+      border-collapse: collapse;
+      width: 100%;
+      &__tr{
+        display: table-row;
+        border-bottom: 1px dashed #E8E8E8;
+        .catalog-product__list__char-table__td:nth-child(2){
+          font-weight: bold;
+          text-align: right;
+          color: #525A68;
+        }
+      }
+      &__td{
+        display: table-cell;
+      }
+    }
     &-img{
       position: relative;
       margin-bottom: rem(10px);
+      box-shadow: 0px 0px 50px #DAE5EB;
+      border-radius: 5px;
+      overflow: hidden;
       img{
         width: 100%;
       }
@@ -174,16 +194,18 @@
         line-height: rem(21px);
       }
     }
+    &-type--list{
+      grid-template-columns: 100% !important;
+    }
   }
   &__icon-list{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: rem(10px);
+    left: rem(10px);
     display: flex;
     align-items: center;
     &__item{
-      width: rem(30px);
-      height: rem(30px);
+      padding: rem(6px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -192,15 +214,33 @@
       background-color: #fff;
       font-size: rem(18px);
       font-weight: 500;
+      min-width: rem(30px);
+      max-height: rem(30px);
+      overflow: hidden;
       &:not(:last-child){
         margin-right: rem(10px);
       }
       &--hot{
         color: #F2994A;
       }
+      &--priority{
+        background-color: #F2994A;
+        box-shadow: 0px 5px 20px rgba(0, 24, 174, 0.1);
+        border-radius: 4px;
+        color: #fff;
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        grid-gap: rem(8px);
+        align-items: center;
+        font-weight: 700;
+        &__name{
+          font-weight: bold;
+          font-size: rem(9px);
+          line-height: rem(9px);
+        }
+      }
       &--sale{
-        width: rem(66px);
-        height: rem(30px);
+        padding: rem(6px) rem(15px);
         display: flex;
         justify-content: center;
         align-items: center;

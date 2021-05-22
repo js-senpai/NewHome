@@ -738,5 +738,29 @@ const lazyLoadInstance = new LazyLoad({
                 $(this).attr('data-title',`${getTitle}.Количетво: ${$('#product-col').val()}`)
             })
         }
+        // Catalog automatic
+        if($('.catalog-automatic__filters-categories__item').length && $('.catalog-automatic__filters-list__item').length){
+            mobileFunc({mobileFunc:()=>{
+               $('.catalog-automatic__filters-categories__item').click(function (){
+                   $(this).toggleClass('active').siblings().remove('active')
+                   if($(this).hasClass('active')){
+                       $('.catalog-automatic__filters-list').addClass('active')
+                   } else {
+                       $('.catalog-automatic__filters-list').removeClass('active')
+                   }
+               })
+            },mobileWidth:1280})
+        }
+        // Toggle type list
+        if($('.catalog-product__block-type__btn').length && $('.catalog-product__list').length){
+            $('.catalog-product__block-type__btn').click(function (){
+                $(this).addClass('active').siblings().removeClass('active')
+                if($(this).hasClass('catalog-product__block-type__grid')){
+                    $('.catalog-product__list').removeClass('catalog-product__list-type--list')
+                } else {
+                    $('.catalog-product__list').addClass('catalog-product__list-type--list')
+                }
+            })
+        }
     })
 })(jQuery)

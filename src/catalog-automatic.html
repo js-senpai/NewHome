@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner catalog-automatic">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Заборы',
+                breadcrumbItemThird: 'Каталог ворот и калиток'
+                })
+                <h1 class="catalog-automatic__title font-normal"><span class="font-bold">Каталог ворот и калиток</span></h1>
+                <div class="catalog-automatic__filters">
+                    <div class="catalog-automatic__filters-item">
+                        <div class="catalog-automatic__filters-categories">
+                            <div class="catalog-automatic__filters-categories__item">
+                                <header class="catalog-automatic__filters-categories__header">
+                                    <span class="catalog-automatic__filters-categories__header-title">По назначению</span>
+                                    <i class="fas fa-sliders-h"></i>
+                                </header>
+                                <ul class="catalog-automatic__filters-categories__list">
+                                    <li class="catalog-automatic__filters-categories__list-item active">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для секционных ворот</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для откатных ворот</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для распашных ворот</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для промышленных ворот</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для рулонных ворот</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalog-automatic__filters-categories__item">
+                                <header class="catalog-automatic__filters-categories__header">
+                                    <span class="catalog-automatic__filters-categories__header-title">По производителю</span>
+                                    <i class="fas fa-sliders-h"></i>
+                                </header>
+                                <ul class="catalog-automatic__filters-categories__list">
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для ворот Came</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для ворот Doorhan</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для ворот Faac</span>
+                                    </li>
+                                    <li class="catalog-automatic__filters-categories__list-item">
+                                        <i class="fas fa-caret-right"></i>
+                                        <span>Автоматика для ворот Nice</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-automatic__filters-item">
+                        <ul class="catalog-automatic__filters-list">
+                            <li class="catalog-automatic__filters-list__item">
+                                <div class="catalog-automatic__filters-list__container">
+                                    <div class="catalog-automatic__filters-list__title">Тип устройства:</div>
+                                    <ul class="catalog-automatic__filters-list__checkbox-list">
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="type-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-1">Комлект</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="type-checkbox-2" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">По отдельности</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="catalog-automatic__filters-list__more">Больше</span>
+                            </li>
+                            <li class="catalog-automatic__filters-list__item">
+                                <div class="catalog-automatic__filters-list__container">
+                                    <div class="catalog-automatic__filters-list__title">Максимальный вес:</div>
+                                    <ul class="catalog-automatic__filters-list__checkbox-list">
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 160 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 230 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 250 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 3200 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 350 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 400 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 500 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 550 кг</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">до 600 кг</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="catalog-automatic__filters-list__more active">Больше</span></li>
+                            <li class="catalog-automatic__filters-list__item">
+                                <div class="catalog-automatic__filters-list__container">
+                                    <div class="catalog-automatic__filters-list__title">Интенсивность использования:</div>
+                                    <ul class="catalog-automatic__filters-list__checkbox-list">
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">4</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">5</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">6</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">7</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">8</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">9</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">16</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">18</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">20</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">30</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="catalog-automatic__filters-list__more active">Больше</span>
+                            </li>
+                            <li class="catalog-automatic__filters-list__item">
+                                <div class="catalog-automatic__filters-list__container">
+                                    <div class="catalog-automatic__filters-list__title">Интенсивность работы:</div>
+                                    <ul class="catalog-automatic__filters-list__checkbox-list">
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">25%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">30%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">40%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">45%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">50%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">55%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">60%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">65%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">70%</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">80%</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="catalog-automatic__filters-list__more active">Больше</span></li>
+                            <li class="catalog-automatic__filters-list__item">
+                                <div class="catalog-automatic__filters-list__container">
+                                    <div class="catalog-automatic__filters-list__title">Тип упровления:</div>
+                                    <ul class="catalog-automatic__filters-list__checkbox-list">
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">С ручным управлением</label>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-automatic__filters-list__checkbox-list__item">
+                                            <div class="input-checkbox">
+                                                <input name="calc-other-checkbox" class="catalog-automatic__filters-list__checkbox-list__checkbox" type="checkbox" id="weight-checkbox-1" value="Крепеж для X–кронштейнов">
+                                                <label for="type-checkbox-2">С автоматикой</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="catalog-automatic__filters-list__more">Больше</span></li>
+                        </ul>
+                        <div class="catalog-automatic__filters-button__container">
+                            <div class="btn catalog-automatic__filters-button catalog-automatic__filters-button--show">
+                                Показать
+                            </div>
+                            <div class="btn catalog-automatic__filters-button catalog-automatic__filters-button--clear">Очистить</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-automatic-products">
+        <div class="container">
+            <header class="catalog-product__header">
+                <div class="catalog-product__sort-select">
+                    <button class="catalog-product__sort-select__btn">
+                        <span class="catalog-product__sort-select__selected">Сортировка</span>
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <ul class="catalog-product__sort-select__list">
+                        <li class="catalog-product__sort-select__list-item">по возрастанию цены</li>
+                        <li class="catalog-product__sort-select__list-item">по убыванию цены</li>
+                        <li class="catalog-product__sort-select__list-item">по новизне</li>
+                        <li class="catalog-product__sort-select__list-item">акционные</li>
+                    </ul>
+                </div>
+                <div class="catalog-product__block-type__container">
+                    <button class="catalog-product__block-type__btn catalog-product__block-type__grid active">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="catalog-product__block-type__btn catalog-product__block-type__list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </header>
+            <ul class="catalog-product__list catalog-product__list-v2">
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-1.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                  %
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--priority">
+                                    <i class="fas fa-fire"></i>
+                                    <div class="catalog-product__icon-list__item--priority__name">Предложение АГОНЬ!</div>
+                                </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Въездные</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-2.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                -30%
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-3.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-4.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-1.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Въездные</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-2.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Уличные рулонные</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-3.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-product__list-item">
+                    <div class="catalog-product__list-container">
+                        <a href="#" class="catalog-product__list-img">
+                            <img data-src="img/catalog-automatic/products/item-4.jpg" class="lazy" alt="product">
+                            <ul class="catalog-product__icon-list">
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--hot">
+                                    <i class="fas fa-fire"></i>
+                                </li>
+                                <li class="catalog-product__icon-list__item catalog-product__icon-list__item--sale">
+                                    -30%
+                                </li><li class="catalog-product__icon-list__item catalog-product__icon-list__item--percent">
+                                %
+                            </li>
+                            </ul>
+                        </a>
+                        <div class="catalog-product__list-content">
+                            <a href="#" class="catalog-product__list-title">Распашные с калиткой</a>
+                            <div class="catalog-product__list-description">
+                                <div class="catalog-product__list__char-table">
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Производитель</div>
+                                        <div class="catalog-product__list__char-table__td">CAME</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Интенсивность</div>
+                                        <div class="catalog-product__list__char-table__td">50%</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Класс защиты</div>
+                                        <div class="catalog-product__list__char-table__td">IP44</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Напряжение питания</div>
+                                        <div class="catalog-product__list__char-table__td">220 B</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Вес створки</div>
+                                        <div class="catalog-product__list__char-table__td">800 кг</div>
+                                    </div>
+                                    <div class="catalog-product__list__char-table__tr">
+                                        <div class="catalog-product__list__char-table__td">Страна производитель</div>
+                                        <div class="catalog-product__list__char-table__td">Италия</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="catalog-product__list-footer">
+                                <div class="catalog-product__list-price__container">
+                                    <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                    <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                                </div>
+                                <button class="btn btn-action btn-open-popup-call catalog-product__btn" data-title="Въездные">Заказать забор</button>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

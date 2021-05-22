@@ -43,10 +43,18 @@
         grid-template-columns: repeat(2,1fr);
         .catalog-product__list-footer{
           display: grid;
-          grid-template-columns: 2fr 1fr;
+          grid-template-columns: 1.1fr 1fr;
           align-items: center;
           justify-content: space-between;
+          grid-gap: rem(25px);
+        }
+        .catalog-product__list-container{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
           grid-gap: rem(30px);
+        }
+        .catalog-product__list-img,.catalog-product__list-price__container{
+          margin-bottom: 0;
         }
         .catalog-product__btn{
           order: -1;

@@ -85,7 +85,6 @@
     }
     &__char-table{
       display: table;
-      margin-bottom: rem(15px);
       &__tr{
         display: table-row;
         .current-product__char-table__td:first-child{
@@ -114,8 +113,15 @@
         border-radius: 5px;
         grid-template-columns: 100%;
         height: 100%;
-        padding: rem(45px) rem(25px);
+        grid-gap: rem(10px);
+        padding: rem(25px);
+        &-img{
+          margin-bottom: 0;
+        }
       }
+    }
+    &__grid-container{
+      grid-template-columns: repeat(2,1fr);
     }
   }
 }

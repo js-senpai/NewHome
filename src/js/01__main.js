@@ -585,7 +585,7 @@ const lazyLoadInstance = new LazyLoad({
         // Steps list
         if($('.steps-list__item').length){
             mobileSlider({mobileFunc:()=>{
-                    $('.steps-list').slick({
+                    $('.steps-list--slider').slick({
                         arrows: true,
                         infinite: true,
                         speed: 300,
@@ -595,7 +595,7 @@ const lazyLoadInstance = new LazyLoad({
                         prevArrow: '<span class="slider-btn steps-list__btn steps-list__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
                         nextArrow: '<span class="slider-btn steps-list__btn  steps-list__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
                     })
-                },descFunc: ()=>{$('.steps-list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.steps-list'
+                },descFunc: ()=>{$('.steps-list--slider').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.steps-list--slider'
             })
         }
         // Our advantages
@@ -760,6 +760,55 @@ const lazyLoadInstance = new LazyLoad({
                 } else {
                     $('.catalog-product__list').addClass('catalog-product__list-type--list')
                 }
+            })
+        }
+        // Service page advantages
+        // Product gates advantages
+        if($('.service-page-advantages__list-item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.service-page-advantages__list').slick({
+                        arrows: false,
+                        autoplay: true,
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                    })
+                },descFunc: ()=>{$('.service-page-advantages__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.service-page-advantages__list'
+            })
+        }
+        // Service page requirements
+        if($('.service-page-requirements__list-item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.service-page-requirements__list').slick({
+                        arrows: false,
+                        autoplay: true,
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                    })
+                },descFunc: ()=>{$('.service-page-requirements__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.service-page-requirements__list'
+            })
+        }
+        // Service page types
+        if($('.service-page-types__list-item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.service-page-types__list').slick({
+                        arrows: false,
+                        autoplay: true,
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                    })
+                },descFunc: ()=>{$('.service-page-types__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.service-page-types__list'
             })
         }
     })

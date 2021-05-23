@@ -1,5 +1,4 @@
 .catalog-banner{
-  padding: rem(20px) 0;
   background: #fff;
   &__title{
     margin-bottom: rem(20px);
@@ -12,6 +11,9 @@
     }
   }
   &__wrapper{
+    padding: rem(20px) 0;
+  }
+  .container{
     background-color: #fff;
   }
   &__container{

@@ -1,0 +1,22 @@
+@media (max-width: 1535px){
+  .faq{
+    &__container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+@screen 2xl {
+  .faq{
+    padding: rem(70px) 0;
+    &__title{
+      margin-bottom: rem(70px);
+    }
+    &__list{
+      &-title{
+        font-size: rem(24px);
+        line-height: rem(28px);
+      }
+    }
+  }
+}

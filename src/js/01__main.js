@@ -811,5 +811,28 @@ const lazyLoadInstance = new LazyLoad({
                 },descFunc: ()=>{$('.service-page-types__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.service-page-types__list'
             })
         }
+        // Service page info
+        if($('.service-page-info__list-item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.service-page-info__list').slick({
+                        arrows: false,
+                        autoplay: true,
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                    })
+                },descFunc: ()=>{$('.service-page-info__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.service-page-info__list'
+            })
+        }
+        // FAQ
+        if($('.faq__list-item').length){
+            $('.faq__list-item').click(function (){
+                $(this).toggleClass('active')
+                $(this).find('.faq__list-content').fadeToggle(500)
+            })
+        }
     })
 })(jQuery)

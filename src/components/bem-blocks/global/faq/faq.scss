@@ -1,0 +1,43 @@
+.faq{
+  padding: rem(20px) 0;
+  background-color: var(--grey-color);
+  &__title{
+    margin-bottom: rem(20px);
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(10px);
+    &-item{
+      background-color: #fff;
+      padding: rem(20px);
+      &.active{
+        .fa-chevron-down{
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    &-header{
+      display: grid;
+      grid-template-columns: 1fr rem(20px);
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-title{
+      font-size: rem(14px);
+      line-height: rem(16px);
+      color: #333333;
+    }
+    .fa-chevron-down{
+      color: #FC6D2B;
+      transition: all 500ms ease-in-out;
+      font-size: rem(18px);
+    }
+    &-content{
+      display: none;
+      padding-top: rem(30px);
+    }
+
+  }
+}
+@import "media";

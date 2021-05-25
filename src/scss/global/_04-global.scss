@@ -276,7 +276,7 @@ input[type="radio"]{
 		padding-inline-start: rem(15px);
 		position: relative;
 		background-color: #fff;
-		padding: rem(5px) rem(10px) rem(15px) rem(10px);
+		padding: rem(5px) rem(10px) rem(10px) rem(10px);
 		font-size: rem(17px);
 		&.required::after{
 			content: '';
@@ -298,6 +298,7 @@ input[type="radio"]{
 		}
 		legend{
 			font-size: rem(12px);
+			line-height: rem(12px);
 			color: var(--light-grey-color);
 		}
 	}
@@ -350,6 +351,10 @@ input[type="radio"]{
 			background-color: #fff;
 			border: 1px solid #EEF4F8;
 		}
+	}
+	&__checkbox-text{
+		font-size: rem(14px);
+		line-height: rem(16px);
 	}
 }
 // See more

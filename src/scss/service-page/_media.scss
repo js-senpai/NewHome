@@ -155,7 +155,7 @@
           .service-page-price__table-td:not(:first-child){
             position: relative;
             padding-left: rem(48px);
-            box-shadow: -10px -25px 24px -7px var(--grey-color),-10px 30px 24px -7px var(--grey-color), -23px 0 30px -18px  rgba(39, 49, 66, 0.2);
+            box-shadow: -10px -25px 24px -7px transparent,-10px 30px 24px -7px transparent, -23px 0 30px -18px  rgba(39, 49, 66, 0.2);
           }
         }
         &-td{
@@ -216,6 +216,30 @@
         &--desc{
           display: flex;
           max-width: rem(407px);
+        }
+      }
+    }
+    &-recommend{
+      padding-bottom: rem(70px);
+      &__title{
+        margin-bottom: rem(30px);
+      }
+      &__list{
+        grid-template-columns: repeat(4,1fr);
+      }
+    }
+    &-v2{
+      &-our{
+        background-color: var(--grey-color);
+        padding: rem(70px) 0;
+      }
+      &-price{
+        &__table{
+          &-tr{
+            .service-page-price__table-td:last-child{
+              text-align: center;
+            }
+          }
         }
       }
     }

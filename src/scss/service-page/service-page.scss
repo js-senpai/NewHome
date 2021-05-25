@@ -361,5 +361,27 @@
       }
     }
   }
+  &-recommend{
+    padding: rem(20px) 0;
+    &__title{
+      margin-bottom: rem(20px);
+    }
+  }
+  &-v2{
+    &-price{
+      &__table{
+        &-tr{
+          grid-template-columns: 1fr 1fr;
+          .service-page-price__table-td:first-child{
+            grid-column-start: 1;
+            grid-column-end: 1;
+          }
+          .service-page-price__table-td:last-child{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
 }
 @import "media";

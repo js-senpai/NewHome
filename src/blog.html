@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner blog-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Услуги',
+                breadcrumbItemThird: 'Порошковая покраска'
+                })
+                <h1 class="blog-banner__title">Лазерная резка и гибка металла</h1>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog-container">
+                <div class="blog-container__item">
+                    <nav class="blog-nav">
+                        <h2 class="blog-nav__title">Статьи</h2>
+                        <ul class="blog-nav__list">
+                            <li class="blog-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="blog-nav__list-title"><a href="#">Автоматика для секционных ворот</a></h3></li>
+                            <li class="blog-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="blog-nav__list-title"><a href="#">Автоматика для откатных ворот</a></h3></li>
+                            <li class="blog-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="blog-nav__list-title"><a href="#">Автоматика для распашных ворот</a></h3></li>
+                            <li class="blog-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="blog-nav__list-title"><a href="#">Автоматика для промышленных ворот</a></h3></li>
+                            <li class="blog-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="blog-nav__list-title"><a href="#">Автоматика для рулонных ворот</a></h3></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="blog-container__item">
+                    <ul class="blog-list">
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-1.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Купить заборы жалюзи в Челябинске</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Купить заборы жалюзи в Челябинске. На данный момент сейчас одними и "трендовых" заборов считаются именно Заборы жалюзи. Заборы жалюзи используются очень широко. Рынок потребителей данной прод</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-2.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Преимущества сотрудничества</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Добро пожаловать на новый сайт нашей компании! Мы постарались сделать его максимально удобным и полезным для Вас! Здесь Вы найдете всю информацию о компании, продукции, форму для обратной связи</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-3.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Перечень услуг от фирмы Home Improvement Technologies</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Добро пожаловать на новый сайт нашей компании! Мы постарались сделать его максимально удобным и полезным для Вас! Здесь Вы найдете всю информацию о компании, продукции, форму для обратной связи</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-4.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Строительство домов под ключ</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Купить заборы жалюзи в Челябинске. На данный момент сейчас одними и "трендовых" заборов считаются именно Заборы жалюзи. Заборы жалюзи используются очень широко. Рынок потребителей данной прод</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-1.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Купить заборы жалюзи в Челябинске</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Купить заборы жалюзи в Челябинске. На данный момент сейчас одними и "трендовых" заборов считаются именно Заборы жалюзи. Заборы жалюзи используются очень широко. Рынок потребителей данной прод</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-2.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Преимущества сотрудничества</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Добро пожаловать на новый сайт нашей компании! Мы постарались сделать его максимально удобным и полезным для Вас! Здесь Вы найдете всю информацию о компании, продукции, форму для обратной связи</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-3.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Перечень услуг от фирмы Home Improvement Technologies</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Добро пожаловать на новый сайт нашей компании! Мы постарались сделать его максимально удобным и полезным для Вас! Здесь Вы найдете всю информацию о компании, продукции, форму для обратной связи</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-4.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Строительство домов под ключ</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Купить заборы жалюзи в Челябинске. На данный момент сейчас одними и "трендовых" заборов считаются именно Заборы жалюзи. Заборы жалюзи используются очень широко. Рынок потребителей данной прод</a>
+                            </div>
+                        </li>
+                        <li class="blog-list__item">
+                            <div class="blog-list__img">
+                                <img data-src="img/blog/item-1.jpg" class="lazy" alt="blog">
+                            </div>
+                            <h2 class="blog-list__title"><a href="#">Строительство домов под ключ</a></h2>
+                            <div class="blog-list__content">
+                                <time datetime="06.12.2020" class="blog-list__date">06.12.2020</time>
+                                <a href="#" class="blog-list__description">Купить заборы жалюзи в Челябинске. На данный момент сейчас одними и "трендовых" заборов считаются именно Заборы жалюзи. Заборы жалюзи используются очень широко. Рынок потребителей данной прод</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="blog-pagination">
+                        <li class="blog-pagination__item active"><a href="#">1</a></li>
+                        <li class="blog-pagination__item"><a href="#">2</a></li>
+                        <li class="blog-pagination__item"><a href="#">3</a></li>
+                        <li class="blog-pagination__item"><a href="#">4</a></li>
+                        <li class="blog-pagination__item"><a href="#">5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

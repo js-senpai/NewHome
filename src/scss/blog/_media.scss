@@ -1,0 +1,29 @@
+@screen 2xl {
+  .blog{
+    padding: rem(40px) 0 rem(70px) 0;
+    &-container{
+      grid-template-columns: 1fr 3fr;
+      grid-gap: rem(30px);
+      margin-bottom: rem(30px);
+    }
+    &-nav{
+      &__list {
+        padding: rem(15px) rem(20px);
+        &-title{
+          font-size: rem(14px);
+          line-height: rem(32px);
+        }
+      }
+    }
+    &-list{
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: rem(30px);
+      margin-bottom: rem(30px);
+      &__title{
+        margin-bottom: rem(30px);
+        font-size: rem(24px);
+        line-height: rem(28px);
+      }
+    }
+  }
+}

@@ -49,5 +49,10 @@
       grid-gap: rem(20px);
     }
   }
+  &-blog{
+    .popup-form__container{
+      grid-template-columns: 100%;
+    }
+  }
 }
 @import "media";

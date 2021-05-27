@@ -37,7 +37,7 @@ const lazyLoadInstance = new LazyLoad({
             });
         }
         // Open popup
-        const openPopup = (btn = '',popup = '',title = '') =>{
+        const openPopup = (btn = '',popup = '') =>{
             if($(btn).length && $(popup).length){
                 $(btn).click(function (){
                     let title = ''
@@ -50,8 +50,8 @@ const lazyLoadInstance = new LazyLoad({
             }
         }
         // Open popup call
-        openPopup('.btn-open-popup-call','.popup-call','.popup-call__input-title')
-        openPopup('.btn-open-popup-write','.popup-write','.popup-write__input-title')
+        openPopup('.btn-open-popup-call','.popup-call')
+        openPopup('.btn-open-popup-write','.popup-write')
         // Checkbox
         if($('.form__checkbox').length){
             $('.form__checkbox').each(function (item){
@@ -833,6 +833,10 @@ const lazyLoadInstance = new LazyLoad({
                 $(this).toggleClass('active')
                 $(this).find('.faq__list-content').fadeToggle(500)
             })
+        }
+        // Blog
+        if($('.blog-page-header__info-remind').length){
+            openPopup('.blog-page-header__info-remind','.popup-blog')
         }
     })
 })(jQuery)

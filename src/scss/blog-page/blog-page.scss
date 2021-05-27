@@ -1,0 +1,94 @@
+.blog-page{
+  &-header{
+    padding-bottom: rem(20px);
+    &__img{
+      position: relative;
+      margin-bottom: rem(10px);
+      img{
+        display: block;
+        border-radius: 5px;
+        width: 100%;
+        min-height: rem(160px);
+      }
+    }
+    &__mobile{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: absolute;
+      bottom: rem(10px);
+      left: rem(10px);
+      right: rem(10px);
+    }
+    &__info{
+      margin-bottom: rem(20px);
+      &-item{
+        display: flex;
+        align-items: center;
+      }
+      &-rate{
+        &--desc{
+          display: none;
+        }
+        &__text{
+          font-size: rem(12px);
+          line-height: rem(14px);
+          color: #828282;
+          margin-bottom: rem(5px);
+        }
+        &__list{
+          display: grid;
+          grid-template-columns: repeat(5,1fr);
+          grid-gap: rem(5px);
+          align-items: center;
+          color: var(--yellow-color);
+        }
+      }
+      &-time{
+        display: flex;
+        align-items: center;
+        &--desc{
+          display: none;
+        }
+        i{
+          color: var(--yellow-color);
+          margin-right: rem(8px);
+        }
+        &__text{
+          font-size: rem(12px);
+          line-height: rem(14px);
+          color: #828282;
+        }
+      }
+      &-subject{
+        display: block;
+        font-weight: bold;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: #525A68;
+        margin-bottom: rem(10px);
+        margin-left: rem(30px);
+      }
+      &-remind{
+        display: none;
+      }
+      &-tags{
+        display: flex;
+        &__item{
+          font-size: rem(11px);
+          line-height: rem(13px);
+          color: #525A68;
+          padding: rem(10px) rem(15px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #FFF5EA;
+          &:not(:last-child){
+            margin-right: rem(10px);
+          }
+        }
+      }
+    }
+  }
+}
+@import "media";

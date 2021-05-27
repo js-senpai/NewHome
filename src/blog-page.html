@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner blog-page-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Новости',
+                breadcrumbItemThird: 'Купить заборы жалюзи в Челябинске'
+                })
+                <h1 class="blog-banner__title">Купить заборы жалюзи в Челябинске</h1>
+            </div>
+        </div>
+    </section>
+    <section class="blog-page-header">
+        <div class="container">
+            <div class="blog-page-header__img">
+                <img data-src="img/blog-page/img.jpg" class="lazy" alt="blog">
+                <div class="blog-page-header__mobile">
+                    <div class="blog-page-header__mobile-item">
+                        <div class="blog-page-header__info-rate blog-page-header__info-rate--mobile">
+                            <div class="blog-page-header__info-rate__text">Оценок 49</div>
+                            <ul class="blog-page-header__info-rate__list">
+                                <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                                <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                                <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                                <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                                <li class="blog-page-header__info-rate__list-item"><i class="far fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog-page-header__mobile-item">
+                        <div class="blog-page-header__info-time blog-page-header__info-time--mobile">
+                            <i class="far fa-clock"></i>
+                            <span class="blog-page-header__info-time__text">10 минут на чтение</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-page-header__info">
+                <div class="blog-page-header__info-item">
+                    <div class="blog-page-header__info-time blog-page-header__info-time--desc">
+                        <i class="far fa-clock"></i>
+                        <span class="blog-page-header__info-time__text">10 минут на чтение</span>
+                    </div>
+                    <a href="#" class="blog-page-header__info-subject">Автоматические ворота</a>
+                </div>
+                <div class="blog-page-header__info-item">
+                    <div class="blog-page-header__info-rate blog-page-header__info-rate--desc">
+                        <div class="blog-page-header__info-rate__text">Оценок 49</div>
+                        <ul class="blog-page-header__info-rate__list">
+                            <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                            <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                            <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                            <li class="blog-page-header__info-rate__list-item"><i class="fas fa-star"></i></li>
+                            <li class="blog-page-header__info-rate__list-item"><i class="far fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <button class="blog-page-header__info-remind" data-title="Заголовок статьи">Прочитать позже</button>
+                </div>
+            </div>
+            <ul class="blog-page-header__info-tags">
+                <li class="blog-page-header__info-tags__item"><a href="#">Мама</a></li>
+                <li class="blog-page-header__info-tags__item"><a href="#">Воспитание</a></li>
+                <li class="blog-page-header__info-tags__item"><a href="#">Отдых</a></li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

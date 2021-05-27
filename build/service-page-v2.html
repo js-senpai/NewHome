@@ -2205,6 +2205,39 @@
         </form>
     </div>
 </div>
+<div  class="popup-overlay popup-blog">
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <header class="popup__header">
+                <h4 class="popup__header-title">Прочитать позже</h4>
+                <i class="fas fa-times popup-close"></i>
+            </header>
+            <div class="popup-body">
+                <div class="popup-form__container">
+                    <fieldset class="form__fieldset popup-form__fieldset required">
+                        <legend>Ваше email</legend>
+                        <input type="email" class="form__input popup-form__input" required placeholder="example.com">
+                    </fieldset>
+                </div>
+                <div class="popup-form__btn-container">
+                    <div class="form__checkbox-container popup-form__checkbox-container">
+                        <div class="form__checkbox-item form__checkbox-icon popup-form__checkbox-icon">
+                            <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                        </div>
+                        <div class="form__checkbox-item">
+                            <input checked type="checkbox" class="form__checkbox popup-form__checkbox" hidden />
+                            <div class="form__checkbox-text popup-form__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-action popup-submit" value="Напомнить о статье">
+                </div>
+                <div class="hidden">
+                    <input type="hidden" class="popup-call__input-title">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>

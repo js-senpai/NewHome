@@ -1,0 +1,55 @@
+@screen 2xl {
+  .contacts{
+    padding-bottom: rem(50px);
+    p{
+      margin-bottom: rem(20px);
+    }
+    &-list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+      grid-gap: rem(30px);
+      &__title{
+        margin-bottom: rem(40px);
+        font-size: rem(24px);
+        line-height: rem(28px);
+      }
+      &__socials{
+        &-item{
+          &:not(:last-child){
+            margin-right: rem(20px);
+          }
+        }
+      }
+      &__requisites{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: rem(20px);
+        justify-content: space-between;
+      }
+    }
+    &-contact__list{
+      grid-gap: rem(30px);
+    }
+    &__form{
+      margin-left: 0;
+      margin-right: 0;
+      padding: rem(30px);
+      position: relative;
+      z-index: 2;
+      &-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: rem(20px);
+      }
+    }
+    &-map{
+      top:rem(-105px);
+      padding-top: rem(130px);
+      padding-bottom: rem(130px);
+    }
+    &-subscribe{
+      position: relative;
+      margin-top: rem(-152px);
+    }
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner contacts-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Информация',
+                breadcrumbItemThird: 'Контакты'
+                })
+                <h1 class="contacts-banner__title">Контакты</h1>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <h2 class="contacts-list__title">Наш адрес</h2>
+                    <ul class="contact-list contacts-contact__list">
+                        <li class="contact-list__item contacts-contact__list-item">
+                            <div class="contact-list__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-list__info">
+                                <div class="contact-list__info-link">Челябинск, ул. Троицкая 1в/2</div>
+                            </div>
+                        </li>
+                        <li class="contact-list__item contacts-contact__list-item">
+                            <div class="contact-list__icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="contact-list__info">
+                                <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+                            </div>
+                        </li>
+                        <li class="contact-list__item contacts-contact__list-item">
+                            <div class="contact-list__icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-list__info">
+                                <a href="tel:83517015581" class="contact-list__info-link">8 (800) 701-55-81</a>
+                            </div>
+                        </li>
+                        <li class="contact-list__item contacts-contact__list-item">
+                            <div class="contact-list__icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="contact-list__info">
+                                <div class="contact-list__info-link">10:00–20:00, без выходных</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="contacts-list__item">
+                    <h2 class="contacts-list__title">Как добраться?</h2>
+                    <p>От железнодорожной станции "Крюково" до остановки "Универмаг" можно доехать на 1, 2, 2кл автобусах и 903 маршрутном такси.</p>
+                    <ul class="contacts-list__socials">
+                        <li class="contacts-list__socials-item"><a href="#"><img data-src="img/contacts/youtube.svg" class="lazy" alt="socials"></a></li>
+                        <li class="contacts-list__socials-item"><a href="#"><img data-src="img/contacts/telegram.svg" class="lazy" alt="socials"></a></li>
+                        <li class="contacts-list__socials-item"><a href="#"><img data-src="img/contacts/vk.svg" class="lazy" alt="socials"></a></li>
+                        <li class="contacts-list__socials-item"><a href="#"><img data-src="img/contacts/insta.svg" class="lazy" alt="socials"></a></li>
+                        <li class="contacts-list__socials-item"><a href="#"><img data-src="img/contacts/fb.svg" class="lazy" alt="socials"></a></li>
+                    </ul>
+                </li>
+                <li class="contacts-list__item">
+                    <h2 class="contacts-list__title">Реквизиты</h2>
+                    <div class="contacts-list__requisites">
+                        <p><b>ИНН/КПП</b>
+                            7451432180/745101001</p>
+                        <p><b>ОГРН</b> 1187456005109</p>
+                        <p><b>р/с</b>
+                            40702810010000281954 в АО "ТИНЬКОФФ БАНК"</p>
+                        <p><b>р/с</b>
+                            40702810005000038009 УРАЛЬСКИЙ Ф-Л ПАО "ПРОМСВЯЗЬБАНК"</p>
+                        <p><b>БИК</b> 044525974 кор./сч 30101810145250000974</p>
+                        <p><b>БИК</b> 046577975 кор./сч 30101810500000000975</p>
+                    </div>
+                </li>
+                <li class="contacts-list__item">
+                    <div class="contacts__form">
+                        <div class="contacts__form-title">Мы вам перезвоним</div>
+                        <div class="contacts__form-text">Оставьте ваши данные и мы свяжемся с вами.</div>
+                        <div class="contacts__form-container">
+                            <fieldset class="form__fieldset contacts__form-fieldset required">
+                                <legend>Ваше имя</legend>
+                                <input type="text" class="form__input contacts__input" required placeholder="Иван Иванов">
+                            </fieldset>
+                            <fieldset class="form__fieldset contacts__form-fieldset required">
+                                <legend>Ваш телефон</legend>
+                                <input type="tel" class="form__input contacts__input" required placeholder="8 800 333 33 33">
+                            </fieldset>
+                            <div class="contacts__btn-container">
+                                <div class="form__checkbox-container contacts__form-checkbox">
+                                    <div class="form__checkbox-item form__checkbox-icon contacts__checkbox-icon">
+                                        <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                                    </div>
+                                    <div class="form__checkbox-item">
+                                        <input checked type="checkbox" class="form__checkbox contacts__checkbox" hidden />
+                                        <div class="form__checkbox-text contacts__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                                    </div>
+                                </div>
+                                <input type="submit" class="btn btn-action contacts-submit" value="Заказать обратный звонок">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/map/map.html',{
+     class: 'contacts-map'
+    })
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+      class: 'contacts-subscribe'
+    })
+    @@include('components/bem-blocks/global/contact-action/contact-action.html',{
+      class: 'contacts-action'
+    })
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

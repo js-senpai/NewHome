@@ -1,0 +1,13 @@
+@screen 2xl {
+  .faq-page {
+    padding: rem(40px) 0 rem(70px) 0;
+    &-container {
+      grid-template-columns: 1fr 3fr;
+      grid-gap: rem(30px);
+      margin-bottom: rem(30px);
+    }
+    &-search{
+      margin-bottom: rem(40px);
+    }
+  }
+}

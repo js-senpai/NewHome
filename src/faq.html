@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner faq-page-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Информация',
+                breadcrumbItemThird: 'Вопрос и ответ'
+                })
+                <h1 class="faq-page-banner__title">Вопрос и ответ</h1>
+            </div>
+        </div>
+    </section>
+    <section class="faq-page">
+        <div class="container">
+            <div class="faq-page-container">
+                <div class="faq-page-container__item">
+                    <nav class="page-nav">
+                        <h2 class="page-nav__title">Темы вопросов</h2>
+                        <ul class="page-nav__list">
+                            <li class="page-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="page-nav__list-title"><a href="#">Автоматика для секционных ворот</a></h3></li>
+                            <li class="page-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="page-nav__list-title"><a href="#">Автоматика для откатных ворот</a></h3></li>
+                            <li class="page-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="page-nav__list-title"><a href="#">Автоматика для распашных ворот</a></h3></li>
+                            <li class="page-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="page-nav__list-title"><a href="#">Автоматика для промышленных ворот</a></h3></li>
+                            <li class="page-nav__list-item"><i class="fas fa-caret-right"></i><h3 class="page-nav__list-title"><a href="#">Автоматика для рулонных ворот</a></h3></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="faq-page-container__item">
+                    <div class="faq-page-search">
+                        <form class="search">
+                            <input type="search" placeholder="Найдём всё..." class="search-input">
+                            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <ul class="faq__list">
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Как забронировать место на курсе?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Сколько человек в группе?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Сколько длится обучение ?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Возможно ли пройти обучение быстрее ?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Как забронировать место на курсе?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Сколько человек в группе? </div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Сколько длится обучение ?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Как забронировать место на курсе?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Сколько человек в группе? </div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                        <li class="faq__list-item">
+                            <header class="faq__list-header">
+                                <div class="faq__list-title">Сколько длится обучение ?</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </header>
+                            <div class="faq__list-content">— ОЧНО: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 7400 рублей. Остаток оплатить на первом очном занятии или далее оплачивать в рассрочку.
+                                — ОН-ЛАЙН: оплатить сразу всю сумму за курс, или оплатить разовый первый платеж в размере 6500 рублей если далее вы хотите оплачивать в рассрочку. </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.faq-page{
+  padding: rem(20px) 0;
+  &-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: rem(20px);
+  }
+  &-search{
+    margin-bottom: rem(20px);
+  }
+}
+@import "media";

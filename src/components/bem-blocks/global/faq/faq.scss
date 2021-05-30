@@ -11,6 +11,8 @@
     &-item{
       background-color: #fff;
       padding: rem(20px);
+      box-shadow: 0px 10px 20px rgba(218, 229, 235, 0.2);
+      border-radius: 5px;
       &.active{
         .fa-chevron-down{
           transform: rotate(-180deg);

@@ -1,0 +1,23 @@
+.sales{
+  padding: rem(20px) 0;
+  &-list{
+    display: grid;
+    grid-gap: rem(20px);
+    grid-template-columns: 100%;
+    &__img{
+      margin-bottom: rem(20px);
+      img{
+        display: block;
+        border-radius: 5px;
+      }
+    }
+    &__title{
+      font-weight: bold;
+      font-size: rem(18px);
+      line-height: rem(21px);
+      color: #273142;
+      margin-bottom: rem(10px);
+    }
+  }
+}
+@import "media";

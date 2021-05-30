@@ -1,0 +1,17 @@
+@screen 2xl {
+  .sales{
+    padding: rem(40px) 0;
+    &-list{
+      grid-gap: rem(30px);
+      grid-template-columns: repeat(2,1fr);
+      &__img{
+        margin-bottom: rem(30px);
+      }
+      &__title{
+        font-size: rem(24px);
+        line-height: rem(28px);
+        margin-bottom: rem(20px);
+      }
+    }
+  }
+}

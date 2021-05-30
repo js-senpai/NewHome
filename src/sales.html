@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner sales-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Информация',
+                breadcrumbItemThird: 'Акции и скидки'
+                })
+                <h1 class="sales-banner__title">Акции и скидки</h1>
+                <div class="sales-banner__description">
+                    <p>Компания STOREHOUSE предлагает услуги по порошковой покраске металла и металлоконструкций в Киеве. У нас доступен большой выбор цветов по шкале RAL (около 250). В своей работе используем порошковые краски известных, отлично зарекомендовавших себя европейских производителей.
+                        Возьмите во внимание и то, что кроме покраски металлоизделий компания занимается и металлообработкой. Так что, имея на руках только чертежи, мы можем создать и покрасить для вас изделие любой формы. Благодаря собственному оборудованию и профессиональным навыкам нашего персонала мы сделаем для вас «конфету».
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sales">
+        <div class="container">
+            <ul class="sales-list">
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-1.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">ПОЛУЧИТЕ П-ОБРАЗНУЮ ПЛАНКУ НА ЗАБОР ИЗ ПРОФНАСТИЛА</h2>
+                    <div class="sales-list__description">П-образная планка изготовлена из отечественного металла, как и сам профнастил (производство НЛМК). Планка добавляет конструкции жесткости, защищает верхнюю кромку листа от осадков, придает эстетичный внешний вид. Благодаря ей забор обретает более законченный внешний вид. * при заказе от 70 п.м.</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-2.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">ПОЛУЧИТЕ В ПОДАРОК КОВАНУЮ ЛАВОЧКУ</h2>
+                    <div class="sales-list__description">Благодаря эстетичному внешнему виду такая лавочка гармонично впишется в интерьер Вашего участка и станет Ваш надежным другом и опорой. * при заказе от 100 п.м.</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-3.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">ПОЛУЧИТЕ ЗАБУТОВКУ ЩЕБНЕМ СО СКИДКОЙ 80%</h2>
+                    <div class="sales-list__description">Это делается для того, чтобы ваши столбы стояли ровно на пучинистых грунтах нашей области. Пучинистый грунт способен впитывать в себя и накапливать влагу, а затем при морозах расширяться и двигать всё, в нём находящееся, в том числе столбы. Щебень же влагу не впитывает, и при промораживании окружающего грунта лишь будет сам двигаться в лунке</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-4.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">Получите бесплатно запорную фурнитуру на ворота</h2>
+                    <div class="sales-list__description">Закажите забор в компании «Доступные заборы» и мы бесплатно установим на Ваши ворота и калитку всю запорную фурнитуру: на воротах будут установлены нижние стопоры, изнутри будет установлено запирающееся устройство «Гусь» с проушинами для замка, на калитке будут установлены ручки, снаружи будут установлены проушины для замка</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-5.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">ПОЛУЧИТЕ П-ОБРАЗНУЮ ПЛАНКУ НА ЗАБОР ИЗ ПРОФНАСТИЛА</h2>
+                    <div class="sales-list__description">П-образная планка изготовлена из отечественного металла, как и сам профнастил (производство НЛМК). Планка добавляет конструкции жесткости, защищает верхнюю кромку листа от осадков, придает эстетичный внешний вид. Благодаря ей забор обретает более законченный внешний вид. * при заказе от 70 п.м.</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-6.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">ПОЛУЧИТЕ В ПОДАРОК КОВАНУЮ ЛАВОЧКУ</h2>
+                    <div class="sales-list__description">Благодаря эстетичному внешнему виду такая лавочка гармонично впишется в интерьер Вашего участка и станет Ваш надежным другом и опорой. * при заказе от 100 п.м.</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-7.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">ПОЛУЧИТЕ ЗАБУТОВКУ ЩЕБНЕМ СО СКИДКОЙ 80%</h2>
+                    <div class="sales-list__description">Это делается для того, чтобы ваши столбы стояли ровно на пучинистых грунтах нашей области. Пучинистый грунт способен впитывать в себя и накапливать влагу, а затем при морозах расширяться и двигать всё, в нём находящееся, в том числе столбы. Щебень же влагу не впитывает, и при промораживании окружающего грунта лишь будет сам двигаться в лунке</div>
+                </li>
+                <li class="sales-list__item">
+                    <div class="sales-list__img">
+                        <img data-src="img/sales/item-8.jpg" class="lazy" alt="sales">
+                    </div>
+                    <h2 class="sales-list__title">Получите бесплатно запорную фурнитуру на ворота</h2>
+                    <div class="sales-list__description">Закажите забор в компании «Доступные заборы» и мы бесплатно установим на Ваши ворота и калитку всю запорную фурнитуру: на воротах будут установлены нижние стопоры, изнутри будет установлено запирающееся устройство «Гусь» с проушинами для замка, на калитке будут установлены ручки, снаружи будут установлены проушины для замка</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

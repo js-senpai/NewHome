@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner payments-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Информация',
+                breadcrumbItemThird: 'Оплата'
+                })
+                <h1 class="payments-banner__title">Оплата</h1>
+                <div class="payments-banner__description">
+                    <p>Компания STOREHOUSE предлагает услуги по порошковой покраске металла и металлоконструкций в Киеве. У нас доступен большой выбор цветов по шкале RAL (около 250). В своей работе используем порошковые краски известных, отлично зарекомендовавших себя европейских производителей.
+                        Возьмите во внимание и то, что кроме покраски металлоизделий компания занимается и металлообработкой. Так что, имея на руках только чертежи, мы можем создать и покрасить для вас изделие любой формы. Благодаря собственному оборудованию и профессиональным навыкам нашего персонала мы сделаем для вас «конфету».</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="payments-steps">
+        <div class="container">
+            <h2 class="payments-steps__title">Порядок оплаты</h2>
+            <ul class="steps-list steps-list--slider">
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Вы оставляете заявку на сайте или по бесплатной линии
+                        <a href="tel:88007073501">8 (800) 707-35-01</a>
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Специалист связывается с Вами для уточнения деталей и выставляет счет на оплату согласно заявке.
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Вы проверяете и оплачиваете счет прямо на сайте без комиссий, либо по реквизитам в счете.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Производство заказа за 1 день! Тщательная упаковка груза по местам.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Отправка транспортной компанией или самовывоз из ближайшего филиала сети!</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="payments-info">
+        <div class="container payments-info__container">
+            <div class="payments-info__container-item">
+                Компания STOREHOUSE предлагает услуги по порошковой покраске металла и металлоконструкций в Киеве. У нас доступен большой выбор цветов по шкале RAL (около 250). В своей работе используем порошковые краски известных, отлично зарекомендовавших себя европейских производителей.
+                Возьмите во внимание и то, что кроме покраски металлоизделий компания занимается и металлообработкой. Так что, имея на руках только чертежи, мы можем создать и покрасить для вас изделие любой формы. Благодаря собственному оборудованию и профессиональным навыкам нашего персонала мы сделаем для вас «конфету».
+            </div>
+            <div class="payments-info__container-item">
+                @@include('components/bem-blocks/global/actions-blocks/master-block/master-block.html')
+            </div>
+        </div>
+    </section>
+    <section class="payments-ways">
+        <div class="container">
+            <h2 class="payments-ways__title">Способы оплаты</h2>
+            <ul class="payments-ways__list">
+                <li class="payments-ways__list-item">
+                    <header class="payments-ways__list-header">
+                        <div class="payments-ways__list-img">
+                            <img data-src="img/global/advantages/item-1.svg" class="lazy" alt="ways">
+                        </div>
+                        <div class="payments-ways__list-title">Наличная</div>
+                    </header>
+                    <div class="payments-ways__list-content">Оплата наличными при получении товара</div>
+                </li>
+                <li class="payments-ways__list-item">
+                    <header class="payments-ways__list-header">
+                        <div class="payments-ways__list-img">
+                            <img data-src="img/global/advantages/item-2.svg" class="lazy" alt="ways">
+                        </div>
+                        <div class="payments-ways__list-title">Безналичными для юридических лиц</div>
+                    </header>
+                    <div class="payments-ways__list-content">Оплата по безналичному расчету производится в кассе отделения любого банка или с расчетного счета Вашей фирмы</div>
+                </li>
+                <li class="payments-ways__list-item">
+                    <header class="payments-ways__list-header">
+                        <div class="payments-ways__list-img">
+                            <img data-src="img/global/advantages/item-3.svg" class="lazy" alt="ways">
+                        </div>
+                        <div class="payments-ways__list-title">Безналичными для юридических лиц</div>
+                    </header>
+                    <div class="payments-ways__list-content">Оплата по безналичному расчету производится в кассе отделения любого банка или с расчетного счета Вашей фирмы</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="payments-variants">
+        <div class="container payments-variants__container">
+            <div class="payments-variants__item">
+                <h2 class="payments-variants__title">Оплата наличными</h2>
+                <div class="payments-variants__content">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                    предлагать утеротоники для профилактики ПРК;</div>
+            </div>
+            <div class="payments-variants__item">
+                <h2 class="payments-variants__title">Оплата банковской картой</h2>
+                <div class="payments-variants__content">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                    предлагать утеротоники для профилактики ПРК;</div>
+                <ul class="payments-variants__banks">
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-1.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-2.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-3.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-4.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-5.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-6.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-7.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-8.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-9.jpg" alt="bank"></li>
+                    <li class="payments-variants__banks-item"><img class="lazy" data-src="img/payments/banks/item-10.jpg" alt="bank"></li>
+                </ul>
+            </div>
+            <div class="payments-variants__item">
+                <h2 class="payments-variants__title">Электронные платежы</h2>
+                <div class="payments-variants__content">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                    предлагать утеротоники для профилактики ПРК;</div>
+                <ul class="payments-variants__internet">
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-1.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-2.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-3.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-4.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-5.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-6.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-7.jpg" alt=""></li>
+                    <li class="payments-variants__internet-item"><img src="img/payments/internet/item-8.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="payments-variants__item">
+                <h2 class="payments-variants__title">Банковский перевод</h2>
+                <div class="payments-variants__content">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                    предлагать утеротоники для профилактики ПРК;</div>
+                <ul class="payments-variants__transfer">
+                    <li class="payments-variants__transfer-item">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                        предлагать утеротоники для профилактики ПРК;</li>
+                    <li class="payments-variants__transfer-item">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                        предлагать утеротоники для профилактики ПРК;</li>
+                    <li class="payments-variants__transfer-item">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                        предлагать утеротоники для профилактики ПРК;</li>
+                    <li class="payments-variants__transfer-item">Собственный вклад каждого компонента «активного ведения третьего периода родов» рассматривался в свете новых доступных доказательств, после чего были сформулированы соответствующие рекомендации. Всем рожающим женщинам в третьем периоде родов следует
+                        предлагать утеротоники для профилактики ПРК;</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

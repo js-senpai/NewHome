@@ -25,17 +25,25 @@
     &-item{
       display: grid;
       grid-template-columns: 5px 1fr;
-      grid-gap:   rem(13px);
+      grid-gap:  rem(13px);
       align-items: center;
       i{
         color: #ADB6C6;
         font-size: rem(12px);
+      }
+      &.active{
+        font-weight: bold;
+        .page-nav__list-title{
+          border: 1px solid var(--yellow-color);
+        }
       }
     }
     &-title{
       font-size: rem(12px);
       line-height: rem(32px);
       font-weight: normal;
+      display: block;
+      width: max-content;
       margin-bottom: 0;
       color: #525A68;
     }

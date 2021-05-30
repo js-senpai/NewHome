@@ -1,0 +1,85 @@
+@screen 2xl {
+  .payments{
+    &-steps{
+      background-color: #fff;
+      padding: rem(40px) 0;
+      &__title{
+        margin-bottom: rem(30px);
+      }
+    }
+    &-info{
+      padding: rem(40px) 0;
+      &__container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: rem(30px);
+      }
+    }
+    &-ways{
+      padding: rem(70px) 0 rem(60px) 0;
+      background-color: var(--grey-color);
+      &__title{
+        margin-bottom: rem(30px);
+      }
+      &__list{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: rem(30px);
+        &-item{
+          padding: rem(30px);
+        }
+        &-header{
+          grid-template-columns: 100%;
+          img{
+            display: block;
+            width: rem(50px);
+            height: rem(50px);
+          }
+        }
+        &-title{
+          font-size: rem(18px);
+          line-height: rem(28px);
+        }
+        &-content{
+          color: #595959;
+        }
+      }
+    }
+    &-variants{
+      padding: rem(70px) 0;
+      &__container{
+        grid-gap: rem(30px);
+      }
+      &__title{
+        font-size: rem(36px);
+        line-height: rem(42px);
+        margin-bottom: rem(30px);
+      }
+      &__content{
+        margin-bottom: rem(30px);
+      }
+      &__banks,&__internet{
+        justify-content: space-between;
+      }
+      &__banks{
+        grid-template-columns: repeat(5,1fr);
+      }
+      &__internet{
+        grid-template-columns: repeat(8,1fr);
+      }
+      &__transfer{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        grid-gap: rem(50px);
+        &-item{
+          display: grid;
+          grid-template-columns: rem(80px) 1fr;
+          grid-gap: rem(30px);
+          &::before{
+            font-size: rem(96px);
+            line-height: rem(113px);
+          }
+        }
+      }
+    }
+  }
+}

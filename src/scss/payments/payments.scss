@@ -1,0 +1,101 @@
+.payments{
+  &-steps{
+    background-color: var(--grey-color);
+    padding: rem(20px) 0;
+    &__title{
+      margin-bottom: rem(20px);
+    }
+  }
+  &-info{
+    padding: rem(20px) 0;
+    &__container{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+    }
+  }
+  &-ways{
+    padding: rem(20px) 0;
+    &__title{
+      margin-bottom: rem(20px);
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+      &-item{
+        padding: rem(20px);
+        background-color: #FFFFFF;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      &-header{
+        display: grid;
+        grid-template-columns: rem(40px) 1fr;
+        grid-gap: rem(20px);
+        margin-bottom: rem(20px);
+        img{
+          display: block;
+          width: rem(40px);
+          height: rem(40px);
+        }
+      }
+      &-title{
+        font-weight: bold;
+        font-size: rem(14px);
+        line-height: rem(20px);
+        color: #000000;
+      }
+      &-content{
+        color: #595959;
+      }
+    }
+  }
+  &-variants{
+     padding: rem(20px) 0;
+     &__container{
+       display: grid;
+       grid-template-columns: 100%;
+       grid-gap: rem(20px);
+     }
+     &__title{
+       font-size: rem(24px);
+       line-height: rem(28px);
+       color: #525A68;
+       margin-bottom: rem(20px);
+     }
+     &__content{
+       margin-bottom: rem(20px);
+     }
+     &__banks,&__internet{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       justify-content: center;
+       grid-gap: rem(20px);
+       align-items: center;
+       img{
+         display: block;
+       }
+     }
+     &__transfer{
+       display: grid;
+       grid-template-columns: 100%;
+       grid-gap: rem(20px);
+       counter-reset: transfer;
+       &-item{
+         display: grid;
+         grid-template-columns: rem(30px) 1fr;
+         grid-gap: rem(7px);
+         &::before{
+           counter-increment: transfer;
+           content: counter(transfer);
+           font-weight: bold;
+           font-size: rem(48px);
+           line-height: rem(50px);
+           color: var(--yellow-color);
+         }
+       }
+     }
+   }
+}
+@import "media";

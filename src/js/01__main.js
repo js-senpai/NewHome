@@ -3,6 +3,15 @@ const lazyLoadInstance = new LazyLoad({
 });
 (function ($){
     $(document).ready(function (){
+        //Scroll to
+        const scrollTo = (elem,attr) => {
+            $(elem).on("click", function () {
+                let anchor = $(this).attr(attr);
+                $('html, body').stop().animate({
+                    scrollTop: $(`${anchor}`).offset().top
+                }, 1500);
+            });
+        };
         //Mobile slider
         const mobileSlider = ({mobileFunc,descFunc,mobileWidth = 880,elemClass = ''}) =>{
             if ($(window).width() <= mobileWidth) {
@@ -837,6 +846,32 @@ const lazyLoadInstance = new LazyLoad({
         // Blog
         if($('.blog-page-header__info-remind').length){
             openPopup('.blog-page-header__info-remind','.popup-blog')
+        }
+        // Blog page
+        if($('.blog-page-nav__list').length){
+            const getTitles = $('.blog-page-content h1,.blog-page-content h2,.blog-page-content h3,.blog-page-content h4,.blog-page-content h5,.blog-page-content h6')
+            if(getTitles.length){
+                let count = 0;
+                const createFragment = document.createDocumentFragment()
+                getTitles.each(function () {
+                    const createItem = document.createElement('li')
+                    createItem.classList.add('blog-page-nav__list-item')
+                    const createLink = document.createElement('a')
+                    $(this).attr('id',`title-${count}`)
+                    createLink.textContent = $(this).text()
+                    createLink.setAttribute('href',`#title-${count}`)
+                    createItem.append(createLink)
+                    createFragment.append(createItem)
+                    count++
+                })
+                document.querySelector('.blog-page-nav__list').append(createFragment)
+                scrollTo('.blog-page-nav__list a','href')
+            }
+        }
+        if($('.blog-page-nav__wrapper').length){
+            $('.blog-page-nav__wrapper').click(function (){
+                $(this).toggleClass('active')
+            })
         }
     })
 })(jQuery)

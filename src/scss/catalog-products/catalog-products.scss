@@ -1,5 +1,6 @@
 .catalog-product{
   &__header{
+    padding-top: rem(20px);
     display: grid;
     grid-template-columns: rem(175px) max-content;
     grid-gap: rem(20px);

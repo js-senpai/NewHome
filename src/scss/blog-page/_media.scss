@@ -58,7 +58,112 @@
             color: #fff;
           }
         }
-
+      }
+    }
+    &-nav{
+      p:not(:last-child),h1,h2,h3,h4,h5,h6,ol,ul,li{
+        margin-bottom: rem(30px);
+      }
+      &__container{
+        grid-template-columns: 1fr 2fr;
+        grid-gap: rem(30px);
+      }
+      &__wrapper{
+        margin-left: 0;
+        margin-right: 0;
+        padding: rem(30px);
+        &.active{
+          i{
+            transform: rotate(-180deg);
+          }
+          .blog-page-nav__list{
+            display: block;
+          }
+        }
+      }
+      &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+          transition: all 500ms ease-in-out;
+        }
+        &-title{
+          font-size: rem(18px);
+          line-height: rem(30px);
+        }
+      }
+      &__list{
+        padding-top: rem(20px);
+      }
+    }
+    &-content{
+      padding-bottom: rem(50px);
+      p,h1,h2,h3,h4,h5,h6,li,blockquote,table{
+        margin-bottom: rem(30px);
+      }
+      blockquote{
+        padding: rem(30px);
+        grid-template-columns: 40px 1fr;
+        grid-gap: rem(40px);
+      }
+      ul:not([class]){
+        padding-left: 0;
+        li{
+          grid-gap: rem(16px);
+          &::before{
+            margin-top: rem(8px);
+          }
+        }
+      }
+      ol:not([class]){
+        li{
+          grid-template-columns: rem(35px) 1fr;
+          grid-gap: rem(20px);
+          &::before{
+            height: rem(35px);
+            font-size: rem(18px);
+            line-height: rem(30px);
+            margin-top: rem(3px);
+          }
+        }
+      }
+      &__table{
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: auto;
+      }
+      &__other-page{
+        margin-bottom: rem(30px);
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: rem(30px);
+        align-items: center;
+        &__img{
+          img{
+            height: rem(140px);
+          }
+        }
+        &__content{
+          &-title{
+            font-size: rem(48px);
+            line-height: rem(56px);
+          }
+        }
+      }
+    }
+    &-rate{
+      &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(30px);
+      }
+      &__socials{
+        &-title{
+          font-size: rem(24px);
+          line-height: rem(28px);
+          margin-bottom: rem(14px);
+        }
       }
     }
   }

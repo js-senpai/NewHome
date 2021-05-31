@@ -1,0 +1,55 @@
+.refund{
+  &-steps{
+    padding: rem(20px) 0;
+    &__title{
+      margin-bottom: rem(20px);
+    }
+  }
+  &-info{
+    padding: rem(20px) 0;
+    background-color: var(--grey-color);
+    &__container{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+    }
+    &__section{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: rem(20px);
+      &-title,p:not(:last-child){
+        margin-bottom: rem(20px);
+      }
+      &-form{
+        margin-left: -2rem;
+        margin-right: -2rem;
+        background-color: #fff;
+        box-shadow: 0px 0px 50px #DAE5EB;
+        border-radius: 3px;
+        padding: rem(20px);
+        &__title{
+          font-weight: bold;
+          font-size: rem(18px);
+          line-height: rem(21px);
+          color: #273142;
+          margin-bottom: rem(10px);
+        }
+        &__content{
+          margin-bottom: rem(10px);
+        }
+        &__list{
+          margin-bottom: rem(20px);
+          display: grid;
+          grid-template-columns: 100%;
+          grid-gap: rem(20px);
+          &-item{
+            font-weight: 500;
+            font-size: rem(18px);
+            line-height: rem(21px);
+          }
+        }
+      }
+    }
+  }
+}
+@import "media";

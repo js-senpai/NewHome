@@ -1,0 +1,46 @@
+@screen 2xl {
+  .refund{
+    &-steps{
+      padding: rem(40px) 0;
+      &__title{
+        margin-bottom: rem(30px);
+      }
+    }
+    &-info{
+      padding: 0;
+      &__container{
+        grid-gap: 0;
+      }
+      &__item{
+        background-color: #fff;
+        &:first-child{
+          background-color: var(--grey-color);
+        }
+      }
+      &__section{
+        grid-template-columns: 2fr 1fr;
+        grid-gap: rem(30px);
+        padding-top: rem(70px);
+        padding-bottom: rem(70px);
+        &-title,p:not(:last-child){
+          margin-bottom: rem(40px);
+        }
+        &-form{
+          margin-left: 0;
+          margin-right: 0;
+          padding: rem(30px);
+          &__title{
+            margin-bottom: rem(18px);
+          }
+          &__content{
+            margin-bottom: rem(55px);
+          }
+          &__list{
+            grid-template-columns: 100%;
+            grid-gap: rem(30px);
+          }
+        }
+      }
+    }
+  }
+}

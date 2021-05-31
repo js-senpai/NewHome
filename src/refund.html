@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner refund-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Информация',
+                breadcrumbItemThird: 'Возврат денег'
+                })
+                <h1 class="refund-banner__title">Возврат денег</h1>
+                <div class="refund-banner__description">
+                    <p>Компания STOREHOUSE предлагает услуги по порошковой покраске металла и металлоконструкций в Киеве. У нас доступен большой выбор цветов по шкале RAL (около 250). В своей работе используем порошковые краски известных, отлично зарекомендовавших себя европейских производителей.
+                        Возьмите во внимание и то, что кроме покраски металлоизделий компания занимается и металлообработкой. Так что, имея на руках только чертежи, мы можем создать и покрасить для вас изделие любой формы. Благодаря собственному оборудованию и профессиональным навыкам нашего персонала мы сделаем для вас «конфету».
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="refund-steps">
+        <div class="container">
+            <ul class="steps-list steps-list--slider">
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Вы оставляете заявку на сайте или по бесплатной линии
+                        <a href="tel:88007073501">8 (800) 707-35-01</a>
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        Специалист связывается с Вами для уточнения деталей и выставляет счет на оплату согласно заявке.
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Вы проверяете и оплачиваете счет прямо на сайте без комиссий, либо по реквизитам в счете.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Производство заказа за 1 день! Тщательная упаковка груза по местам.</div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">Отправка транспортной компанией или самовывоз из ближайшего филиала сети!</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="refund-info">
+        <div class="refund-info__container">
+            <div class="refund-info__item">
+                <div class="container refund-info__section">
+                    <div class="refund-info__section-item">
+                        <h2 class="refund-info__section-title">Возврат наличными денежными средствами</h2>
+                        <div class="refund-info__section-content">
+                            <p>Равным образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации модели развития. Равным образом рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+                            <p>Не следует, однако забывать, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Равным образом консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <p>Идейные соображения высшего порядка, а также укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                        </div>
+                    </div>
+                    <div class="refund-info__section-item">
+                        <div class="refund-info__section-form">
+                            <div class="refund-info__section-form__title">Заявка на возврат средств</div>
+                            <div class="refund-info__section-form__content">Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам</div>
+                            <ul class="contact-list refund-info__section-form__list">
+                                <li class="contact-list__item rated-info__section-form__list-item">
+                                    <div class="contact-list__icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-list__info">
+                                        <div class="contact-list__info-link">Челябинск, ул. Троицкая 1в/2</div>
+                                    </div>
+                                </li>
+                                <li class="contact-list__item rated-info__section-form__list-item">
+                                    <div class="contact-list__icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="contact-list__info">
+                                        <div class="contact-list__info-link">10:00–20:00, без выходных</div>
+                                    </div>
+                                </li>
+                                <li class="contact-list__item rated-info__section-form__list-item">
+                                    <div class="contact-list__icon">
+                                        <i class="far fa-envelope-open"></i>
+                                    </div>
+                                    <div class="contact-list__info">
+                                        <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn rated-info__section-form__btn">Скачать бланк заявления</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="refund-info__item">
+                <div class="container refund-info__section">
+                    <div class="refund-info__section-item">
+                        <h2 class="refund-info__section-title">Возврат при оплате другими способами</h2>
+                        <div class="refund-info__section-content">
+                            <p>Равным образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации модели развития. Равным образом рамки и место обучения кадров требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+                            <p>Не следует, однако забывать, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Равным образом консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <p>Идейные соображения высшего порядка, а также укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                        </div>
+                    </div>
+                    <div class="refund-info__section-item">
+                        <div class="refund-info__section-form">
+                            <div class="refund-info__section-form__title">Заявка на возврат средств</div>
+                            <div class="refund-info__section-form__content">Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам</div>
+                            <ul class="contact-list refund-info__section-form__list">
+                                <li class="contact-list__item rated-info__section-form__list-item">
+                                    <div class="contact-list__icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-list__info">
+                                        <div class="contact-list__info-link">Челябинск, ул. Троицкая 1в/2</div>
+                                    </div>
+                                </li>
+                                <li class="contact-list__item rated-info__section-form__list-item">
+                                    <div class="contact-list__icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                    <div class="contact-list__info">
+                                        <div class="contact-list__info-link">10:00–20:00, без выходных</div>
+                                    </div>
+                                </li>
+                                <li class="contact-list__item rated-info__section-form__list-item">
+                                    <div class="contact-list__icon">
+                                        <i class="far fa-envelope-open"></i>
+                                    </div>
+                                    <div class="contact-list__info">
+                                        <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn rated-info__section-form__btn">Скачать бланк заявления</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    'class': 'catalog-metal-subscribe'
+    })
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

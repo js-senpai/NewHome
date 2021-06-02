@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+@@include('components/page/_2_header.html')
+<main class="main">
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav-toggle/catalog-nav-toggle.html')
+    @@include('components/bem-blocks/global/catalog-nav/catalog-nav.html',{
+    class: 'catalog-navigation__mobile'
+    })
+    <section class="catalog-banner company-banner">
+        <div class="container">
+            <div class="catalog-banner__wrapper">
+                @@include('components/bem-blocks/global/breadcrumbs/breadcrumbs.html',{
+                breadcrumbItemFirst: 'Главная',
+                breadcrumbItemSecond: 'Информация',
+                breadcrumbItemThird: 'О компании'
+                })
+                <h1 class="company-banner__title">О компании</h1>
+                <div class="company-banner__description">
+                    <p>Компания «Новый Дом» Основана в 2014г. Наша компания специализируется на производстве заборов Жалюзи и Евроштакетника. Мы обладаем большим опытом деятельности на рынке заборов-конструкторов и используем современное оборудование для производства, благодаря этому мы предлагаем клиентам лучшие товары по оптимальным ценам. Для изготовления продукции, на производстве используется только качественное сырьё из оцинкованной стали и с полимерным покрытием от импортных поставщиков и ведущих Российских металлургических комбинатов. Новейшие разработки используемые при создании всех типов товаров, постоянный контроль качества готовых изделий, позволяет нам выпускать только качественную продукцию.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="company-refund">
+        <div class="container">
+            <h2 class="company-refund__title">В каких случаях можно сделать возврат</h2>
+            <ul class="steps-list steps-list--slider">
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        <b>Опыт более 15 лет на рынке.</b> В том числе большой опыт прогнозирования и решения неочевидных до старта трудностей, которые могут повлиять на сроки и качество выполняемых работ.
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content">
+                        <b>Комплексное решение задачи:</b> проектирование, производство оборудования и металлоконструкций, строительство – все в одном лице.
+                    </div>
+                </li>
+                <li class="steps-list__item">
+                    <div class="steps-list__content"><b>Бесплатно!</b> Выезд к клиенту, подготовка сметы, 3D-визуализация объекта, технологическая схема и схема привязки объекта к местности.</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/portfolio-block/portfolio-block.html',{
+      class: 'white-bg'
+    })
+    <div class="company-portfolio-info">
+        <div class="container">
+            <p>Компания «Новый Дом» Основана в 2014г. Наша компания специализируется на производстве заборов Жалюзи и Евроштакетника. Мы обладаем большим опытом деятельности на рынке заборов-конструкторов и используем современное оборудование для производства, благодаря этому мы предлагаем клиентам лучшие товары по оптимальным ценам. Для изготовления продукции, на производстве используется только качественное сырьё из оцинкованной стали и с полимерным покрытием от импортных поставщиков и ведущих Российских металлургических комбинатов. Новейшие разработки используемые при создании всех типов товаров, постоянный контроль качества готовых изделий, позволяет нам выпускать только качественную продукцию.</p>
+        </div>
+    </div>
+    <section class="company-goals">
+        <div class="container">
+            <h2 class="company-goals__title font-normal"><span class="font-bold">Наши цели</span> и ценности</h2>
+            <div class="company-goals__description">Монтаж забора на участке осуществляется в следующей последовательности: Строительство фундамента (на плывучих и слабых грунтах). Разметка площадки с установкой колышков на месте будущего монтажа опорных столбов. При работе с грунтом используются буры, позволяющие выполнить качественное заглубление опоры.</div>
+            <div class="company-goals__container">
+                <div class="company-goals__container-item">
+                    <img data-src="img/company/goals/item-1.jpg" alt="goals" class="company-goals__img lazy">
+                </div>
+                <div class="company-goals__container-item">
+                    <ul class="checked-list">
+                        <li class="checked-list__item"><i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Надежность.</b> Металлический секционный забор служит защитой участка от любопытных глаз и посторонних. В отличие от глухих секций еврожалюзи имеют низкую парусность, а опоры с квадратным сечением обеспечивают устойчивость конструкции к боковым нагрузкам. Такое ограждение устоит даже при сильных порывах ветра, не сломается и не погнется.</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Устойчивость к внешним факторам.</b> Оцинкованная сталь с полимерным покрытием не боится коррозии, перепадов температуры, воздействия влаги и химически активных сред. Забор еврожалюзи сохраняет первоначальный вид в течение всего срока эксплуатации.</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Эстетичность.</b> Заборы с горизонтально расположенными ламелями и текстурированным покрытием выглядят красиво и аккуратно. Широкий выбор цветов и оттенков позволяет подобрать материал для забора, который будет гармонировать с отделкой фасада дома и идеально впишется в окружающий ландшафт.</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Практичность.</b> Ограждения не нужно каждый год красить — покрытие не выгорает на солнце, не шелушится от дождя и мороза. Достаточно по мере необходимости смывать пыль и грязь с поверхности. Делать это можно обычной водой из шланга</div>
+                        </li>
+                        <li class="checked-list__item">
+                            <i class="far fa-check-circle"></i>
+                            <div class="checked-list__content"><b>Ремонтопригодность.</b> В случае деформации нескольких ламелей не нужно менять всю секцию. Достаточно открутить саморезы на нужном участке, убрать погнутые планки, поставить новые и закрутить саморезы.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="company-years">
+        <div class="container">
+            <div class="company-years__container">
+                <div class="company-years__container-item">
+                    <h2 class="company-years__title">2005-2008</h2>
+                    <div class="company-years__content">
+                        <p>Группа Компаний «Эксперт-Агро» (ООО «Эксперт-Агро», ООО «Эксперт-Инжиниринг» и др.) с 2005 года специализируется на оказании полного комплекса услуг по проектированию и строительству объектов переработки и хранения зерна, а также его производных продуктов.</p>
+                    </div>
+                    <div class="company-years__advantages">
+                        <div class="company-years__advantages-title">Реализованные проекты</div>
+                        <ul>
+                            <li>Строительство и реконструкция элеваторов и зерноочистительных комплексов;</li>
+                            <li>Инженерно-техническое проектирование в промышленности и строительстве;</li>
+                            <li>Производство зерноочистительного оборудования и металлоконструкций.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company-years__container-item">
+                    <img data-src="img/company/goals/item-2.jpg" class="company-years__img lazy" alt="years">
+                </div>
+            </div>
+            <div class="company-years__container">
+                <div class="company-years__container-item">
+                    <h2 class="company-years__title">2008-2012</h2>
+                    <div class="company-years__content">
+                        <p>Группа Компаний «Эксперт-Агро» (ООО «Эксперт-Агро», ООО «Эксперт-Инжиниринг» и др.) с 2005 года специализируется на оказании полного комплекса услуг по проектированию и строительству объектов переработки и хранения зерна, а также его производных продуктов.</p>
+                    </div>
+                    <div class="company-years__advantages">
+                        <div class="company-years__advantages-title">Реализованные проекты</div>
+                        <ul>
+                            <li>Строительство и реконструкция элеваторов и зерноочистительных комплексов;</li>
+                            <li>Инженерно-техническое проектирование в промышленности и строительстве;</li>
+                            <li>Производство зерноочистительного оборудования и металлоконструкций.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company-years__container-item">
+                    <img data-src="img/company/goals/item-3.jpg" class="company-years__img lazy" alt="years">
+                </div>
+            </div>
+            <div class="company-years__container">
+                <div class="company-years__container-item">
+                    <h2 class="company-years__title">2008-2012</h2>
+                    <div class="company-years__content">
+                        <p>Группа Компаний «Эксперт-Агро» (ООО «Эксперт-Агро», ООО «Эксперт-Инжиниринг» и др.) с 2005 года специализируется на оказании полного комплекса услуг по проектированию и строительству объектов переработки и хранения зерна, а также его производных продуктов.</p>
+                    </div>
+                    <div class="company-years__advantages">
+                        <div class="company-years__advantages-title">Реализованные проекты</div>
+                        <ul>
+                            <li>Строительство и реконструкция элеваторов и зерноочистительных комплексов;</li>
+                            <li>Инженерно-техническое проектирование в промышленности и строительстве;</li>
+                            <li>Производство зерноочистительного оборудования и металлоконструкций.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company-years__container-item">
+                    <img data-src="img/company/goals/item-4.jpg" class="company-years__img lazy" alt="years">
+                </div>
+            </div>
+            <div class="company-years__container">
+                <div class="company-years__container-item">
+                    <h2 class="company-years__title">2012-2016</h2>
+                    <div class="company-years__content">
+                        <p>Группа Компаний «Эксперт-Агро» (ООО «Эксперт-Агро», ООО «Эксперт-Инжиниринг» и др.) с 2005 года специализируется на оказании полного комплекса услуг по проектированию и строительству объектов переработки и хранения зерна, а также его производных продуктов.</p>
+                    </div>
+                    <div class="company-years__advantages">
+                        <div class="company-years__advantages-title">Реализованные проекты</div>
+                        <ul>
+                            <li>Строительство и реконструкция элеваторов и зерноочистительных комплексов;</li>
+                            <li>Инженерно-техническое проектирование в промышленности и строительстве;</li>
+                            <li>Производство зерноочистительного оборудования и металлоконструкций.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company-years__container-item">
+                    <img data-src="img/company/goals/item-5.jpg" class="company-years__img lazy" alt="years">
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/video-block/video-block.html')
+    @@include('components/bem-blocks/global/stages-cooperation/stages-cooperation.html')
+    <section class="company-partners">
+        <div class="container">
+            <h2 class="company-partners__title font-normal"><span class="font-bold">Наши</span> партнеры</h2>
+            <img data-src="img/global/reviews/partners.png" class="company-partners__img company-partners__img--desc lazy" alt="lazy">
+            <img data-src="img/global/reviews/mobile-partners.png" class="company-partners__img company-partners__img--mobile lazy" alt="lazy">
+        </div>
+    </section>
+    <section class="company-employers">
+        <div class="container">
+            <header class="company-employers__header">
+                <h2 class="company-employers__title font-normal"><span class="font-bold">Наши </span>сотрудники</h2>
+                <div class="company-employers__list-nav"></div>
+            </header>
+            <ul class="company-employers__list">
+                <li class="company-employers__list-item">
+                    <div class="company-employers__list-container">
+                        <div class="company-employers__list-img">
+                            <img data-src="img/company/employers/item-1.jpg" class="lazy" alt="employee">
+                        </div>
+                        <div class="company-employers__list-content">
+                            <div class="company-employers__list-name">Константин Скобеев</div>
+                            <div class="company-employers__list-position">Основатель компании</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="company-employers__list-item">
+                    <div class="company-employers__list-container">
+                        <div class="company-employers__list-img">
+                            <img data-src="img/company/employers/item-2.jpg" class="lazy" alt="employee">
+                        </div>
+                        <div class="company-employers__list-content">
+                            <div class="company-employers__list-name">Константин Скобеев</div>
+                            <div class="company-employers__list-position">Основатель компании</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="company-employers__list-item">
+                    <div class="company-employers__list-container">
+                        <div class="company-employers__list-img">
+                            <img data-src="img/company/employers/item-3.jpg" class="lazy" alt="employee">
+                        </div>
+                        <div class="company-employers__list-content">
+                            <div class="company-employers__list-name">Константин Скобеев</div>
+                            <div class="company-employers__list-position">Основатель компании</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="company-employers__list-item">
+                    <div class="company-employers__list-container">
+                        <div class="company-employers__list-img">
+                            <img data-src="img/company/employers/item-4.jpg" class="lazy" alt="employee">
+                        </div>
+                        <div class="company-employers__list-content">
+                            <div class="company-employers__list-name">Константин Скобеев</div>
+                            <div class="company-employers__list-position">Основатель компании</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="company-employers__list-item">
+                    <div class="company-employers__list-container">
+                        <div class="company-employers__list-img">
+                            <img data-src="img/company/employers/item-5.jpg" class="lazy" alt="employee">
+                        </div>
+                        <div class="company-employers__list-content">
+                            <div class="company-employers__list-name">Константин Скобеев</div>
+                            <div class="company-employers__list-position">Основатель компании</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="company-employers__list-item">
+                    <div class="company-employers__list-container">
+                        <div class="company-employers__list-img">
+                            <img data-src="img/company/employers/item-6.jpg" class="lazy" alt="employee">
+                        </div>
+                        <div class="company-employers__list-content">
+                            <div class="company-employers__list-name">Константин Скобеев</div>
+                            <div class="company-employers__list-position">Основатель компании</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="company-requisites">
+        <div class="container">
+            <h2 class="company-requisites__title font-normal"><span class="font-bold">Наши </span>реквизиты</h2>
+            <div class="company-requisites__container">
+                <div class="company-requisites__container-item">
+                    <h3 class="company-requisites__subtitle">Реквизиты</h3>
+                    <div class="company-requisites__content">
+                        <p><b>ИНН/КПП</b> 7451432180/745101001</p>
+                        <p><b>р/с</b> 40702810010000281954 в АО "ТИНЬКОФФ БАНК"</p>
+                        <p><b>БИК</b> 044525974 кор./сч 30101810145250000974</p>
+                        <p><b>ОГРН</b> 1187456005109</p>
+                        <p><b>р/с</b> 40702810005000038009 УРАЛЬСКИЙ Ф-Л ПАО "ПРОМСВЯЗЬБАНК"</p>
+                        <p><b>БИК</b> 046577975 кор./сч 30101810500000000975</p>
+                    </div>
+                </div>
+                <div class="company-requisites__container-item">
+                    <h3 class="company-requisites__subtitle">Свидетельства</h3>
+                    <ul class="company-requisites__list">
+                        <li class="company-requisites__list-item">
+                            <a data-fancybox="gallery" href="img/company/sert/item-1.jpg">
+                                <img data-src="img/company/sert/item-1.jpg" class="lazy" alt="sert">
+                            </a>
+                        </li>
+                        <li class="company-requisites__list-item">
+                            <a data-fancybox="gallery" href="img/company/sert/item-2.jpg">
+                                <img data-src="img/company/sert/item-2.jpg" class="lazy" alt="sert">
+                            </a>
+                        </li>
+                        <li class="company-requisites__list-item">
+                            <a data-fancybox="gallery" href="img/company/sert/item-3.jpg">
+                                <img data-src="img/company/sert/item-3.jpg" class="lazy" alt="sert">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/bem-blocks/global/map/map.html')
+    @@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
+    class: 'bottom-action'
+    })
+    @@include('components/bem-blocks/global/contact-action/contact-action.html')
+    @@include('components/bem-blocks/global/our-news/our-news.html')
+</main>
+@@include('components/page/_3_footer.html')
+@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

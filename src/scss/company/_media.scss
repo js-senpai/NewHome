@@ -1,0 +1,125 @@
+@screen 2xl {
+  .company{
+    &-refund{
+      padding: rem(70px) 0;
+      &__title{
+        margin-bottom: rem(30px);
+      }
+      .steps-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
+        grid-gap: rem(30px);
+      }
+    }
+    &-info{
+      padding-bottom: rem(20px);
+    }
+    &-goals{
+      padding: rem(720px) 0;
+      &__title,&__description{
+        margin-bottom: rem(30px);
+      }
+      &__container{
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
+      }
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-years{
+      padding: rem(70px) 0;
+      &__container{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: rem(30px);
+        &:not(:last-child){
+          padding-bottom: rem(70px);
+        }
+        &:nth-child(2n+1){
+          .company-years__container-item:last-child{
+            order: -1;
+          }
+        }
+      }
+      &__title,&__content{
+        margin-bottom: rem(30px);
+      }
+      &__advantages{
+        &-title{
+          margin-bottom: rem(20px);
+        }
+        ul:not([class]){
+          padding-left: 0;
+          li{
+            grid-gap: rem(20px);
+            align-items: center;
+          }
+        }
+        &__img{
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    &-partners{
+      padding: rem(70px) 0;
+      &__title{
+        margin-bottom: rem(70px);
+      }
+      &__img{
+        &--desc{
+          display: block;
+        }
+        &--mobile{
+         display: none;
+        }
+      }
+    }
+    &-employers{
+      padding: rem(70px) 0;
+      &__header{
+        margin-bottom: rem(70px);
+        grid-template-columns: 100%;
+      }
+      &__title{
+        margin-bottom: 0;
+      }
+      &__list{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: rem(30px);
+        justify-content: space-between;
+        &-nav{
+          display: none;
+        }
+        &-container{
+          padding: rem(20px);
+        }
+      }
+    }
+    &-requisites{
+      padding-bottom: rem(70px);
+      &__title{
+        margin-bottom: rem(70px);
+      }
+      &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: rem(30px);
+      }
+      &__subtitle{
+        font-size: rem(24px);
+        line-height: rem(28px);
+        margin-bottom: rem(40px);
+      }
+      &__list{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: rem(30px);
+      }
+    }
+  }
+}

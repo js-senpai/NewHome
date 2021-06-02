@@ -873,5 +873,22 @@ const lazyLoadInstance = new LazyLoad({
                 $(this).toggleClass('active')
             })
         }
+        // Company slider
+        if($('.company-employers__list-item').length){
+            mobileSlider({mobileFunc:()=>{
+                    $('.company-employers__list').slick({
+                        arrows: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        lazyLoad: 'progressive',
+                        appendArrows: '.company-employers__list-nav',
+                        prevArrow: '<span class="slider-btn company-employers__btn company-employers__btn-left"><i class="fas fa-long-arrow-alt-left"></i></span>',
+                        nextArrow: '<span class="slider-btn company-employers__btn  company-employers__btn-right"><i class="fas fa-long-arrow-alt-right"></i></span>',
+                    })
+                },descFunc: ()=>{$('.company-employers__list').filter('.slick-initialized').slick('unslick')},mobileWidth: 1280,elemClass: '.company-employers__list'
+            })
+        }
     })
 })(jQuery)

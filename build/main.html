@@ -1,0 +1,2809 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Easy webdev startpack by budfy">
+	<meta name="keywords"
+				content="Webdev, Gulp4, html, css, js, jquery">
+	<link rel="shortcut icon"
+				href="img/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy webdev startpack - test</title>
+	<link href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+	<link href="libs/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header class="header">
+    <div class="header__top">
+        <div class="container header__top-container">
+            <div class="header__top-item">
+                <ul class="header__top-info__list">
+                    <li class="header__top-info__item choose-city">
+                        <div class="header__top-info__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="header__top-info__text">Челябинск, ул. Троицкая 1в/2</div>
+                    </li>
+                    <li class="header__top-info__item">
+                        <div class="header__top-info__icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="header__top-info__text">10:00–20:00, без выходных</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__top-item">
+                <ul class="header__top-social">
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/youtube.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/telegram.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/vk.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/insta.svg" class="lazy" alt=""></a></li>
+                    <li class="header__top-social__item"><a href="#"><img data-src="img/global/icons/facebook.svg" class="lazy" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-desktop">
+            <div class="header-desktop__middle">
+                <div class="nav-list @class">
+    <div class="nav-list__item footer-list__item">
+        <a href="#" class="logo @@class">
+    <img data-src="img/global/icons/logo.svg" class="logo__img lazy" alt="logo">
+    <div class="logo__content">
+        <div class="logo__title">новый дом</div>
+        <div class="logo__subtitle">Заборы нового поколения</div>
+    </div>
+</a>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <div class="contact-list__info-title">Ваш регион</div>
+            <div class="contact-list__info-link">Санкт-Петербург</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="far fa-envelope-open"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+            <div class="contact-list__info-title">Написать нам</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+            <div class="contact-list__info-title">Заказать звонок</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+            <div class="contact-list__info-title">бесплатно по России</div>
+        </div>
+    </div>
+    <div class="nav-list__item">
+        <div class="btn btn-action footer-btn-action btn-open-popup-call">Обратный звонок</div>
+    </div>
+</div>
+            </div>
+            <div class="header-desktop__footer">
+                <button class="btn header-desktop__catalog-btn">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                    <span>Каталог товаров</span>
+                </button>
+                <ul class="header-desktop__menu">
+                    <li class="header-desktop__menu-item">
+                        <a href="#">Наши услуги</a>
+                        <ul class="header-desktop__submenu">
+                            <li class="header-desktop__submenu-item"><a href="#">Порошковая покраска</a></li>
+                            <li class="header-desktop__submenu-item"><a href="#">Лазерная резка и гибка металла</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-desktop__menu-item"><a href="#">Калькулятор</a></li>
+                    <li class="header-desktop__menu-item"><a href="#">Цены</a></li>
+                    <li class="header-desktop__menu-item"><a href="#">Фото работ</a></li>
+                    <li class="header-desktop__menu-item"><a href="#">Компания</a></li>
+                    <li class="header-desktop__menu-item"><a href="#">Вакансии</a></li>
+                    <li class="header-desktop__menu-item"><a href="#">Статьи</a></li>
+                    <li class="header-desktop__menu-item"><a href="#">Контакты</a></li>
+                </ul>
+                <button class="header-desktop__btn-search"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-desktop__catalog">
+                <div class="header-desktop__catalog-container">
+                    <nav class="header-desktop__catalog-menu">
+                        <ul class="header-desktop__catalog-menu__list">
+                            <li class="header-desktop__catalog-menu__list-item active"><span data-catalog="#catalog-1">Заборы жалюзи</span></li>
+                            <li class="header-desktop__catalog-menu__list-item"><span data-catalog="#catalog-2">Ворота и калитки</span></li>
+                            <li class="header-desktop__catalog-menu__list-item"><span data-catalog="#catalog-3">Забор «РАНЧО»</span></li>
+                            <li class="header-desktop__catalog-menu__list-item"><span data-catalog="#catalog-4">3Д-забор</span></li>
+                            <li class="header-desktop__catalog-menu__list-item"><span data-catalog="#catalog-5">Автоматика для ворот</span></li>
+                        </ul>
+                        <a href="#" class="header-desktop__catalog-menu__link">Все заборы</a>
+                    </nav>
+                    <div class="header-desktop__catalog__nav-list">
+                        <div class="header-desktop__catalog__nav-list__item active" id="catalog-1">
+                            <div class="header-desktop__catalog-nav">
+                                <header class="header-desktop__catalog-nav__header">
+                                    <a href="#" class="header-desktop__catalog-nav__title">Заборы жалюзи</a>
+                                    <button class="header-desktop__catalog-nav__btn-close"><i class="fas fa-times"></i></button>
+                                </header>
+                                <ul class="header-desktop__catalog-nav__list">
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Металлические заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-0.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Деревянные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из пластика</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы с монолитным основанием</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Секционные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Быстровозводимые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы для дачи</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из камня</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из сэндвич панелей</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Шумозащитные заборы и экраны</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Кованые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Комби заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Рулонные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Сварные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-desktop__catalog__nav-list__item" id="catalog-2">
+                            <div class="header-desktop__catalog-nav">
+                                <header class="header-desktop__catalog-nav__header">
+                                    <div class="header-desktop__catalog-nav__title">Заборы жалюзи</div>
+                                    <button class="header-desktop__catalog-nav__btn-close"><i class="fas fa-times"></i></button>
+                                </header>
+                                <ul class="header-desktop__catalog-nav__list">
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Металлические заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-0.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Деревянные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из пластика</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы с монолитным основанием</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Секционные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Быстровозводимые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы для дачи</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из камня</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из сэндвич панелей</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Шумозащитные заборы и экраны</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Кованые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Комби заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Рулонные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Сварные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-desktop__catalog__nav-list__item" id="catalog-3">
+                            <div class="header-desktop__catalog-nav">
+                                <header class="header-desktop__catalog-nav__header">
+                                    <div class="header-desktop__catalog-nav__title">Заборы жалюзи</div>
+                                    <button class="header-desktop__catalog-nav__btn-close"><i class="fas fa-times"></i></button>
+                                </header>
+                                <ul class="header-desktop__catalog-nav__list">
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Металлические заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-0.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Деревянные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из пластика</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы с монолитным основанием</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Секционные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Быстровозводимые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы для дачи</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из камня</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из сэндвич панелей</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Шумозащитные заборы и экраны</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Кованые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Комби заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Рулонные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Сварные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-desktop__catalog__nav-list__item" id="catalog-4">
+                            <div class="header-desktop__catalog-nav">
+                                <header class="header-desktop__catalog-nav__header">
+                                    <div class="header-desktop__catalog-nav__title">Заборы жалюзи</div>
+                                    <button class="header-desktop__catalog-nav__btn-close"><i class="fas fa-times"></i></button>
+                                </header>
+                                <ul class="header-desktop__catalog-nav__list">
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Металлические заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-0.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Деревянные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из пластика</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы с монолитным основанием</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Секционные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Быстровозводимые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы для дачи</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из камня</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из сэндвич панелей</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Шумозащитные заборы и экраны</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Кованые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Комби заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Рулонные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Сварные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-desktop__catalog__nav-list__item" id="catalog-5">
+                            <div class="header-desktop__catalog-nav">
+                                <header class="header-desktop__catalog-nav__header">
+                                    <div class="header-desktop__catalog-nav__title">Заборы жалюзи</div>
+                                    <button class="header-desktop__catalog-nav__btn-close"><i class="fas fa-times"></i></button>
+                                </header>
+                                <ul class="header-desktop__catalog-nav__list">
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Металлические заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-0.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Деревянные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из пластика</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы с монолитным основанием</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Секционные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Быстровозводимые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы для дачи</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из камня</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Заборы из сэндвич панелей</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Шумозащитные заборы и экраны</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Кованые заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Комби заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Рулонные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header-desktop__catalog-nav__list-item">
+                                        <a href="#">
+                                            <div class="header-desktop__catalog-nav__list-item__title">Сварные заборы</div>
+                                            <div class="header-desktop__catalog-nav__list-item__img">
+                                                <img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="header-mobile__footer">
+                <div class="header-mobile__footer-item">
+                    <button class="mobile-btn header-mobile__btn-menu"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="header-mobile__footer-item">
+                    <a href="#" class="logo @@class">
+    <img data-src="img/global/icons/logo.svg" class="logo__img lazy" alt="logo">
+    <div class="logo__content">
+        <div class="logo__title">новый дом</div>
+        <div class="logo__subtitle">Заборы нового поколения</div>
+    </div>
+</a>
+                </div>
+                <div class="header-mobile__footer-item">
+                    <button class="mobile-btn header-mobile__btn-contact"><i class="fas fa-phone-alt"></i></button>
+                </div>
+            </div>
+            <div class="header-mobile__contact-menu">
+                <header class="header-mobile__contact-menu__header">
+                    <button class="mobile-btn header-mobile__btn-contact-close"><i class="fas fa-times"></i></button>
+                </header>
+                <div class="nav-list @class">
+    <div class="nav-list__item footer-list__item">
+        <a href="#" class="logo @@class">
+    <img data-src="img/global/icons/logo.svg" class="logo__img lazy" alt="logo">
+    <div class="logo__content">
+        <div class="logo__title">новый дом</div>
+        <div class="logo__subtitle">Заборы нового поколения</div>
+    </div>
+</a>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <div class="contact-list__info-title">Ваш регион</div>
+            <div class="contact-list__info-link">Санкт-Петербург</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="far fa-envelope-open"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+            <div class="contact-list__info-title">Написать нам</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+            <div class="contact-list__info-title">Заказать звонок</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+            <div class="contact-list__info-title">бесплатно по России</div>
+        </div>
+    </div>
+    <div class="nav-list__item">
+        <div class="btn btn-action footer-btn-action btn-open-popup-call">Обратный звонок</div>
+    </div>
+</div>
+            </div>
+            <div class="header-mobile__nav">
+                <div class="header-mobile__menu">
+                    <header class="header-mobile__nav-header header-mobile__menu-header">
+                        <div class="header-mobile__nav-header__title header-mobile__menu-header__title">Меню</div>
+                        <button class="header-mobile__nav-btn"><i class="fas fa-times"></i></button>
+                    </header>
+                    <ul class="header-mobile__menu-list">
+                        <li class="header-mobile__menu-list__item"><a href="#">Наши услуги</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Калькулятор</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Цены</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Фото работ</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Компания</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Вакансии</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Контакты</a></li>
+                        <li class="header-mobile__menu-list__item"><a href="#">Статьи</a></li>
+                    </ul>
+                </div>
+                <div class="header-mobile__search">
+                    <div class="container">
+                        <form class="search">
+                            <input type="search" placeholder="Найдём всё..." class="search-input">
+                            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-mobile__catalog">
+                        <header class="container header-mobile__nav-header header-mobile__catalog-header">
+                            <div class="header-mobile__nav-header__title header-mobile__catalog-header__title">Каталог</div>
+                            <a href="#" class="header-mobile__catalog-link">Все заборы</a>
+                        </header>
+                        <ul class="header-mobile__catalog-menu">
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Заборы жалюзи</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Ворота и калитки</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Забор «РАНЧО»</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">3Д-забор</a></li>
+                            <li class="header-mobile__catalog-menu__item"><a href="#">Автоматика для ворот</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__cities">
+            <div class="container">
+                <header class="header__cities-header">
+                    <div class="header__cities-header__title">Каталог</div>
+                    <button class="header__cities-header__btn"><i class="fas fa-times"></i></button>
+                </header>
+                <div class="header__cities-search">
+                    <form class="search">
+                        <input type="search" placeholder="Найдём всё..." class="search-input">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <ul class="header__cities-list">
+                    <li class="header__cities-list__item active"><a href="#">Москва</a></li>
+                    <li class="header__cities-list__item"><a href="#">Санкт-Петербург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Нижний Новгород</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ростов-на-Дону</a></li>
+                    <li class="header__cities-list__item"><a href="#">Самара</a></li>
+                    <li class="header__cities-list__item"><a href="#">Казань</a></li>
+                    <li class="header__cities-list__item"><a href="#">Воронеж</a></li>
+                    <li class="header__cities-list__item"><a href="#">Уфа</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ярославль</a></li>
+                    <li class="header__cities-list__item"><a href="#">Екатеринбург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Тольятти</a></li>
+                    <li class="header__cities-list__item"><a href="#">Омск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Волгоград</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ставрополь</a></li>
+                    <li class="header__cities-list__item"><a href="#">Краснодар</a></li>
+                    <li class="header__cities-list__item"><a href="#">Саратов</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ижевск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Челябинск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Санкт-Петербург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Нижний Новгород</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ростов-на-Дону</a></li>
+                    <li class="header__cities-list__item"><a href="#">Самара</a></li>
+                    <li class="header__cities-list__item"><a href="#">Казань</a></li>
+                    <li class="header__cities-list__item"><a href="#">Воронеж</a></li>
+                    <li class="header__cities-list__item"><a href="#">Уфа</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ярославль</a></li>
+                    <li class="header__cities-list__item"><a href="#">Екатеринбург</a></li>
+                    <li class="header__cities-list__item"><a href="#">Тольятти</a></li>
+                    <li class="header__cities-list__item"><a href="#">Омск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Волгоград</a></li>
+                    <li class="header__cities-list__item"><a href="#">Казань</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ставрополь</a></li>
+                    <li class="header__cities-list__item"><a href="#">Краснодар</a></li>
+                    <li class="header__cities-list__item"><a href="#">Саратов</a></li>
+                    <li class="header__cities-list__item"><a href="#">Ижевск</a></li>
+                    <li class="header__cities-list__item"><a href="#">Челябинск</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+	<main class="main">
+		<section class="main-banner">
+			<div class="container">
+				<div class="main-banner__top-container">
+					<div class="delivery-block @@class">
+    <div class="delivery-block__content">
+        <div class="delivery-block__title">Бесплатная доставка 50км от МКАД</div>
+        <div class="delivery-block__text">
+            Бесплатно доставим все материалы и рабочую бригаду до Вашего участка в приделах 50 км от МКАД при превышении стоимости объекта 50 т.р.
+        </div>
+        <div class="delivery-block__btn-container delivery-block__content-btn-container">
+            <a href="#" class="btn delivery-block__btn">Подробнее о доставке</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+    </div>
+    <div class="delivery-block__img delivery-block__img-desc">
+        <img data-src="img/global/actions-blocks/delivery-block/car-desc.png" class="lazy" alt="car">
+    </div>
+    <div class="delivery-block__img delivery-block__img-mobile">
+        <img data-src="img/global/actions-blocks/delivery-block/car-mobile.png" class="lazy" alt="car">
+        <div class="delivery-block__btn-container">
+            <a href="#" class="btn delivery-block__btn">Подробнее о доставке</a>
+            <i class="fas fa-long-arrow-alt-right delivery-block__arrow"></i>
+        </div>
+    </div>
+</div>
+					<div class="work-block @@class">
+    <div class="work-block__title">Бесплатный выезд менеджера-замерщика</div>
+    <div class="work-block__text">Осуществляем бесплатный выезд менеджера - замерщика на участок заказчика в рамках Московской области.</div>
+    <button class="btn btn-open-popup-call work-block__btn" data-title="Бесплатный выезд менеджера-замерщика">Вызвать замерщика</button>
+    <div class="work-block__img">
+        <img data-src="img/global/actions-blocks/work-block/master.png" class="lazy" alt="master">
+    </div>
+</div>
+				</div>
+				<div class="main-banner__bottom-container">
+					<ul class="main-banner__advantages-list">
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-1.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">Под заказ за 2 дня</div>
+						</li>
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-2.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">Делаем под ваш размер</div>
+						</li>
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-3.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">
+								10 цветовых решений
+							</div>
+						</li>
+						<li class="main-banner__advantages-list__item">
+							<div class="main-banner__advantages-list__item-img">
+								<img data-src="img/global/main-banner/item-4.svg" class="lazy" alt="advantages">
+							</div>
+							<div class="main-banner__advantages-list__title">
+								Доставка с оплатой на месте
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-navigation @@class">
+        <ul class="container mx-auto catalog-nav">
+            <li class="catalog-nav-item">
+                <a href="#">
+                    <div class="catalog-nav__img">
+                        <img class="lazy" data-src="img/global/catalog-nav/item-1.svg" alt="catalog">
+                    </div>
+                    <div class="catalog-nav__title">Откатные ворота</div>
+                </a>
+            </li>
+            <li class="catalog-nav-item">
+                <a href="#">
+                    <div class="catalog-nav__img">
+                      <img class="lazy" data-src="img/global/catalog-nav/item-2.svg" alt="catalog">
+                    </div>
+                    <div class="catalog-nav__title">Заборы из профнастила</div>
+                </a>
+            </li>
+            <li class="catalog-nav-item">
+                <a href="#">
+                    <div class="catalog-nav__img">
+                      <img class="lazy" data-src="img/global/catalog-nav/item-3.svg" alt="catalog">
+                    </div>
+                    <div class="catalog-nav__title">Из металлического штакетника</div>
+                </a>
+            </li>
+            <li class="catalog-nav-item">
+                <a href="#">
+                    <div class="catalog-nav__img">
+                      <img class="lazy" data-src="img/global/catalog-nav/item-4.svg" alt="catalog">
+                    </div>
+                    <div class="catalog-nav__title">3D забор Гиттер</div>
+                </a>
+            </li>
+            <li class="catalog-nav-item">
+                <a href="#">
+                    <div class="catalog-nav__img">
+                        <img class="lazy" data-src="img/global/catalog-nav/item-5.svg" alt="catalog">
+                    </div>
+                    <div class="catalog-nav__title">Заборы из сетки</div>
+                </a>
+            </li>
+            <li class="catalog-nav-item">
+                <a href="#">
+                    <div class="catalog-nav__img">
+                        <img class="lazy" data-src="img/global/catalog-nav/item-6.svg" alt="catalog">
+                    </div>
+                    <div class="catalog-nav__title">Заборы из дерева</div>
+                </a>
+            </li>
+        </ul>
+</section>
+		<section class="catalog-banner">
+			<div class="container">
+				<div class="catalog-banner__wrapper">
+					<div class="catalog-banner__container">
+						<div class="catalog-banner__item">
+							<h1 class="catalog-banner__title font-normal"><span class="font-bold">Каталог заборов</span> с установкой под ключ</h1>
+							<div class="catalog-banner__content">
+								<p>Наша компания специализируется на строительстве заборов полностью под ключ.</p>
+								<p>Собственное производство, постоянный штат рабочих и оптимизированная логистика позволяет продавать заборы по выгодной цене без ущерба для качества. Мы являемся обладателем более 15 патентов.</p>
+								<p>"Заборкин" ограждает от забот! Доверьте установку ограждения специалистам компании!</p>
+								<p>Мы занимаемся изготовлением и монтажом ворот для частных домов и объектов промышленного назначения. Принимаем заказы на установку ворот с автоматикой и без нее.</p>
+							</div>
+						</div>
+						<div class="catalog-banner__item">
+							<ul class="scroll-container catalog-banner__catalog-list">
+								<li class="catalog-banner__catalog-list__item catalog-banner__catalog-list__item--large start">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__container">
+												<div class="catalog-banner__catalog-list__title">Металлические заборы</div>
+												<div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
+											</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item catalog-banner__catalog-list__item--large end">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__container">
+												<div class="catalog-banner__catalog-list__title">Деревянные заборы</div>
+												<div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
+											</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Заборы из пластика</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Заборы с монолитным основанием</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Быстровозводимые заборы</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Заборы для дачи</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Заборы из камня</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Заборы из сэндвич панелей</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Кованые заборы</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Комби заборы</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Рулонные заборы</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Сварные заборы</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Секционные заборы</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+								<li class="catalog-banner__catalog-list__item">
+									<a href="#">
+										<div class="catalog-banner__catalog-list__content">
+											<div class="catalog-banner__catalog-list__title">Шумозащитные заборы и экраны</div>
+										</div>
+										<div class="catalog-banner__catalog-list__img">
+											<img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
+										</div>
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="btn catalog-banner__link">Полный каталог</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="video-block @@class">
+    <div class="container">
+        <header class="video-block__header">
+            <h2 class="video-block__title font-normal">Наше <span class="font-bold">производство</span></h2>
+            <a href="#" class="see-more video-block__see-more"><i class="fas fa-chevron-right see-more__icon"></i><span class="see-more__text">История компания</span></a>
+        </header>
+        <div class="advantages @@class">
+    <ul class="advantages-list">
+        <li class="advantages-list__item">
+            <div class="advantages-list__item__img">
+                <img class="lazy" data-src="img/global/video-block/advantages/item-1.svg" alt="avantages" />
+            </div>
+            <div class="advantages-list__item__content">
+                <div class="advantages-list__item__title">Надежность</div>
+                <div class="advantages-list__item__subtitle">100%</div>
+            </div>
+        </li>
+        <li class="advantages-list__item">
+            <div class="advantages-list__item__img">
+                <img class="lazy" data-src="img/global/video-block/advantages/item-2.svg" alt="avantages" />
+            </div>
+            <div class="advantages-list__item__content">
+                <div class="advantages-list__item__title">Безупречное обслуживание</div>
+                <div class="advantages-list__item__subtitle">100%</div>
+            </div>
+        </li>
+        <li class="advantages-list__item">
+            <div class="advantages-list__item__img">
+                <img class="lazy" data-src="img/global/video-block/advantages/item-3.svg" alt="avantages" />
+            </div>
+            <div class="advantages-list__item__content">
+                <div class="advantages-list__item__title">Контроль качества</div>
+                <div class="advantages-list__item__subtitle">100%</div>
+            </div>
+        </li>
+        <li class="advantages-list__item">
+            <div class="advantages-list__item__img">
+                <img class="lazy" data-src="img/global/video-block/advantages/item-4.svg" alt="avantages" />
+            </div>
+            <div class="advantages-list__item__content">
+                <div class="advantages-list__item__title">Слаженная команда</div>
+                <div class="advantages-list__item__subtitle">100%</div>
+            </div>
+        </li>
+        <li class="advantages-list__item">
+            <div class="advantages-list__item__img">
+                <img class="lazy" data-src="img/global/video-block/advantages/item-5.svg" alt="avantages" />
+            </div>
+            <div class="advantages-list__item__content">
+                <div class="advantages-list__item__title">Успехи и награды</div>
+                <div class="advantages-list__item__subtitle">100%</div>
+            </div>
+        </li>
+        <li class="advantages-list__item">
+            <div class="advantages-list__item__img">
+                <img class="lazy" data-src="img/global/video-block/advantages/item-6.svg" alt="avantages" />
+            </div>
+            <div class="advantages-list__item__content">
+                <div class="advantages-list__item__title">Бесплатная доставка</div>
+                <div class="advantages-list__item__subtitle">100%</div>
+            </div>
+        </li>
+    </ul>
+</div>
+        <div class="video-block__content">
+           <div class="video-block__text">
+               <p>Компания «Новый Дом» Основана в 2014г. Наша компания специализируется на производстве заборов Жалюзи и Евроштакетника.</p>
+               <p>Мы обладаем большим опытом деятельности на рынке заборов-конструкторов и используем современное оборудование для производства, благодаря этому мы предлагаем клиентам лучшие товары.</p>
+               <p>Для изготовления продукции, на производстве используется только качественное сырьё из оцинкованной стали.</p>
+               <p>Новейшие разработки используемые при создании всех типов товаров, постоянный контроль качества готовых изделий, позволяет нам выпускать только качественную продукцию.</p>
+           </div>
+            <div class="video-block__gallery">
+                <ul class="video-block__gallery-images">
+                    <li class="video-block__gallery-images__item">
+                        <a data-fancybox="gallery" href="img/global/video-block/gallery/item-1.jpg">
+                            <img class="lazy" data-src="img/global/video-block/gallery/item-1.jpg" alt="video">
+                        </a>
+                    </li>
+                    <li class="video-block__gallery-images__item">
+                        <a data-fancybox="gallery" href="img/global/video-block/gallery/item-2.jpg">
+                            <img class="lazy" data-src="img/global/video-block/gallery/item-2.jpg" alt="video">
+                        </a>
+                    </li>
+                    <li class="video-block__gallery-images__item">
+                        <a data-fancybox="gallery" href="img/global/video-block/gallery/item-3.jpg">
+                            <img class="lazy" data-src="img/global/video-block/gallery/item-3.jpg" alt="video">
+                        </a>
+                    </li>
+                </ul>
+                <div class="video-block__gallery-video">
+                    <div class="youtube video-block__youtube" data-youtube-img="img/global/video-block/gallery/bg.jpg" data-youtube="https://www.youtube.com/watch?v=5kAPExqSZ1I"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="stages-installation @@class">
+    <div class="container">
+       <h2 class="stages-installation__title font-normal"><span class="font-bold">Этапы </span> установки забора</h2>
+        <div class="stages-installation__tab-container">
+            <ul class="stages-installation__tab-nav">
+                <li class="stages-installation__tab-nav__item active" data-tab="tab-inst-1">
+                    <img data-src="img/global/stages-installation/bg.png" class="lazy stages-installation__tab-nav__bg" alt="">
+                    <div class="stages-installation__tab-nav__img">
+                        <img class="lazy" data-src="img/global/stages-installation/item-1.svg" alt="tab">
+                    </div>
+                    <div class="stages-installation__tab-nav__title">До строительства</div>
+                </li>
+                <li class="stages-installation__tab-nav__item" data-tab="tab-inst-2">
+                    <img data-src="img/global/stages-installation/bg.png" class="lazy stages-installation__tab-nav__bg" alt="">
+                    <div class="stages-installation__tab-nav__img">
+                        <img class="lazy" data-src="img/global/stages-installation/item-2.svg" alt="tab">
+                    </div>
+                    <div class="stages-installation__tab-nav__title">Строительство</div>
+                </li>
+                <li class="stages-installation__tab-nav__item" data-tab="tab-inst-3">
+                    <img data-src="img/global/stages-installation/bg.png" class="lazy stages-installation__tab-nav__bg" alt="">
+                    <div class="stages-installation__tab-nav__img">
+                        <img class="lazy" data-src="img/global/stages-installation/item-3.svg" alt="tab">
+                    </div>
+                    <div class="stages-installation__tab-nav__title">
+                        После строительства
+                    </div>
+                </li>
+            </ul>
+            <div class="stages-installation__tab-wrapper">
+                <div class="stages-installation__tab active" id="tab-inst-1">
+                    <div class="stages-installation__tab-title">До строительства</div>
+                    <div class="stages-installation__tab-content">
+                        <ol>
+                            <li><b>Расчет точной стоимости забора на основании информации и пожеланий Клиента.</b>
+                                Нужная информация: общая длина забора, количество ворот и калиток, способ установки столбов, вид материала обшивки каркаса, адрес места монтажа, дополнительные работы. У нас честный подход: стоимость установки забора рассчитывается до начала работ. Никаких наценок в процессе – список работ и сумма фиксируются в договоре. Мы предлагаем качественные заборы.</li>
+                            <li><b>Бесплатный вызов замерщика, оформление документов в офисе или на вашем участке.</b>
+                                Для заказа забора обратитесь в наш офис в Москве, Сергиевом Посаде или вызовите замерщика, который измерит длину, уточнит все Ваши пожелания, составит ТЗ, нарисует схему и оформит договор. 90% заказов не требуют предоплаты, Вы оплачиваете работу после приемки.</li>
+                            <li><b>Возможность заказа по телефону без посещения офиса и вызова замерщика.</b>
+                                Вы знаете точную длину периметра участка и уже выбрали забор? Оформите заказ по телефону, мы подготовим все необходимые документы и привезем их в день начала строительства.</li>
+                            <li><b>Комплектация забора на складе и подготовка материалов.</b>
+                                После составления технического задания мы готовим материалы и акты приемки к ним. Все приготовления производятся точно к сроку начала работ. Материалы будут готовы к отгрузке в нужный момент.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="stages-installation__tab" id="tab-inst-2">
+                    <div class="stages-installation__tab-title">До строительства</div>
+                    <div class="stages-installation__tab-content">
+                        <ol>
+                            <li><b>Расчет точной стоимости забора на основании информации и пожеланий Клиента.</b>
+                                Нужная информация: общая длина забора, количество ворот и калиток, способ установки столбов, вид материала обшивки каркаса, адрес места монтажа, дополнительные работы. У нас честный подход: стоимость установки забора рассчитывается до начала работ. Никаких наценок в процессе – список работ и сумма фиксируются в договоре. Мы предлагаем качественные заборы.</li>
+                            <li><b>Бесплатный вызов замерщика, оформление документов в офисе или на вашем участке.</b>
+                                Для заказа забора обратитесь в наш офис в Москве, Сергиевом Посаде или вызовите замерщика, который измерит длину, уточнит все Ваши пожелания, составит ТЗ, нарисует схему и оформит договор. 90% заказов не требуют предоплаты, Вы оплачиваете работу после приемки.</li>
+                            <li><b>Возможность заказа по телефону без посещения офиса и вызова замерщика.</b>
+                                Вы знаете точную длину периметра участка и уже выбрали забор? Оформите заказ по телефону, мы подготовим все необходимые документы и привезем их в день начала строительства.</li>
+                            <li><b>Комплектация забора на складе и подготовка материалов.</b>
+                                После составления технического задания мы готовим материалы и акты приемки к ним. Все приготовления производятся точно к сроку начала работ. Материалы будут готовы к отгрузке в нужный момент.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="stages-installation__tab" id="tab-inst-3">
+                    <div class="stages-installation__tab-title">До строительства</div>
+                    <div class="stages-installation__tab-content">
+                        <ol>
+                            <li><b>Расчет точной стоимости забора на основании информации и пожеланий Клиента.</b>
+                                Нужная информация: общая длина забора, количество ворот и калиток, способ установки столбов, вид материала обшивки каркаса, адрес места монтажа, дополнительные работы. У нас честный подход: стоимость установки забора рассчитывается до начала работ. Никаких наценок в процессе – список работ и сумма фиксируются в договоре. Мы предлагаем качественные заборы.</li>
+                            <li><b>Бесплатный вызов замерщика, оформление документов в офисе или на вашем участке.</b>
+                                Для заказа забора обратитесь в наш офис в Москве, Сергиевом Посаде или вызовите замерщика, который измерит длину, уточнит все Ваши пожелания, составит ТЗ, нарисует схему и оформит договор. 90% заказов не требуют предоплаты, Вы оплачиваете работу после приемки.</li>
+                            <li><b>Возможность заказа по телефону без посещения офиса и вызова замерщика.</b>
+                                Вы знаете точную длину периметра участка и уже выбрали забор? Оформите заказ по телефону, мы подготовим все необходимые документы и привезем их в день начала строительства.</li>
+                            <li><b>Комплектация забора на складе и подготовка материалов.</b>
+                                После составления технического задания мы готовим материалы и акты приемки к ним. Все приготовления производятся точно к сроку начала работ. Материалы будут готовы к отгрузке в нужный момент.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="stages-installation__accordion">
+        <li class="stages-installation__accordion-item active">
+            <header class="stages-installation__accordion__header">
+                <div class="container stages-installation__accordion__header-container">
+                    <div class="stages-installation__accordion__img">
+                        <img class="lazy" data-src="img/global/stages-installation/item-1.svg" alt="tab">
+                    </div>
+                    <div class="stages-installation__accordion__header-title">До строительства</div>
+                    <div class="stages-installation__accordion__header-btn"><i class="fas fa-chevron-left"></i></div>
+                </div>
+            </header>
+            <div class="container stages-installation__accordion__body">
+                <div class="stages-installation__accordion__title">До строительства</div>
+                <div class="stages-installation__accordion__content">
+                    <ol>
+                        <li><b>Расчет точной стоимости забора на основании информации и пожеланий Клиента.</b>
+                            Нужная информация: общая длина забора, количество ворот и калиток, способ установки столбов, вид материала обшивки каркаса, адрес места монтажа, дополнительные работы. У нас честный подход: стоимость установки забора рассчитывается до начала работ. Никаких наценок в процессе – список работ и сумма фиксируются в договоре. Мы предлагаем качественные заборы.</li>
+                        <li><b>Бесплатный вызов замерщика, оформление документов в офисе или на вашем участке.</b>
+                            Для заказа забора обратитесь в наш офис в Москве, Сергиевом Посаде или вызовите замерщика, который измерит длину, уточнит все Ваши пожелания, составит ТЗ, нарисует схему и оформит договор. 90% заказов не требуют предоплаты, Вы оплачиваете работу после приемки.</li>
+                        <li><b>Возможность заказа по телефону без посещения офиса и вызова замерщика.</b>
+                            Вы знаете точную длину периметра участка и уже выбрали забор? Оформите заказ по телефону, мы подготовим все необходимые документы и привезем их в день начала строительства.</li>
+                        <li><b>Комплектация забора на складе и подготовка материалов.</b>
+                            После составления технического задания мы готовим материалы и акты приемки к ним. Все приготовления производятся точно к сроку начала работ. Материалы будут готовы к отгрузке в нужный момент.</li>
+                    </ol>
+                </div>
+            </div>
+        </li>
+        <li class="stages-installation__accordion-item">
+            <header class="stages-installation__accordion__header">
+                <div class="container stages-installation__accordion__header-container">
+                    <div class="stages-installation__accordion__header-img">
+                        <img class="lazy" data-src="img/global/stages-installation/item-2.svg" alt="tab">
+                    </div>
+                    <div class="stages-installation__accordion__header-title">Строительство</div>
+                    <div class="stages-installation__accordion__header-btn"><i class="fas fa-chevron-left"></i></div>
+                </div>
+            </header>
+            <div class="container stages-installation__accordion__body">
+                <div class="stages-installation__accordion__title">Строительство</div>
+                <div class="stages-installation__accordion__content">
+                    <ol>
+                        <li><b>Расчет точной стоимости забора на основании информации и пожеланий Клиента.</b>
+                            Нужная информация: общая длина забора, количество ворот и калиток, способ установки столбов, вид материала обшивки каркаса, адрес места монтажа, дополнительные работы. У нас честный подход: стоимость установки забора рассчитывается до начала работ. Никаких наценок в процессе – список работ и сумма фиксируются в договоре. Мы предлагаем качественные заборы.</li>
+                        <li><b>Бесплатный вызов замерщика, оформление документов в офисе или на вашем участке.</b>
+                            Для заказа забора обратитесь в наш офис в Москве, Сергиевом Посаде или вызовите замерщика, который измерит длину, уточнит все Ваши пожелания, составит ТЗ, нарисует схему и оформит договор. 90% заказов не требуют предоплаты, Вы оплачиваете работу после приемки.</li>
+                        <li><b>Возможность заказа по телефону без посещения офиса и вызова замерщика.</b>
+                            Вы знаете точную длину периметра участка и уже выбрали забор? Оформите заказ по телефону, мы подготовим все необходимые документы и привезем их в день начала строительства.</li>
+                        <li><b>Комплектация забора на складе и подготовка материалов.</b>
+                            После составления технического задания мы готовим материалы и акты приемки к ним. Все приготовления производятся точно к сроку начала работ. Материалы будут готовы к отгрузке в нужный момент.</li>
+                    </ol>
+                </div>
+            </div>
+        </li>
+        <li class="stages-installation__accordion-item">
+            <header class="stages-installation__accordion__header">
+                <div class="container stages-installation__accordion__header-container">
+                    <div class="stages-installation__accordion__header-img">
+                        <img class="lazy" data-src="img/global/stages-installation/item-3.svg" alt="tab">
+                    </div>
+                    <div class="stages-installation__accordion__header-title">После строительства</div>
+                    <div class="stages-installation__accordion__header-btn"><i class="fas fa-chevron-left"></i></div>
+                </div>
+            </header>
+            <div class="container stages-installation__accordion__body">
+                <div class="stages-installation__accordion__title">После строительства</div>
+                <div class="stages-installation__accordion__content">
+                    <ol>
+                        <li><b>Расчет точной стоимости забора на основании информации и пожеланий Клиента.</b>
+                            Нужная информация: общая длина забора, количество ворот и калиток, способ установки столбов, вид материала обшивки каркаса, адрес места монтажа, дополнительные работы. У нас честный подход: стоимость установки забора рассчитывается до начала работ. Никаких наценок в процессе – список работ и сумма фиксируются в договоре. Мы предлагаем качественные заборы.</li>
+                        <li><b>Бесплатный вызов замерщика, оформление документов в офисе или на вашем участке.</b>
+                            Для заказа забора обратитесь в наш офис в Москве, Сергиевом Посаде или вызовите замерщика, который измерит длину, уточнит все Ваши пожелания, составит ТЗ, нарисует схему и оформит договор. 90% заказов не требуют предоплаты, Вы оплачиваете работу после приемки.</li>
+                        <li><b>Возможность заказа по телефону без посещения офиса и вызова замерщика.</b>
+                            Вы знаете точную длину периметра участка и уже выбрали забор? Оформите заказ по телефону, мы подготовим все необходимые документы и привезем их в день начала строительства.</li>
+                        <li><b>Комплектация забора на складе и подготовка материалов.</b>
+                            После составления технического задания мы готовим материалы и акты приемки к ним. Все приготовления производятся точно к сроку начала работ. Материалы будут готовы к отгрузке в нужный момент.</li>
+                    </ol>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+		<section class="portfolio-block @@class">
+    <div class="container">
+        <h2 class="portfolio-block__title font-normal"><span class="font-bold">Примеры</span> наших работ</h2>
+        <div class="portfolio-block__tab-container">
+            <ul class="portfolio-block__tab-nav">
+                <li class="portfolio-block__tab-nav__item active" data-tab="portfolio-tab-1">Заборы</li>
+                <li class="portfolio-block__tab-nav__item" data-tab="portfolio-tab-2">Ворота</li>
+                <li class="portfolio-block__tab-nav__item" data-tab="portfolio-tab-3">Навесы</li>
+                <li class="portfolio-block__tab-nav__item" data-tab="portfolio-tab-4">Козырьки</li>
+                <li class="portfolio-block__tab-nav__item" data-tab="portfolio-tab-5">Декоративные элементы</li>
+            </ul>
+            <div class="portfolio-block__tab-wrapper">
+                <div class="portfolio-block__tab active" id="portfolio-tab-1">
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-1.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-1.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-2.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-2.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-3.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-3.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-4.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-4.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-5.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-5.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-6.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-6.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-7.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-7.jpg" alt="porfolio" class="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-block__tab" id="portfolio-tab-2">
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-1.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-1.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-2.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-2.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-3.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-3.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-4.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-4.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-5.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-5.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-6.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-6.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-7.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-7.jpg" alt="porfolio" class="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-block__tab"id="portfolio-tab-3">
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-1.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-1.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-2.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-2.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-3.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-3.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-4.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-4.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-5.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-5.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-6.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-6.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-7.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-7.jpg" alt="porfolio" class="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-block__tab" id="portfolio-tab-4">
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-1.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-1.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-2.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-2.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-3.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-3.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-4.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-4.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-5.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-5.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-6.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-6.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-7.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-7.jpg" alt="porfolio" class="lazy">
+                    </a>
+                </div>
+                <div class="portfolio-block__tab" id="portfolio-tab-5">
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-1.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-1.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-2.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-2.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-3.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-3.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-4.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-4.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-5.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-5.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-6.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-6.jpg" alt="porfolio" class="lazy">
+                    </a>
+                    <a data-fancybox="gallery" href="img/global/portfolio-block/item-7.jpg" class="portfolio-block__tab-img">
+                        <img data-src="img/global/portfolio-block/item-7.jpg" alt="porfolio" class="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="stages-cooperation @@class">
+    <div class="container">
+        <h2 class="stages-cooperation__title font-normal"><span class="font-bold">Этапы</span> сотрудничества</h2>
+        <div class="stages-cooperation__list">
+            <div class="stages-cooperation__item">
+                <div class="stages-cooperation__item-container">
+                    <div class="stages-cooperation__img">
+                        <img data-src="img/global/stages-cooperation/item-1.svg" class="lazy" alt="cooperation">
+                    </div>
+                    <div class="stages-cooperation__text">
+                        Вы оставляете заявку на сайте или по бесплатной линии
+                        <a href="tel:88007073501">8 (800) 707-35-01</a>
+                    </div>
+                </div>
+            </div>
+            <div class="stages-cooperation__item">
+                <div class="stages-cooperation__item-container">
+                    <div class="stages-cooperation__img">
+                        <img data-src="img/global/stages-cooperation/item-1.svg" class="lazy" alt="cooperation">
+                    </div>
+                    <div class="stages-cooperation__text">
+                        Специалист связывается с Вами для уточнения деталей и выставляет счет на оплату согласно заявке.
+                    </div>
+                </div>
+            </div>
+            <div class="stages-cooperation__item">
+                <div class="stages-cooperation__item-container">
+                    <div class="stages-cooperation__img">
+                        <img data-src="img/global/stages-cooperation/item-2.svg" class="lazy" alt="cooperation">
+                    </div>
+                    <div class="stages-cooperation__text">
+                        Вы проверяете и оплачиваете счет прямо на сайте без комиссий, либо по реквизитам в счете.
+                    </div>
+                </div>
+            </div>
+            <div class="stages-cooperation__item">
+                <div class="stages-cooperation__item-container">
+                    <div class="stages-cooperation__img">
+                        <img data-src="img/global/stages-cooperation/item-3.svg" class="lazy" alt="cooperation">
+                    </div>
+                    <div class="stages-cooperation__text">
+                        Производство заказа за 1 день! Тщательная упаковка груза по местам.
+                    </div>
+                </div>
+            </div>
+            <div class="stages-cooperation__item">
+                <div class="stages-cooperation__item-container">
+                    <div class="stages-cooperation__img">
+                        <img data-src="img/global/stages-cooperation/item-4.svg" class="lazy" alt="cooperation">
+                    </div>
+                    <div class="stages-cooperation__text">
+                        Отправка транспортной компанией или самовывоз из ближайшего филиала сети!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stages-cooperation__nav">
+
+        </div>
+    </div>
+</section>
+		<section class="main-calculator">
+			<div class="container">
+				<div class="main-calculator__title">Расчет стоимости</div>
+			</div>
+			<section class="calculator">
+    <header class="calculator__header">
+        <ul class="calculator__nav">
+            <li class="calculator__nav-item active" data-tab="calculator-1">
+                <div class="calculator__nav-content">
+                    <div class="calculator__nav-title">Материал забора</div>
+                </div>
+                <div class="calculator__nav-btn-container">
+                    <div class="calculator__nav-btn">
+                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="calculator__nav-item" data-tab="calculator-2">
+                <div class="calculator__nav-content">
+                    <div class="calculator__nav-title">Профиль ламелей</div>
+                </div>
+                <div class="calculator__nav-btn-container">
+                    <div class="calculator__nav-btn">
+                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="calculator__nav-item" data-tab="calculator-3">
+                <div class="calculator__nav-content">
+                    <div class="calculator__nav-title">Покрытие</div>
+                </div>
+                <div class="calculator__nav-btn-container">
+                    <div class="calculator__nav-btn">
+                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="calculator__nav-item" data-tab="calculator-4">
+                <div class="calculator__nav-content">
+                    <div class="calculator__nav-title">Виды оформления</div>
+                </div>
+                <div class="calculator__nav-btn-container">
+                    <div class="calculator__nav-btn">
+                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="calculator__nav-item" data-tab="calculator-5">
+                <div class="calculator__nav-content">
+                    <div class="calculator__nav-title">Параметры забора</div>
+                </div>
+                <div class="calculator__nav-btn-container">
+                    <div class="calculator__nav-btn">
+                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="calculator__nav-item" data-tab="calculator-6">
+                <div class="calculator__nav-content">
+                    <div class="calculator__nav-title">Крепежные материалы</div>
+                </div>
+                <div class="calculator__nav-btn-container">
+                    <div class="calculator__nav-btn">
+                        <i class="fas fa-check-double"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="container calculator__container">
+        <div class="calculator__wrapper">
+            <div class="calculator__tab">
+                <div class="calculator__tab-item tab-catalog active" id="calculator-1">
+                    <div class="calculator__tab-title">1. Материал забора</div>
+                    <ul class="scroll-container calculator__catalog-nav">
+                        <li class="calculator__catalog-nav__item active">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Металлические заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-1.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Деревянные заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-2.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы из пластика</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-3.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы с монолитным основанием</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-4.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Быстровозводимые заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-5.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                 <div class="calculator__catalog-nav__item-title">Заборы для дачи</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-6.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы из камня</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-7.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Заборы из сэндвич панелей</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-8.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Кованые заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-9.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Комбинированные заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-10.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                 <div class="calculator__catalog-nav__item-title">Рулонные заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-11.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Сварные заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-12.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                <div class="calculator__catalog-nav__item-title">Секционные заборы</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-13.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                        <li class="calculator__catalog-nav__item">
+                            <div class="calculator__catalog-nav__item-content">
+                                 <div class="calculator__catalog-nav__item-title">Шумозащитные заборы и экраны</div>
+                            </div>
+                            <div class="calculator__catalog-nav__item-img">
+                                <img data-src="img/global/calculator/catalog/item-14.png" class="lazy" alt="calculator" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculator__tab-item tab-materials" id="calculator-2">
+                    <div class="calculator__tab-title">2. Выбор покрытия и цвета ламелей</div>
+                    <ul class="scroll-container calculator__materials-nav">
+                        <li class="calculator__materials-nav__item active">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-1.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием High Gloss Matt</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-2.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием Стальной Бархат</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-3.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием Printech</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-4.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С двустрониим покрытием Printech</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-5.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием Полиэстер</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-6.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С покрытием полиэстер и полиэфирной эмалью обратной стороны</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-7.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С двусторонним покрытием Полиэстер</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/item-7.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">С двухсторонним порошковым покрытием Antique</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                        <li class="calculator__materials-nav__item last">
+                            <div class="calculator__materials-nav__item-img">
+                                <img data-src="img/global/calculator/material/default.png" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__materials-nav__item-title">Ламели любого цвета</div>
+                            <i class="fas fa-info-circle"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculator__tab-item tab-types" id="calculator-3">
+                    <div class="calculator__tab-title">3. Виды оформления забора</div>
+                    <ul class="calculator__types-nav">
+                        <li class="calculator__types-nav__item active">
+                            <div class="calculator__types-nav__item-title">
+                                <input name="types" id="calc-type-1" type="radio" value="Жалюзи №1" class="calculator__types-nav__checkbox" checked />
+                                <label for="calc-type-1">Жалюзи №1</label>
+                            </div>
+                            <div class="calculator__types-nav__item-img">
+                                <img data-src="img/global/calculator/types/item-1.jpg" class="lazy" alt="calculator" />
+                            </div>
+                            <div class="calculator__types-nav__item-name">Забор-жалюзи с железными столбами</div>
+                        </li>
+                        <li class="calculator__types-nav__item">
+                            <div class="calculator__types-nav__item-title">
+                                <input name="types" id="calc-type-2" type="radio" value="Жалюзи №2" class="calculator__types-nav__checkbox" />
+                                <label for="calc-type-2">Жалюзи №2</label>
+                            </div>
+                            <div class="calculator__types-nav__item-img">
+                                <img src="img/global/calculator/types/item-2.jpg"  alt="calculator" />
+                            </div>
+                            <div class="calculator__types-nav__item-name">Забор-жалюзи с кирпичными столбами</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculator__tab-item tab-parameters" id="calculator-4">
+                    <div class="calculator__tab-title">4. Параметры забора</div>
+                    <div class="calculator__parameters-container">
+                        <div class="calculator__parameters-item">
+                            <div class="calculator__parameters-title">Задайте высоту секции забора:</div>
+                            <div class="calculator__parameters-height">
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" checked id="calc-param-1" type="radio" value="1.25" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-1">1,25 м</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" id="calc-param-2" type="radio" value="1.5" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-2">1,5 м</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" id="calc-param-3" type="radio" value="1.7" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-3">1,7 м</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input name="calc-height" id="calc-param-4" type="radio" value="2" class="calculator__parameters__checkbox calculator__parameters__height" />
+                                    <label for="calc-param-4">2 м</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__parameters-item">
+                            <div class="calculator__parameters-width">
+                                <div class="calculator__parameters-width__item">
+                                    <div class="calculator__tab-text">Задайте длинну забора:</div>
+                                    <div class="calculator__parameters-numbers">
+                                        <div class="input-number">
+                                            <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__length" />
+                                            <div class="input-number__nav">
+                                                <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                                <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator__parameters-width__item">
+                                    <div class="calculator__tab-text">или, укажите точное количество ламелей:</div>
+                                    <div class="calculator__parameters-numbers">
+                                        <div class="input-number">
+                                            <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__colLam" />
+                                            <div class="input-number__nav">
+                                                <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                                <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator__parameters-width__item">
+                                    <div class="calculator__tab-text">укажите расстояние между ламелями:</div>
+                                    <div class="calculator__parameters-numbers">
+                                        <div class="input-number">
+                                            <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__distance" />
+                                            <div class="input-number__nav">
+                                                <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                                <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__parameters-item">
+                            <div class="calculator__tab-text">Ширина секции:</div>
+                            <div class="input-number">
+                                <input type="text" pattern="^[0-9]+$" value="10" class="calculator__parameters__number calculator__parameters__width-section" />
+                                <div class="input-number__nav">
+                                    <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                    <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                </div>
+                            </div>
+                            <div class="calculator__tab-text calculator__parameters__lag-title">Количество лаг</div>
+                            <div class="calculator__parameters__lag-container">
+                                <div class="calculator__parameters-btn">
+                                    <input checked id="calc-param-width-1" name="calc-param-lag" type="radio" value="2" class="calculator__parameters__checkbox calculator__parameters__colLag" />
+                                    <label for="calc-param-width-1">2 лаги</label>
+                                </div>
+                                <div class="calculator__parameters-btn">
+                                    <input id="calc-param-width-2" type="radio" name="calc-param-lag" value="3" class="calculator__parameters__checkbox calculator__parameters__colLag" />
+                                    <label for="calc-param-width-2">3 лаги</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__tab-item tab-other" id="calculator-5">
+                    <div class="calculator__tab-title">5. Крепежные материалы</div>
+                    <div class="calculator__tab-text calculator__other-description">Выберите необходимые элементы подконструкции и крепежные материалы</div>
+                    <div class="calculator__other-container">
+                        <div class="calculator__other-item">
+                            <div class="calculator__other-checkbox__container active">
+                                <div class="input-checkbox">
+                                    <input checked name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-1" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
+                                    <label for="other-checkbox-1">Металлические столбы для забора / Колпаки на кирпичные столбы</label>
+                                </div>
+                                <div class="input-number">
+                                    <input type="text" pattern="^[0-9]+$" value="10" class="calculator__other-number" />
+                                    <div class="input-number__nav">
+                                        <div class="input-number__nav-plus"><i class="fas fa-sort-up"></i></div>
+                                        <div class="input-number__nav-minus"><i class="fas fa-sort-down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-2" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
+                                    <label for="other-checkbox-2">Х–кронштейны (позволяют обойтись без сварки)</label>
+                                </div>
+                            </div>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-3" value="Металлические столбы для забора / Колпаки на кирпичные столбы">
+                                    <label for="other-checkbox-3">Лаги для забора</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__other-item">
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-4" value="Крепеж для ламелей">
+                                    <label for="other-checkbox-4">Крепеж для ламелей</label>
+                                </div>
+                            </div>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-5" value="Заглушки на столбы">
+                                    <label for="other-checkbox-5">Заглушки на столбы</label>
+                                </div>
+                            </div>
+                            <div class="calculator__other-checkbox__container">
+                                <div class="input-checkbox">
+                                    <input name="calc-other-checkbox" class="calculator__other-checkbox" type="checkbox" id="other-checkbox-6" value="Крепеж для X–кронштейнов">
+                                    <label for="other-checkbox-6">Крепеж для X–кронштейнов</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__tab-item tab-result" id="calculator-6">
+                    <div class="calculator__result-title">Отличный выбор!</div>
+                    <div class="calculator__tab-text calculator__result-text">Вы выбрали такой забор</div>
+                    <div class="calculator__result-container">
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-subtitle">Покрытие:</div>
+                            <div class="calculator__result-material">
+                                <div class="calculator__result-material__item-img">
+                                    <img src="img/global/calculator/material/item-1.png" alt="calculator" />
+                                </div>
+                                <div class="calculator__result-material__item-title">С покрытием High Gloss Matt</div>
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                        </div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-types">
+                                <div class="calculator__result-subtitle calculator__types-title">Жалюзи 2</div>
+                                <div class="calculator__result-types__img">
+                                    <img data-src="img/global/calculator/types/item-1.jpg" class="lazy" alt="alt" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-subtitle font-bold">Выбранные параметры:</div>
+                            <div class="calculator__result-text calculator__result-height-section">Высота секции - <span class="font-bold">2м</span></div>
+                            <div class="calculator__result-text calculator__result-width">Ширина секции - <span class="font-bold">3м</span></div>
+                            <div class="calculator__result-text calculator__result-length">Длина забора - <span class="font-bold">10</span></div>
+                            <div class="calculator__result-text calculator__result-col-lam">Количество ламелей - <span class="font-bold">10</span></div>
+                            <div class="calculator__result-text calculator__result-distance-lam">Расстояние между ламелями - <span class="font-bold">10</span></div>
+                            <div class="calculator__result-text calculator__result-col-lag">Количество лаг - <span class="font-bold">2</span></div>
+                            <div class="calculator__result-text calculator__result-material-value">Крепежный материал - <span class="font-bold">Металлические столбы для забора / Колпаки на кирпичные столбы</span> <span class="font-bold value"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__nav-buttons">
+                    <button class="btn calculator__nav-btn left" disabled>
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                        <span>Предыдущий шаг</span>
+                    </button>
+                    <button class="btn calculator__nav-btn right">
+                        <span>Следующий шаг</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="calculator__form">
+                <div class="calculator__form-title">Возникли вопросы?</div>
+                <div class="calculator__form-text">Оставьте свои данные, менеджер в течении часа свяжется с Вами и назначит дату выезда замерщика</div>
+                <div class="calculator__form-container">
+                    <fieldset class="form__fieldset calculator__form-fieldset required">
+                        <legend>Ваше имя</legend>
+                        <input type="text" class="form__input calculator__input" required placeholder="Иван Иванов">
+                    </fieldset>
+                    <fieldset class="form__fieldset calculator__form-fieldset required">
+                        <legend>Ваш телефон</legend>
+                        <input type="tel" class="form__input calculator__input" required placeholder="8 800 333 33 33">
+                    </fieldset>
+                    <fieldset class="form__fieldset calculator__form-fieldset required">
+                        <legend>Ваш email</legend>
+                        <input type="email" class="form__input calculator__input" required placeholder="ivan.ivanov@gmail.com">
+                    </fieldset>
+                    <div class="hidden">
+                        <input type="hidden" class="form__input calculator__input-catalog">
+                        <input type="hidden" class="form__input calculator__input-material">
+                        <input type="hidden" class="form__input calculator__input-material-value">
+                        <input type="hidden" class="form__input calculator__input-type">
+                        <input type="hidden" class="form__input calculator__input-height">
+                        <input type="hidden" class="form__input calculator__input-width">
+                        <input type="hidden" class="form__input calculator__input-length">
+                        <input type="hidden" class="form__input calculator__input-col-lam">
+                        <input type="hidden" class="form__input calculator__input-distance-lam">
+                        <input type="hidden" class="form__input calculator__input-col-lag">
+                    </div>
+                    <div class="calculator__btn-container">
+                        <div class="form__checkbox-container calculator__form-checkbox">
+                            <div class="form__checkbox-item form__checkbox-icon calculator__checkbox-icon">
+                                <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                            </div>
+                            <div class="form__checkbox-item">
+                                <input checked type="checkbox" class="form__checkbox calculator__checkbox" hidden />
+                                <div class="form__checkbox-text calculator__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-action calculator-submit" value="Заказать обратный звонок">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		</section>
+		<section class="reviews">
+    <div class="container">
+        <header class="reviews__header">
+            <h2 class="reviews__title font-normal"><span class="font-bold">Отзывы</span> клиентов</h2>
+            <div class="reviews__slider-nav"></div>
+            <a href="#" class="see-more reviews__see-more"><i class="fas fa-chevron-right see-more__icon"></i><span class="see-more__text">Все отзывы</span></a>
+        </header>
+        <div class="reviews__slider">
+            <div class="reviews__slider-item">
+                <div class="reviews__slider-container">
+                    <header class="reviews__slider-header">
+                        <div class="reviews__slider-header__user">
+                            <img data-lazy="img/global/reviews/user-1.jpg"  alt="user">
+                        </div>
+                        <div class="reviews__slider-header__user-info">
+                            <div class="reviews__slider-header__user-info__name">Олег Васильевич Комиссаров</div>
+                            <div class="reviews__slider-header__user-info__prof">Главный инженер ТСЖ</div>
+                        </div>
+                    </header>
+                    <div class="reviews__slider-content">
+                      <blockquote>
+                          Решил забор-жалюзи металлические купить родителям на смену старого деревянного забора. Было важно не просто произвести минутное впечатление, а максимально удовлетворить их потребности в качестве и надежности. Они люди современные, поэтому новинка от Центра Металлокровли — забор жалюзи из металла, пришлась им по вкусу. Изучил рынок и заказал через интернет, хочу особенно отметить высокое качество и прочность ламелей по сравнению с местными производителями и удобную продуманную логистику, заказ в город Москва доставили в кратчайший срок
+                      </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slider-item">
+                <div class="reviews__slider-container">
+                    <header class="reviews__slider-header">
+                        <div class="reviews__slider-header__user">
+                            <img data-lazy="img/global/reviews/user-2.jpg"  alt="user">
+                        </div>
+                        <div class="reviews__slider-header__user-info">
+                            <div class="reviews__slider-header__user-info__name">Зоя Ивановна Колесникова</div>
+                            <div class="reviews__slider-header__user-info__prof">Главный инженер ТСЖ</div>
+                        </div>
+                    </header>
+                    <div class="reviews__slider-content">
+                        <blockquote>
+                            Совершала покупки в Центре Металлокровли уже не один раз, качество всегда на высоте! В этом году решили заказать металлический горизонтальный забор Еврожалюзи, очень уж этот забор понравился нам на картинке когда искали фото современных заборов и ограждений. Доставили быстро и аккуратно, каждая деталь в плёночке и никаких повреждений. Монтажники были приятно удивлены качеством, сказали, это самый оригинальный жалюзийный забор что им приходилось ставить. Также хочу отметить интересную особенность ламелей Еврожалюзи: мы видим происходящее за участком
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slider-item">
+                <div class="reviews__slider-container">
+                    <header class="reviews__slider-header">
+                        <div class="reviews__slider-header__user">
+                            <img data-lazy="img/global/reviews/user-1.jpg"  alt="user">
+                        </div>
+                        <div class="reviews__slider-header__user-info">
+                            <div class="reviews__slider-header__user-info__name">Олег Васильевич Комиссаров</div>
+                            <div class="reviews__slider-header__user-info__prof">Главный инженер ТСЖ</div>
+                        </div>
+                    </header>
+                    <div class="reviews__slider-content">
+                        <blockquote>
+                            Решил забор-жалюзи металлические купить родителям на смену старого деревянного забора. Было важно не просто произвести минутное впечатление, а максимально удовлетворить их потребности в качестве и надежности. Они люди современные, поэтому новинка от Центра Металлокровли — забор жалюзи из металла, пришлась им по вкусу. Изучил рынок и заказал через интернет, хочу особенно отметить высокое качество и прочность ламелей по сравнению с местными производителями и удобную продуманную логистику, заказ в город Москва доставили в кратчайший срок
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slider-item">
+                <div class="reviews__slider-container">
+                    <header class="reviews__slider-header">
+                        <div class="reviews__slider-header__user">
+                            <img data-lazy="img/global/reviews/user-1.jpg"  alt="user">
+                        </div>
+                        <div class="reviews__slider-header__user-info">
+                            <div class="reviews__slider-header__user-info__name">Олег Васильевич Комиссаров</div>
+                            <div class="reviews__slider-header__user-info__prof">Главный инженер ТСЖ</div>
+                        </div>
+                    </header>
+                    <div class="reviews__slider-content">
+                        <blockquote>
+                            Решил забор-жалюзи металлические купить родителям на смену старого деревянного забора. Было важно не просто произвести минутное впечатление, а максимально удовлетворить их потребности в качестве и надежности. Они люди современные, поэтому новинка от Центра Металлокровли — забор жалюзи из металла, пришлась им по вкусу. Изучил рынок и заказал через интернет, хочу особенно отметить высокое качество и прочность ламелей по сравнению с местными производителями и удобную продуманную логистику, заказ в город Москва доставили в кратчайший срок
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slider-item">
+                <div class="reviews__slider-container">
+                    <header class="reviews__slider-header">
+                        <div class="reviews__slider-header__user">
+                            <img data-lazy="img/global/reviews/user-2.jpg"  alt="user">
+                        </div>
+                        <div class="reviews__slider-header__user-info">
+                            <div class="reviews__slider-header__user-info__name">Зоя Ивановна Колесникова</div>
+                            <div class="reviews__slider-header__user-info__prof">Главный инженер ТСЖ</div>
+                        </div>
+                    </header>
+                    <div class="reviews__slider-content">
+                        <blockquote>
+                            Совершала покупки в Центре Металлокровли уже не один раз, качество всегда на высоте! В этом году решили заказать металлический горизонтальный забор Еврожалюзи, очень уж этот забор понравился нам на картинке когда искали фото современных заборов и ограждений. Доставили быстро и аккуратно, каждая деталь в плёночке и никаких повреждений. Монтажники были приятно удивлены качеством, сказали, это самый оригинальный жалюзийный забор что им приходилось ставить. Также хочу отметить интересную особенность ламелей Еврожалюзи: мы видим происходящее за участком
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slider-item">
+                <div class="reviews__slider-container">
+                    <header class="reviews__slider-header">
+                        <div class="reviews__slider-header__user">
+                            <img data-lazy="img/global/reviews/user-1.jpg"  alt="user">
+                        </div>
+                        <div class="reviews__slider-header__user-info">
+                            <div class="reviews__slider-header__user-info__name">Олег Васильевич Комиссаров</div>
+                            <div class="reviews__slider-header__user-info__prof">Главный инженер ТСЖ</div>
+                        </div>
+                    </header>
+                    <div class="reviews__slider-content">
+                        <blockquote>
+                            Решил забор-жалюзи металлические купить родителям на смену старого деревянного забора. Было важно не просто произвести минутное впечатление, а максимально удовлетворить их потребности в качестве и надежности. Они люди современные, поэтому новинка от Центра Металлокровли — забор жалюзи из металла, пришлась им по вкусу. Изучил рынок и заказал через интернет, хочу особенно отметить высокое качество и прочность ламелей по сравнению с местными производителями и удобную продуманную логистику, заказ в город Москва доставили в кратчайший срок
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews__partners">
+            <img data-src="img/global/reviews/partners.png" class="reviews__partners__img reviews__partners__img-pc lazy" alt="review">
+            <img data-src="img/global/reviews/mobile-partners.png" class="reviews__partners__img reviews__partners__img-mobile lazy" alt="review">
+        </div>
+    </div>
+</section>
+		<div class="subscribe-block container mt">
+    <div class="subscribe-block__container">
+        <h2 class="subscribe-block__title font-normal"><span class="font-bold">Подпишитесь</span> на новинки, скидки, акции!</h2>
+        <div class="subscribe-block__wrapper">
+            <div class="subscribe-block__content">Оставьте свой e-mail, что бы получить скидку на любой курс или услуги от меня</div>
+            <div class="subscribe-block__form">
+                <fieldset class="form__fieldset subscribe-block__fieldset required">
+                    <legend>Ваш email</legend>
+                    <input type="email" class="form__input subscribe-block__input" required placeholder="ivan.ivanov@gmail.com">
+                </fieldset>
+                <div class="form__checkbox-container subscribe-block__checkbox-container">
+                    <div class="form__checkbox-item form__checkbox-icon subscribe-block__checkbox-icon">
+                        <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                    </div>
+                    <div class="form__checkbox-item">
+                        <input checked type="checkbox" class="form__checkbox subscribe-block__checkbox" hidden />
+                        <div class="form__checkbox-text subscribe-block__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-action subscribe-block__submit" value="Подписаться">
+            </div>
+        </div>
+    </div>
+</div>
+		<section class="popular-fances product-slider">
+    <div class="container">
+        <h2 class="popular-fances__title font-normal">
+             <span class="font-bold">Популярные</span> заборы
+        </h2>
+        <ul class="product-slider catalog-product__list  popular-fances__list">
+            <li class="catalog-product__list-item">
+                <div class="catalog-product__list-container">
+                    <a href="#" class="catalog-product__list-img">
+                        <img data-src="img/global/popular-fances/item-1.jpg" class="lazy" alt="product">
+                    </a>
+                    <div class="catalog-product__list-content">
+                        <a href="#" class="catalog-product__list-title">Забор из металлического штакетника Премиум</a>
+                        <div class="catalog-product__list-description">
+                            <ul>
+                                <li>Профнастил: C8 или C20</li>
+                                <li>Цвет профлиста: Нет</li>
+                                <li>Толщина: 0,4</li>
+                                <li>Количество лаг: 2</li>
+                                <li>Высота: 2м</li>
+                                <li>Ворота: распашные</li>
+                                <li>Гарантия: 24 месяца</li>
+                            </ul>
+                        </div>
+                        <footer class="catalog-product__list-footer">
+                            <div class="catalog-product__list-price__container">
+                                <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__btn"  data-title="Забор из металлического штакетника Премиум">Заказать забор</button>
+                        </footer>
+                    </div>
+                </div>
+            </li>
+            <li class="catalog-product__list-item">
+                <div class="catalog-product__list-container">
+                    <a href="#" class="catalog-product__list-img">
+                        <img data-src="img/global/popular-fances/item-2.jpg" class="lazy" alt="product">
+                    </a>
+                    <div class="catalog-product__list-content">
+                        <a href="#" class="catalog-product__list-title">Забор из металлического штакетника Премиум</a>
+                        <div class="catalog-product__list-description">
+                            <ul>
+                                <li>Профнастил: C8 или C20</li>
+                                <li>Цвет профлиста: Нет</li>
+                                <li>Толщина: 0,4</li>
+                                <li>Количество лаг: 2</li>
+                                <li>Высота: 2м</li>
+                                <li>Ворота: распашные</li>
+                                <li>Гарантия: 24 месяца</li>
+                            </ul>
+                        </div>
+                        <footer class="catalog-product__list-footer">
+                            <div class="catalog-product__list-price__container">
+                                <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__btn"  data-title="Забор из металлического штакетника Премиум">Заказать забор</button>
+                        </footer>
+                    </div>
+                </div>
+            </li>
+            <li class="catalog-product__list-item">
+                <div class="catalog-product__list-container">
+                    <a href="#" class="catalog-product__list-img">
+                        <img data-src="img/global/popular-fances/item-3.jpg" class="lazy" alt="product">
+                    </a>
+                    <div class="catalog-product__list-content">
+                        <a href="#" class="catalog-product__list-title">Забор из металлического штакетника Премиум</a>
+                        <div class="catalog-product__list-description">
+                            <ul>
+                                <li>Профнастил: C8 или C20</li>
+                                <li>Цвет профлиста: Нет</li>
+                                <li>Толщина: 0,4</li>
+                                <li>Количество лаг: 2</li>
+                                <li>Высота: 2м</li>
+                                <li>Ворота: распашные</li>
+                                <li>Гарантия: 24 месяца</li>
+                            </ul>
+                        </div>
+                        <footer class="catalog-product__list-footer">
+                            <div class="catalog-product__list-price__container">
+                                <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__btn"  data-title="Забор из металлического штакетника Премиум">Заказать забор</button>
+                        </footer>
+                    </div>
+                </div>
+            </li>
+            <li class="catalog-product__list-item">
+                <div class="catalog-product__list-container">
+                    <a href="#" class="catalog-product__list-img">
+                        <img data-src="img/global/popular-fances/item-4.jpg" class="lazy" alt="product">
+                    </a>
+                    <div class="catalog-product__list-content">
+                        <a href="#" class="catalog-product__list-title">Забор из металлического штакетника Премиум</a>
+                        <div class="catalog-product__list-description">
+                            <ul>
+                                <li>Профнастил: C8 или C20</li>
+                                <li>Цвет профлиста: Нет</li>
+                                <li>Толщина: 0,4</li>
+                                <li>Количество лаг: 2</li>
+                                <li>Высота: 2м</li>
+                                <li>Ворота: распашные</li>
+                                <li>Гарантия: 24 месяца</li>
+                            </ul>
+                        </div>
+                        <footer class="catalog-product__list-footer">
+                            <div class="catalog-product__list-price__container">
+                                <div class="catalog-product__list-price__name">Цена под ключ</div>
+                                <div class="catalog-product__list-price__value"><b>От 1159₽</b> за п.м.</div>
+                            </div>
+                            <button class="btn btn-action btn-open-popup-call catalog-product__btn"  data-title="Забор из металлического штакетника Премиум">Заказать забор</button>
+                        </footer>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+		<section class="contact-action">
+    <div class="container contact-action__container">
+        <div class="master-block @@class">
+    <div class="master-block-item">
+        <div class="master-block__title">Бесплатный выезд менеджера-замерщика</div>
+        <div class="master-block__content">
+            <p>Осуществляем бесплатный выезд менеджера - замерщика на участок заказчика в рамках Московской области.</p>
+        </div>
+        <div class="master-block__form">
+            <fieldset class="form__fieldset master-block__form__fieldset required">
+                <legend>Ваш телефон</legend>
+                <input type="tel" class="form__input master-block__form__input" required placeholder="8 800 333 33 33">
+            </fieldset>
+            <input type="submit" class="btn btn-action master-block__form-submit" value="Вызвать замерщика">
+        </div>
+    </div>
+    <div class="master-block-item master-block__img">
+        <img data-src="img/global/contact-action/master.png" class="lazy" alt="master">
+    </div>
+</div>
+        <div class="calc-block @@class">
+    <div class="calc-block-item">
+        <h2 class="calc-block__title">Воспользуйтесь калькулятором</h2>
+        <div class="calc-block__content">
+            <p>Осуществляем бесплатный выезд менеджера - замерщика на участок заказчика в рамках Московской области.</p>
+        </div>
+        <button class="btn btn-action product-list__btn calc-block__btn btn-open-popup-call" data-title="Калькулятор">Калькулятор</button>
+        <div class="calc-block__mobile-img">
+            <img data-src="img/global/contact-action/mobile-calc.png" class="lazy" alt="contact action">
+        </div>
+    </div>
+    <div class="calc-block-item calc-block__img">
+        <img data-src="img/global/contact-action/calc.png" class="lazy" alt="contact action">
+    </div>
+</div>
+    </div>
+</section>
+		<section class="map @@class">
+    <div class="container map-container">
+        <div class="map-contact">
+            <h2 class="map-contact__title">Наши контакты</h2>
+            <ul class="contact-list map-contact__list">
+                <li class="contact-list__item map-contact__list-item">
+                    <div class="contact-list__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-list__info">
+                        <div class="contact-list__info-title">Ваш регион</div>
+                        <div class="contact-list__info-link">Санкт-Петербург</div>
+                    </div>
+                </li>
+                <li class="contact-list__item map-contact__list-item">
+                    <div class="contact-list__icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="contact-list__info">
+                        <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+                    </div>
+                </li>
+                <li class="contact-list__item map-contact__list-item">
+                    <div class="contact-list__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-list__info">
+                        <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+                        <div class="contact-list__info-title">Заказать звонок</div>
+                    </div>
+                </li>
+                <li class="contact-list__item map-contact__list-item">
+                    <div class="contact-list__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-list__info">
+                        <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+                        <div class="contact-list__info-title">бесплатно по России</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn btn-action map-btn-action btn-open-popup-call" data-title="Карта">Обратный звонок</div>
+        </div>
+    </div>
+    <div class="map-wrapper">
+        <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=224507367698" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</section>
+		<section class="our-news">
+    <div class="container mx-auto">
+        <div class="our-news__title-container">
+           <h2 class="our-news__title font-normal">Наши <span class="font-bold">новости</span></h2>
+            <a href="#" class="see-more our-news__see-more"><i class="fas fa-chevron-right see-more__icon"></i><span class="see-more__text">Все новости</span></a>
+        </div>
+        <ul class="our-news__list">
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-1.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Строительные работы «под ключ» и внутренняя отделка помещений</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-2.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Преимущества сотрудничества</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-3.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Перечень услуг от фирмы Home Improvement Technologies</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-4.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Строительство домов под ключ</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-1.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Строительные работы «под ключ» и внутренняя отделка помещений</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-2.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Преимущества сотрудничества</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-3.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Перечень услуг от фирмы Home Improvement Technologies</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+            <li class="our-news__list-item">
+                <a href="#" class="our-news__list-img">
+                    <img class="lazy" data-src="img/global/our-news/item-4.jpg" alt="news">
+                </a>
+                <div class="our-news__list-content">
+                    <a href="#" class="our-news__list-content__title">Строительство домов под ключ</a>
+                    <time class="our-news__list-content__date">06.12.2020</time>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+	</main>
+	<footer class="footer">
+    <div class="container">
+        <div class="footer-menus">
+            <div class="footer-menus__item">
+                <div class="footer-menus__title">Компания</div>
+                <ul class="footer-menus__nav">
+                    <li class="footer-menus__nav__item"><a href="#">О компании</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Услуги</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Отзывы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Обработки персональных данных</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Договора оферты</a></li>
+                </ul>
+            </div>
+            <div class="footer-menus__item">
+                <div class="footer-menus__title">Информация</div>
+                <ul class="footer-menus__nav">
+                    <li class="footer-menus__nav__item"><a href="#">Доставка и оплата</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Вопрос ответ</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Акции</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Новости</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Возврат денег</a></li>
+                </ul>
+            </div>
+            <div class="footer-menus__item">
+                <div class="footer-menus__title">Каталог</div>
+                <ul class="footer-menus__nav catalog">
+                    <li class="footer-menus__nav__item"><a href="#">Металлические заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Деревянные заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Заборы из пластика</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Заборы с монолитным основанием</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Быстровозводимые заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Заборы из сэндвич панелей</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Кованые заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Комбинированные заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Рулонные заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Сварные заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Заборы для дачи</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Заборы из камня</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Секционные заборы</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Шумозащитные заборы и экраны</a></li>
+                </ul>
+            </div>
+            <div class="footer-menus__item">
+                <div class="footer-menus__title">Услуги</div>
+                <ul class="footer-menus__nav">
+                    <li class="footer-menus__nav__item"><a href="#">Гибка Металла</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Лазерная резка Металла</a></li>
+                    <li class="footer-menus__nav__item"><a href="#">Полимерно-порошковая покраска</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-list @class">
+    <div class="nav-list__item footer-list__item">
+        <a href="#" class="logo @@class">
+    <img data-src="img/global/icons/logo.svg" class="logo__img lazy" alt="logo">
+    <div class="logo__content">
+        <div class="logo__title">новый дом</div>
+        <div class="logo__subtitle">Заборы нового поколения</div>
+    </div>
+</a>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <div class="contact-list__info-title">Ваш регион</div>
+            <div class="contact-list__info-link">Санкт-Петербург</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="far fa-envelope-open"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="mailto:zakaz@nwhouse.ru" class="contact-list__info-link">zakaz@nwhouse.ru</a>
+            <div class="contact-list__info-title">Написать нам</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+            <div class="contact-list__info-title">Заказать звонок</div>
+        </div>
+    </div>
+    <div class="contact-list nav-list__item">
+        <div class="contact-list__icon">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="contact-list__info">
+            <a href="tel:83517015581" class="contact-list__info-link">8 (351) 701-55-81</a>
+            <div class="contact-list__info-title">бесплатно по России</div>
+        </div>
+    </div>
+    <div class="nav-list__item">
+        <div class="btn btn-action footer-btn-action btn-open-popup-call">Обратный звонок</div>
+    </div>
+</div>
+    </div>
+</footer>
+<div  class="popup-overlay popup-call">
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <header class="popup__header">
+                <h4 class="popup__header-title">Мы вам перезвоним</h4>
+                <i class="fas fa-times popup-close"></i>
+            </header>
+            <div class="popup-body">
+                <div class="popup-description">Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам</div>
+                <div class="popup-form__container">
+                    <fieldset class="form__fieldset popup-form__fieldset required">
+                        <legend>Ваше имя</legend>
+                        <input type="text" class="form__input popup-form__input" required placeholder="Иван Иванов">
+                    </fieldset>
+                    <fieldset class="form__fieldset popup-form__fieldset required">
+                        <legend>Ваш телефон</legend>
+                        <input type="tel" class="form__input popup-form__input" required placeholder="8 800 333 33 33">
+                    </fieldset>
+                    <fieldset class="form__fieldset popup-form__fieldset popup-form__fieldset--full">
+                        <legend>Оставьте ваш вопрос</legend>
+                        <textarea class="form__textarea popup-form__textarea" placeholder="Опишите свой вопрос или проблему"></textarea>
+                    </fieldset>
+                </div>
+                <div class="popup-form__btn-container">
+                    <div class="form__checkbox-container popup-form__checkbox-container">
+                        <div class="form__checkbox-item form__checkbox-icon popup-form__checkbox-icon">
+                            <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                        </div>
+                        <div class="form__checkbox-item">
+                            <input checked type="checkbox" class="form__checkbox popup-form__checkbox" hidden />
+                            <div class="form__checkbox-text popup-form__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-action popup-submit" value="Напишите мне">
+                </div>
+                <div class="hidden">
+                    <input type="hidden" class="popup-call__input-title">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="search-popup">
+    <div class="container search-popup__container">
+        <form class="search">
+            <input type="search" placeholder="Найдём всё..." class="search-input">
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</div>
+<div  class="popup-overlay popup-blog">
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <header class="popup__header">
+                <h4 class="popup__header-title">Прочитать позже</h4>
+                <i class="fas fa-times popup-close"></i>
+            </header>
+            <div class="popup-body">
+                <div class="popup-form__container">
+                    <fieldset class="form__fieldset popup-form__fieldset required">
+                        <legend>Ваше email</legend>
+                        <input type="email" class="form__input popup-form__input" required placeholder="example.com">
+                    </fieldset>
+                </div>
+                <div class="popup-form__btn-container">
+                    <div class="form__checkbox-container popup-form__checkbox-container">
+                        <div class="form__checkbox-item form__checkbox-icon popup-form__checkbox-icon">
+                            <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                        </div>
+                        <div class="form__checkbox-item">
+                            <input checked type="checkbox" class="form__checkbox popup-form__checkbox" hidden />
+                            <div class="form__checkbox-text popup-form__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-action popup-submit" value="Напомнить о статье">
+                </div>
+                <div class="hidden">
+                    <input type="hidden" class="popup-call__input-title">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

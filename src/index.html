@@ -1,251 +1,32 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-@@include('components/page/_1_head.html',{
-'title': 'Easy webdev startpack - test',
-'description': 'Easy webdev startpack by budfy',
-'keywords': 'Webdev, Gulp4, html, css, js, jquery',
-'favicon': 'img/favicon.png'
-})
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
 <body>
-	@@include('components/page/_2_header.html')
-	<main class="main">
-		<section class="main-banner">
-			<div class="container">
-				<div class="main-banner__top-container">
-					@@include('components/bem-blocks/global/actions-blocks/delivery-block/delivery-block.html')
-					@@include('components/bem-blocks/global/actions-blocks/work-block/work-block.html')
-				</div>
-				<div class="main-banner__bottom-container">
-					<ul class="main-banner__advantages-list">
-						<li class="main-banner__advantages-list__item">
-							<div class="main-banner__advantages-list__item-img">
-								<img data-src="img/global/main-banner/item-1.svg" class="lazy" alt="advantages">
-							</div>
-							<div class="main-banner__advantages-list__title">Под заказ за 2 дня</div>
-						</li>
-						<li class="main-banner__advantages-list__item">
-							<div class="main-banner__advantages-list__item-img">
-								<img data-src="img/global/main-banner/item-2.svg" class="lazy" alt="advantages">
-							</div>
-							<div class="main-banner__advantages-list__title">Делаем под ваш размер</div>
-						</li>
-						<li class="main-banner__advantages-list__item">
-							<div class="main-banner__advantages-list__item-img">
-								<img data-src="img/global/main-banner/item-3.svg" class="lazy" alt="advantages">
-							</div>
-							<div class="main-banner__advantages-list__title">
-								10 цветовых решений
-							</div>
-						</li>
-						<li class="main-banner__advantages-list__item">
-							<div class="main-banner__advantages-list__item-img">
-								<img data-src="img/global/main-banner/item-4.svg" class="lazy" alt="advantages">
-							</div>
-							<div class="main-banner__advantages-list__title">
-								Доставка с оплатой на месте
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		@@include('components/bem-blocks/global/catalog-nav/catalog-nav.html')
-		<section class="catalog-banner">
-			<div class="container">
-				<div class="catalog-banner__wrapper">
-					<div class="catalog-banner__container">
-						<div class="catalog-banner__item">
-							<h1 class="catalog-banner__title font-normal"><span class="font-bold">Каталог заборов</span> с установкой под ключ</h1>
-							<div class="catalog-banner__content">
-								<p>Наша компания специализируется на строительстве заборов полностью под ключ.</p>
-								<p>Собственное производство, постоянный штат рабочих и оптимизированная логистика позволяет продавать заборы по выгодной цене без ущерба для качества. Мы являемся обладателем более 15 патентов.</p>
-								<p>"Заборкин" ограждает от забот! Доверьте установку ограждения специалистам компании!</p>
-								<p>Мы занимаемся изготовлением и монтажом ворот для частных домов и объектов промышленного назначения. Принимаем заказы на установку ворот с автоматикой и без нее.</p>
-							</div>
-						</div>
-						<div class="catalog-banner__item">
-							<ul class="scroll-container catalog-banner__catalog-list">
-								<li class="catalog-banner__catalog-list__item catalog-banner__catalog-list__item--large start">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__container">
-												<div class="catalog-banner__catalog-list__title">Металлические заборы</div>
-												<div class="catalog-banner__catalog-list__text">Ограждения из стального листа, профилированного с помощью холодного проката с полимерным покрытием.</div>
-											</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-1.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item catalog-banner__catalog-list__item--large end">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__container">
-												<div class="catalog-banner__catalog-list__title">Деревянные заборы</div>
-												<div class="catalog-banner__catalog-list__text">Заборы из равномерно расположенных вертикальных досок.</div>
-											</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-2.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Заборы из пластика</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-3.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Заборы с монолитным основанием</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-4.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Быстровозводимые заборы</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-5.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Заборы для дачи</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-6.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Заборы из камня</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-7.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Заборы из сэндвич панелей</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-8.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Кованые заборы</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-9.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Комби заборы</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-10.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Рулонные заборы</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-11.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Сварные заборы</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-12.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Секционные заборы</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-								<li class="catalog-banner__catalog-list__item">
-									<a href="#">
-										<div class="catalog-banner__catalog-list__content">
-											<div class="catalog-banner__catalog-list__title">Шумозащитные заборы и экраны</div>
-										</div>
-										<div class="catalog-banner__catalog-list__img">
-											<img data-src="img/global/menu/item-13.png" class="lazy" alt="catalog">
-										</div>
-									</a>
-								</li>
-							</ul>
-							<a href="#" class="btn catalog-banner__link">Полный каталог</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		@@include('components/bem-blocks/global/video-block/video-block.html')
-		@@include('components/bem-blocks/global/stages-installation/stages-installation.html',{
-		  title: '<span class="font-bold">Этапы </span> установки забора'
-		})
-		@@include('components/bem-blocks/global/portfolio-block/portfolio-block.html')
-		@@include('components/bem-blocks/global/stages-cooperation/stages-cooperation.html')
-		<section class="main-calculator">
-			<div class="container">
-				<div class="main-calculator__title">Расчет стоимости</div>
-			</div>
-			@@include('components/bem-blocks/global/calculator/calculator.html')
-		</section>
-		@@include('components/bem-blocks/global/reviews/reviews.html')
-		@@include('components/bem-blocks/global/subscribe-block/subscribe-block.html',{
-		   'class': 'mt'
-		})
-		@@include('components/bem-blocks/global/popular-fances/popular-fances.html',{
-		   'title': '<span class="font-bold">Популярные</span> заборы',
-           'class': 'product-slider'
-		})
-		@@include('components/bem-blocks/global/contact-action/contact-action.html')
-		@@include('components/bem-blocks/global/map/map.html')
-		@@include('components/bem-blocks/global/our-news/our-news.html')
-	</main>
-	@@include('components/page/_3_footer.html')
-	@@include('components/page/_4_scripts.html')
+<ul>
+    <li><a href="blog-page.html"></a>blog-page.html</li>
+    <li><a href="blog.html">blog.html</a></li>
+    <li><a href="calculator-fence.html">calculator-fence.html</a></li>
+    <li><a href="catalog-automatic.html">catalog-automatic.html</a></li>
+    <li><a href="catalog-fence.html">catalog-fence.html</a></li>
+    <li><a href="catalog-gates.html">catalog-gates.html</a></li>
+    <li><a href="catalog-metal.html">catalog-metal.html</a></li>
+    <li><a href="company.html">company.html</a></li>
+    <li><a href="contacts.html">contacts.html</a></li>
+    <li><a href="faq.html">faq.html</a></li>
+    <li><a href="main.html">main.html</a></li>
+    <li><a href="payments.html">payments.html</a></li>
+    <li><a href="product-automatic.html">product-automatic.html</a></li>
+    <li><a href="product-fence.html">product-fence.html</a></li>
+    <li><a href="product-gates.html">product-gates.html</a></li>
+    <li><a href="refund.html">refund.html</a></li>
+    <li><a href="service-page-v2.html">service-page-v2.html</a></li>
+    <li><a href="service-page.html">service-page.html</a></li>
+</ul>
 </body>
-
 </html>

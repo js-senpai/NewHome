@@ -16,4 +16,128 @@
 	<title>@@title</title>
 	<link href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
 	<link href="libs/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+    <!-- Organization schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode": "F-75002",
+				"streetAddress": "38 avenue de l'Opera"
+			},
+			"email": "secretariat(at)google.org",
+			"faxNumber": "( 33 1) 42 68 53 01",
+			"member": [
+				{
+					"@type": "Organization"
+				},
+				{
+					"@type": "Organization"
+				}
+			],
+			"alumni": [
+				{
+					"@type": "Person",
+					"name": "Jack Dan"
+				},
+				{
+					"@type": "Person",
+					"name": "John Smith"
+				}
+			],
+			"name": "Google.org (GOOG)",
+			"telephone": "( 33 1) 42 68 53 00"
+		}
+	</script>
+	<!-- Local bussinesss -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "Service",
+			"serviceType": "Weekly home cleaning",
+			"provider": {
+				"@type": "LocalBusiness",
+				"name": "ACME Home Cleaning"
+			},
+			"areaServed": {
+				"@type": "State",
+				"name": "Massachusetts"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Cleaning services",
+				"itemListElement": [
+					{
+						"@type": "OfferCatalog",
+						"name": "House Cleaning",
+						"itemListElement": [
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Apartment light cleaning"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "House light cleaning up to 2 bedrooms"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "House light cleaning 3+ bedrooms"
+								}
+							}
+						]
+					},
+					{
+						"@type": "OfferCatalog",
+						"name": "One-time services",
+						"itemListElement": [
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Window washing"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Carpet cleaning"
+								}
+							},
+							{
+								"@type": "Offer",
+								"itemOffered": {
+									"@type": "Service",
+									"name": "Move in/out cleaning"
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	</script>
+	<!-- Website -->
+	<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "http://example.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http://example.com/search?&q={query}",
+      "query": "required"
+    }
+}
+</script>
 </head>

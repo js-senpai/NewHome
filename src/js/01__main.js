@@ -87,6 +87,7 @@ const lazyLoadInstance = new LazyLoad({
                 if(!$(this).hasClass('active')){
                     const getTab = $(this).attr('data-tab')
                     $(this).addClass('active').siblings().removeClass('active')
+                    console.log(getTab)
                     $(`#${getTab}`).addClass('active').siblings().removeClass('active')
                 }
             })
@@ -842,6 +843,16 @@ const lazyLoadInstance = new LazyLoad({
                 $(this).toggleClass('active')
                 $(this).find('.faq__list-content').fadeToggle(500)
             })
+        }
+        if($('.faq-page').length){
+            tabToggle('.faq-page__nav-list__item')
+            $('.search-input').on("keyup", function() {
+                const value = $(this).val().toLowerCase();
+                const getTabs = $(this).parent().parent().parent().find('.faq__list-item')
+                getTabs.filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
         }
         // Blog
         if($('.blog-page-header__info-remind').length){

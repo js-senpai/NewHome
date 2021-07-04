@@ -1579,6 +1579,48 @@
         </div>
     </div>
 </div>
+<div  class="popup-overlay popup-write">
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <header class="popup__header">
+                <h4 class="popup__header-title">Мы вам напишем</h4>
+                <i class="fas fa-times popup-close"></i>
+            </header>
+            <div class="popup-body">
+                <div class="popup-description">Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам</div>
+                <div class="popup-form__container">
+                    <fieldset class="form__fieldset popup-form__fieldset required">
+                        <legend>Ваше имя</legend>
+                        <input type="text" class="form__input popup-form__input" required placeholder="Иван Иванов">
+                    </fieldset>
+                    <fieldset class="form__fieldset popup-form__fieldset required">
+                        <legend>Ваш телефон</legend>
+                        <input type="tel" class="form__input popup-form__input" required placeholder="8 800 333 33 33">
+                    </fieldset>
+                    <fieldset class="form__fieldset popup-form__fieldset popup-form__fieldset--full">
+                        <legend>Оставьте ваш вопрос</legend>
+                        <textarea class="form__textarea popup-form__textarea" placeholder="Опишите свой вопрос или проблему"></textarea>
+                    </fieldset>
+                </div>
+                <div class="popup-form__btn-container">
+                    <div class="form__checkbox-container popup-form__checkbox-container">
+                        <div class="form__checkbox-item form__checkbox-icon popup-form__checkbox-icon">
+                            <img src="img/global/icons/checkbox.svg" alt="checkbox">
+                        </div>
+                        <div class="form__checkbox-item">
+                            <input checked type="checkbox" class="form__checkbox popup-form__checkbox" hidden />
+                            <div class="form__checkbox-text popup-form__checkbox-text">Я даю согласие на обработку моих персональных данных</div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-action popup-submit" value="Напишите мне">
+                </div>
+                <div class="hidden">
+                    <input type="hidden" class="popup-write__input-title">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="search-popup">
     <div class="container search-popup__container">
         <form class="search">
@@ -1620,6 +1662,7 @@
         </div>
     </div>
 </div>
+
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>

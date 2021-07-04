@@ -1,5 +1,24 @@
 .faq-page{
   padding: rem(20px) 0;
+  &__tab{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  &__nav{
+    &-list{
+      &__item{
+        cursor: pointer;
+        &.active{
+          .page-nav__list-title{
+            border: none !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
   &-container{
     display: grid;
     grid-template-columns: 100%;
